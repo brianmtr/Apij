@@ -1,10 +1,11 @@
 <h1>Landrecies</h1>
 
 
- <div class="containerCard">
+ 
 
  <% @offres.each do |offre| %>
  <% if offre.commune === 'Landrecies' %>
+ <div class="containerCard">
 <div class="card">
     <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
     <br>
@@ -21,6 +22,6 @@
     </p>
     
   </div>  
+  </div>
     <% end %>
  <% end %>
-</div>

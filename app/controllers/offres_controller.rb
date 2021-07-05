@@ -64,6 +64,6 @@ class OffresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def offre_params
-      params.require(:offre).permit(:poste, :contrat, :email, :commune, :adress, :salaire, :description)
+      params.require(:offre).permit(:poste, :contrat, :email, :domaine, :commune, :adress, :salaire, :description)
     end
 end

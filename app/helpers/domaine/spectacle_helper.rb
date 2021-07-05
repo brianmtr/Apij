@@ -1,0 +1,2 @@
+module Domaine::SpectacleHelper
+end

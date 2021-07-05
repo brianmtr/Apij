@@ -10,6 +10,7 @@
     background-color: rgba(255, 255, 255, 0.589);
     box-shadow: 20px 20px 50px #00000025, 
     -30px -30px 60px #00000025;
+    margin: 35px;
 }
 
 .link a{
@@ -28,8 +29,9 @@
 
 .containerCard {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    
 }
 

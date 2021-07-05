@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2021_07_01_125807) do
     t.string "adress"
     t.string "email"
     t.string "contrat"
+    t.string "domaine"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -12,6 +12,16 @@
   <% end %>
 <div class="allField">
   <div class="field">
+    <%= form.label :domaine %><br>
+    <%= form.select :domaine, [
+      'Agriculture et pêche', 'Espaces verts', 'Soins aux animaux', 'Ouvrage d\'art', 'Banque, assurance, immobilier',
+      'Commerce, Vente', 'Communication', 'Bâtiment', 'Restauration', 'Tourisme, Loisirs',
+      'Industrie', 'Maintenance', 'Santé', 'Service à la personne', 'Spectacle',
+      'Support à l\'entreprise', 'Transport, Logistique', 'Pôle collectivités',
+      'Service public', 'Association'
+    ]%>
+</div>
+  <div class="field">
     <%= form.label :poste %>
     <%= form.text_field :poste %>
   </div>

@@ -7,6 +7,7 @@ class CreateOffres < ActiveRecord::Migration[6.1]
       t.string :adress
       t.string :email
       t.string :contrat
+      t.string :domaine
       t.text :description
       
       t.timestamps

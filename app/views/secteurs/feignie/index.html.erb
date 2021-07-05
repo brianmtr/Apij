@@ -1,26 +1,53 @@
-<h1>Feignie</h1>
+<h1>Feignies</h1>
 
+<div class="test">
+<div class="sectorJob">
+    <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', secteurs_feignie_agriculture_index_path %> </div>
 
- <div class="containerCard">
+    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs_feignie_espacevert_index_path %></div>
 
- <% @offres.each do |offre| %>
- <% if offre.commune === 'Feignies' %>
-<div class="card">
-    <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
-    <br>
-    <p><%= offre.contrat %> </p>
-    <p><%= offre.salaire %> € par mois</p>
-    <p><%= offre.email %></p>
-    <small><%= offre.description %></small>
-    <br>
-        <p class="link">
-    <%= link_to 'Show', offre %>
-    <%= link_to 'Edit', edit_offre_path(offre) %>
-    <%= link_to 'Destroy', offre, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <a href="mailto:test@test.fr">POSTULER</a>
-    </p>
-    
-  </div>  
-    <% end %>
- <% end %>
+    <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs_feignie_animals_index_path %></div>
+            
+    <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs_feignie_art_index_path %></div>
 </div>
+<div class="sectorJob">
+     <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_feignie_banque_index_path %></div>
+
+   <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs_feignie_commerce_index_path %></div>
+          
+    <div class="sectorBox communication"><%= link_to 'Communication', secteurs_feignie_communication_index_path %></div>
+
+    <div class="sectorBox biologie"><%= link_to 'Bâtiment', secteurs_feignie_batiment_index_path %></div>
+</div> 
+
+
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Restauration', secteurs_feignie_restauration_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Tourisme, Loisirs', secteurs_feignie_tourisme_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Industrie', secteurs_feignie_industrie_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Maintenance', secteurs_feignie_maintenance_index_path %></div>
+</div> 
+
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Santé', secteurs_feignie_sante_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Service à la personne', secteurs_feignie_service_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Spectacle', secteurs_feignie_spectacle_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Support à l\'entreprise', secteurs_feignie_support_index_path %></div>
+</div> 
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Transport, Logistique', secteurs_feignie_transport_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Pôle collectivités', secteurs_feignie_collectivite_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Service public', secteurs_feignie_servicepublic_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Association', secteurs_feignie_association_index_path %></div>
+</div>    
+</div>  
+

@@ -5,16 +5,17 @@
 <p id="notice"><%= notice %></p>
 
 <h1><span class="colorLetters">Offres</span> par communauté</h1>
- <% if current_user && current_user.conseiller? || current_user.cre? %>
+
     <div class="newOffre"><%= link_to 'Créer une offre d\'emploi', new_offre_path %></div>
-  <% end %>
 
 
-<%= link_to 'Créer une offre d\'emploi', new_offre_path %>
+
+
 
 <div class="sectorJobOffres">
     <div class="sectorJob">
-        <div class="sectorBox landrecies"><%= link_to 'Landrecies', secteurs_landrecies_index_path %></div>
+        <div class="sectorBox all"><%= link_to 'Tous...', secteurs_all_index_path %></div>
+        
         <div class="sectorBox avesnes"><%= link_to 'Avesnes Sur Helpe', secteurs_avesnes_index_path %> </div>   
         <div class="sectorBox feignie"><%= link_to 'Feignie', secteurs_feignie_index_path %><br></div>       
         <div class="sectorBox louvroil"><%= link_to 'Louvroil', secteurs_louvroil_index_path %></div>
@@ -34,7 +35,7 @@
     <div class="sectorJob">
         <div class="sectorBox aulnoye"><%= link_to 'Aulnoye-Aymeries', secteurs_aulnoye_index_path %></div>
         <div class="sectorBox quesnoy"><%= link_to 'Le Quesnoy', secteurs_quesnoy_index_path %></div>
-        <div class="sectorBox blank"></div>
+        <div class="sectorBox landrecies"><%= link_to 'Landrecies', secteurs_landrecies_index_path %></div>
         <div class="sectorBox blank"></div>
     </div> 
 </div>
