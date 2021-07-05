@@ -1,0 +1,90 @@
+
+<div id="boxy" background-image="../images/background.png"> 
+
+
+
+<% if user_signed_in? %>
+<div class="logoCo">
+    <%= image_tag("logo_appijob.png", :alt => "logo_événement_proposé") %>
+</div>
+<% else %>
+<div class="logo">
+    <%= image_tag("logo_appijob.png", :alt => "logo_événement_proposé") %>
+</div>
+<% end %>
+ 
+<div class="boxAccount">
+    <div class="CreAccount">
+        <div class="connexion">
+        <h2>
+          <% if user_signed_in? %>
+          <% else %>
+            <%= link_to 'Se connecter', new_user_session_path %>
+          <% end %>
+          </h2>
+        </div>
+    </div>
+</div>
+<% if user_signed_in? %>
+<div class="containerDashbord">
+  
+  <div class="boxPubliCre">
+    <div class="publicDash">
+    <p class="titleBox">Public</p>
+        <div class="numberDynamic"><%= @users.count(1) %></div>
+    </div>
+    <div class="CreDash">
+      <p class="titleBox">Cre</p>
+     
+    </div>
+  </div>
+  <div class="BoxOffreDashboard">
+    <div class="OffreDash">
+            <p class="titleBox">Offres d'emploi</p>
+               <div class="numberDynamic"><%= @offres.count(1) %></div>
+               <br>
+               <br>
+                   <% @offres.each do |offre| %>
+               <div class="ListOffers">
+               <ul>
+                  <li><%= offre.poste %></li>
+                  <li><%= offre.contrat %></li>  
+                  <li><%= offre.commune %></li> 
+                  <li><%= offre.salaire %> € par mois.</li>
+               </ul>
+               <div class="separeBar"></div>
+               </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<div class="containerDescribe">
+
+   
+      <%= image_tag("imgGomeYellow.png", :alt => "image_home") %>
+      <p class="presentation">Traduction de H. Rackham (1914)
+         "But I must explain to you how all this mistaken idea of 
+         give you a complete account of the system, and expound 
+         the actual teachings of the great explorer of the truth, 
+         the master-builder of human happiness. No one rejects, 
+         dislikes, or avoids pleasure itself, because it is pleasure
+         ,<br>
+         <br>
+         but because those who do not know how to pursue pleasure 
+         rationally encounter consequences that are extremely 
+         denouncing pleasure and praising pain was born and I will
+         painful. Nor again is there anyone who loves or pursues or 
+         desires to obtain pain of itself, because it is pain, but 
+         because occasionally circumstances occur in which toil and 
+         pain can procure him some great pleasure. To take a trivial 
+         ple, which of us ever undertakes laborious physical 
+         exercise, except to obtain some advantage from it? But who
+         <br> 
+         <br>
+         has any right to find fault with a man who chooses to enjoy 
+         a pleasure that has no annoying consequences, or one who 
+         avoids a pain that produces no resultant pleasure?"
+      </p> 
+</div>

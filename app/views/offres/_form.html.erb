@@ -1,0 +1,55 @@
+<%= form_with(model: offre) do |form| %>
+  <% if offre.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(offre.errors.count, "error") %> prohibited this offre from being saved:</h2>
+
+      <ul>
+        <% offre.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="allField">
+  <div class="field">
+    <%= form.label :poste %>
+    <%= form.text_field :poste %>
+  </div>
+
+  <div class="field">
+    <%= form.label :salaire_par_mois %>
+    <%= form.text_field :salaire %>
+  </div>
+
+  <div class="field">
+    <%= form.label :commune %><br>
+    <%= form.select :commune, [
+      'Landrecies', 'Avesnes-Sur-Helpe', 'Feignies', 'Louvroil', 'Fourmies',
+      'Haumont', 'Jeumont', 'Aunloye-Aymeries', 'Quesnoy', 'Maubeuge'
+    ]%>
+</div>
+
+  <div class="field">
+    <%= form.label :adresse %>
+    <%= form.text_field :adress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contrat_de_travail %>
+    <%= form.text_field :contrat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+</div>
+<% end %>

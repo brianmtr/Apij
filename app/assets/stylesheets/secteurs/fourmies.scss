@@ -1,0 +1,35 @@
+// Place all the styles related to the secteurs/Fourmies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.card {
+    color: #fff;
+    padding: 10px;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.589);
+    box-shadow: 20px 20px 50px #00000025, 
+    -30px -30px 60px #00000025;
+}
+
+.link a{
+    color: black;
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link a:hover {
+    color: #ffc107;
+}
+
+.containerCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+

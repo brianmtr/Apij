@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Poste:</strong>
+  <%= @offre.poste %>
+</p>
+
+<p>
+  <strong>salaire:</strong>
+  <%= @offre.salaire %>
+</p>
+
+<p>
+  <strong>commune:</strong>
+  <%= @offre.commune %>
+</p>
+
+<p>
+  <strong>adresse:</strong>
+  <%= @offre.adress %>
+</p>
+
+<p>
+  <strong>email:</strong>
+  <%= @offre.email %>
+</p>
+
+<p>
+  <strong>contrat de travail:</strong>
+  <%= @offre.contrat %>
+</p>
+
+<p>
+  <strong>description:</strong>
+  <%= @offre.description %>
+</p>
+
+<%= link_to 'Edit', edit_offre_path(@offre) %> |
+<%= link_to 'Back', offres_path %>

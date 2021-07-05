@@ -1,0 +1,2 @@
+module Secteurs::MaubeugeHelper
+end
