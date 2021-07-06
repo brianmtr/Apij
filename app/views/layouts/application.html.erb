@@ -13,7 +13,10 @@
   <body>
   <div id="boxy" background-image="../images/background.png"> 
   <div class="top_nav">
-  <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %>
+
+  <% if user_signed_in? %>
+    <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %>
+  <% end %>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -43,8 +46,6 @@
           <a class="nav-link active" aria-current="page" href="#">Formulaire</a>
         </li>
 
-    
-         
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
         </li>

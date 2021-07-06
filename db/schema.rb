@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2021_07_01_125807) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["adress"], name: "index_users_on_adress"
+    t.index ["cre"], name: "index_users_on_cre"
     t.index ["domaine"], name: "index_users_on_domaine"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["entreprise"], name: "index_users_on_entreprise"

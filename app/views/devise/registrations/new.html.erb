@@ -1,14 +1,25 @@
-<h2>Sign up</h2>
+<div class="fieldBox">
+<h2 class="title">S'inscrire</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
+  <div class="fieldSessions">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </div>
+
+    <div class="fieldSessions">
+    <%= f.label :Nom %><br />
+    <%= f.text_field :lastname %>
+  </div>
+
+  <div class="fieldSessions">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
+  <div class="fieldSessions">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -16,14 +27,48 @@
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
-  <div class="field">
+  <div class="fieldSessions">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+<div class="cre">
+  <h3 class="title">Vous êtes un chargé de Rela tion Entreprise ?</h3>
+  
+<div class="fieldcheckbox">
+  <%= f.check_box :cre %>
+  <%= f.label :cre, 'Je suis un Chargé de Relation Entreprise.' %>
+</div>
+
+<div class="fieldSessions">
+     <%= f.label :domaine %><br>
+    <%= f.select :domaine, ['Agriculture', 'Alimentation',
+    'Animaux', 'Architecture', 'Armée-Sécurité-secours', 'Atisanat', 'Banque-Assurance',
+    'Bâtiment', 'Biologie', 'Commerce_immobilier', 'Communication', 'Spectacle',
+    'Droit', 'Édition-Imprimerie', 'Informatique', 'Enseignement', 'Environnement',
+    'Ressources Humaine', 'Restauration', 'Humanitaire', 'Industrie-Matériaux', 
+    'Sciences Humaines', 'Maintenance', 'Numérique-Multimédia', 'Santé', 'Sciences-Mathématiques',
+    'Secrétariat', 'Social', 'Estétique-Coiffure', 'Sport-Animation', 'Transport-Logistique',
+    'Autres secteurs']%>
+</div>
+<div class="fieldSessions">
+    <%= f.label :entreprise %><br/>
+    <%= f.text_field :entreprise %>
+</div>
+<div class="fieldSessions">
+    <%= f.label :adresse %><br />
+    <%= f.text_field :adress %>
+</div>
+</div>
+<div class="fieldcheckbox">
+    <%= f.check_box :rgpd %>
+    <%= f.label :rg, '*Champs obligatoire. J\'accepte que les données saisies soient conservées dans le cadre d\'utilisations sur le site AppiJob.' %>
+</div>
+
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "S'inscrire" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>

@@ -23,3 +23,51 @@ h1 {
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
+.fieldBox {
+    margin-top: 150px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.fieldSessions {
+    
+    flex-direction: column;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.fieldSessions input {
+    width: 100%;
+    border-radius: 30px;
+    height: 35px;
+}
+
+.fieldcheckbox {
+   color: #fff;
+    margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+}
+
+.actions input {
+    padding: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #FCB813;
+    border: none;
+    color: #fff;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+}
+
+.cre {
+    background-color:#ffffff7e;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
