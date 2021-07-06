@@ -1,27 +1,53 @@
 <h1>Landrecies</h1>
 
+<div class="test">
+<div class="sectorJob">
+    <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', secteurs_landrecies_agriculture_index_path %> </div>
 
- 
+    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs_landrecies_espacevert_index_path %></div>
 
- <% @offres.each do |offre| %>
- <% if offre.commune === 'Landrecies' %>
- <div class="containerCard">
-<div class="card">
-    <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
-    <br>
-    <p><%= offre.contrat %> </p>
-    <p><%= offre.salaire %> € par mois</p>
-    <p><%= offre.email %></p>
-    <small><%= offre.description %></small>
-    <br>
-        <p class="link">
-    <%= link_to 'Show', offre %>
-    <%= link_to 'Edit', edit_offre_path(offre) %>
-    <%= link_to 'Destroy', offre, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <a href="mailto:test@test.fr">POSTULER</a>
-    </p>
-    
-  </div>  
-  </div>
-    <% end %>
- <% end %>
+    <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs_landrecies_animals_index_path %></div>
+            
+    <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs_landrecies_art_index_path %></div>
+</div>
+<div class="sectorJob">
+     <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_landrecies_banque_index_path %></div>
+
+   <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs_landrecies_commerce_index_path %></div>
+          
+    <div class="sectorBox communication"><%= link_to 'Communication', secteurs_landrecies_communication_index_path %></div>
+
+    <div class="sectorBox biologie"><%= link_to 'Bâtiment', secteurs_landrecies_batiment_index_path %></div>
+</div> 
+
+
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Restauration', secteurs_landrecies_restauration_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Tourisme, Loisirs', secteurs_landrecies_tourisme_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Industrie', secteurs_landrecies_industrie_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Maintenance', secteurs_landrecies_maintenance_index_path %></div>
+</div> 
+
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Santé', secteurs_landrecies_sante_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Service à la personne', secteurs_landrecies_service_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Spectacle', secteurs_landrecies_spectacle_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Support à l\'entreprise', secteurs_landrecies_support_index_path %></div>
+</div> 
+
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Transport, Logistique', secteurs_landrecies_transport_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Pôle collectivités', secteurs_landrecies_collectivite_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Service public', secteurs_landrecies_servicepublic_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Association', secteurs_landrecies_association_index_path %></div>
+</div>    
+<jeumont
