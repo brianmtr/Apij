@@ -1,28 +1,53 @@
 <h1>Fourmies</h1>
 
+<div class="test">
+<div class="sectorJob">
+    <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', secteurs_fourmies_agriculture_index_path %> </div>
 
- <div class="containerCard">
-
- <% @offres.each do |offre| %>
- <% if offre.commune === 'Fourmies' %>
-<div class="card">
-    <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
-    <br>
-    <p><%= offre.contrat %> </p>
-    <p><%= offre.salaire %> € par mois</p>
-    <p><%= offre.email %></p>
-    <small><%= offre.description %></small>
-    <br>
-        <p class="link">
-    <%= link_to 'Show', offre %>
-    <%= link_to 'Edit', edit_offre_path(offre) %>
-    <%= link_to 'Destroy', offre, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <a href="mailto:test@test.fr">POSTULER</a>
-    </p>
+    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs_fourmies_espacevert_index_path %></div>
     
-  </div>  
-    <% end %>
- <% end %>
+    <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs_fourmies_animals_index_path %></div>
+           
+    <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs_fourmies_art_index_path %></div>
 </div>
+<div class="sectorJob">
+     <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_fourmies_banque_index_path %></div>
 
-   
+   <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs_fourmies_commerce_index_path %></div>
+          
+    <div class="sectorBox communication"><%= link_to 'Communication', secteurs_fourmies_communication_index_path %></div>
+
+    <div class="sectorBox biologie"><%= link_to 'Bâtiment', secteurs_fourmies_batiment_index_path %></div>
+</div> 
+
+
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Restauration', secteurs_fourmies_restauration_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Tourisme, Loisirs', secteurs_fourmies_tourisme_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Industrie', secteurs_fourmies_industrie_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Maintenance', secteurs_fourmies_maintenance_index_path %></div>
+</div> 
+
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Santé', secteurs_fourmies_sante_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Service à la personne', secteurs_fourmies_service_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Spectacle', secteurs_fourmies_spectacle_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Support à l\'entreprise', secteurs_fourmies_support_index_path %></div>
+</div> 
+<div class="sectorJob">
+    <div class="sectorBox commerce"><%= link_to 'Transport, Logistique', secteurs_fourmies_transport_index_path %></div>
+
+    <div class="sectorBox communication"><%= link_to 'Pôle collectivités', secteurs_fourmies_collectivite_index_path %></div>
+          
+    <div class="sectorBox spectacle"><%= link_to 'Service public', secteurs_fourmies_servicepublic_index_path %></div>
+
+    <div class="sectorBox secours"><%= link_to 'Association', secteurs_fourmies_association_index_path %></div>
+</div>    
+</div>  
+

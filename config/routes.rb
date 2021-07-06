@@ -1,6 +1,58 @@
 Rails.application.routes.draw do
 
   namespace :secteurs do
+    namespace :jeumont do
+      get 'transport/index'
+      get 'tourisme/index'
+      get 'support/index'
+      get 'spectacle/index'
+      get 'servicepublic/index'
+      get 'service/index'
+      get 'sante/index'
+      get 'restauration/index'
+      get 'maintenance/index'
+      get 'industrie/index'
+      get 'espacevert/index'
+      get 'communication/index'
+      get 'commerce/index'
+      get 'collectivite/index'
+      get 'batiment/index'
+      get 'banque/index'
+      get 'association/index'
+      get 'art/index'
+      get 'animals/index'
+      get 'agriculture/index'
+    end
+  end
+
+
+  namespace :secteurs do
+    namespace :haumont do
+      get 'transport/index'
+      get 'tourisme/index'
+      get 'support/index'
+      get 'spectacle/index'
+      get 'servicepublic/index'
+      get 'service/index'
+      get 'sante/index'
+      get 'restauration/index'
+      get 'maintenance/index'
+      get 'industrie/index'
+      get 'espacevert/index'
+      get 'communication/index'
+      get 'commerce/index'
+      get 'collectivite/index'
+      get 'batiment/index'
+      get 'banque/index'
+      get 'association/index'
+      get 'art/index'
+      get 'animals/index'
+      get 'agriculture/index'
+    end
+  end
+ 
+  
+  namespace :secteurs do
     namespace :fourmies do
       get 'transport/index'
       get 'tourisme/index'
