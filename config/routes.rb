@@ -1,5 +1,84 @@
 Rails.application.routes.draw do
 
+
+  get 'cre/index'
+  namespace :secteurs do
+    namespace :quesnoy do
+      get 'transport/index'
+      get 'tourisme/index'
+      get 'support/index'
+      get 'spectacle/index'
+      get 'servicepublic/index'
+      get 'service/index'
+      get 'sante/index'
+      get 'restauration/index'
+      get 'maintenance/index'
+      get 'industrie/index'
+      get 'espacevert/index'
+      get 'communication/index'
+      get 'commerce/index'
+      get 'collectivite/index'
+      get 'batiment/index'
+      get 'banque/index'
+      get 'association/index'
+      get 'art/index'
+      get 'animals/index'
+      get 'agriculture/index'
+    end
+  end
+
+  
+  namespace :secteurs do
+    namespace :maubeuge do
+      get 'transport/index'
+      get 'tourisme/index'
+      get 'support/index'
+      get 'spectacle/index'
+      get 'servicepublic/index'
+      get 'service/index'
+      get 'sante/index'
+      get 'restauration/index'
+      get 'maintenance/index'
+      get 'industrie/index'
+      get 'espacevert/index'
+      get 'communication/index'
+      get 'commerce/index'
+      get 'collectivite/index'
+      get 'batiment/index'
+      get 'banque/index'
+      get 'association/index'
+      get 'art/index'
+      get 'animals/index'
+      get 'agriculture/index'
+    end
+  end
+  
+  
+  namespace :secteurs do
+    namespace :louvroil do
+      get 'transport/index'
+      get 'tourisme/index'
+      get 'support/index'
+      get 'spectacle/index'
+      get 'servicepublic/index'
+      get 'service/index'
+      get 'sante/index'
+      get 'restauration/index'
+      get 'maintenance/index'
+      get 'industrie/index'
+      get 'espacevert/index'
+      get 'communication/index'
+      get 'commerce/index'
+      get 'collectivite/index'
+      get 'batiment/index'
+      get 'banque/index'
+      get 'association/index'
+      get 'art/index'
+      get 'animals/index'
+      get 'agriculture/index'
+    end
+  end
+  
   namespace :secteurs do
     namespace :landrecies do
       get 'transport/index'
@@ -246,7 +325,9 @@ Rails.application.routes.draw do
     get 'avesnes/index'
     get 'landrecies/index'
   end
+
   
+  get 'public/index'
    get 'domaine/index'
   resources :offres
   get 'home_two/index'

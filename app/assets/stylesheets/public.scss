@@ -1,0 +1,23 @@
+// Place all the styles related to the Public controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.PublicContainer {
+    background-color: #007BA0;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 20px;
+    padding-top: 10px;
+    margin-top: 100px;
+    box-shadow: 20px 20px 50px #0000001c, 
+    -30px -30px 60px #00000028;
+}
+
+.list-group-item {
+    background-color: #ffffff71;
+    color: #fff;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+

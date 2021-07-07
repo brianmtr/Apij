@@ -1,0 +1,37 @@
+// Place all the styles related to the Cre controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.CreContainer {
+    background-color: #007BA0;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding-top: 10px;
+    margin-top: 100px;
+    box-shadow: 20px 20px 50px #0000001c, 
+    -30px -30px 60px #00000028;
+}
+
+.list-group-item {
+    background-color: #ffffff71;
+    color: #fff;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.list-group-name {
+   font-weight: bold;
+    color: #fff;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.bol {
+    width: 30%;
+    height: 300px;
+    background-color: red;
+}

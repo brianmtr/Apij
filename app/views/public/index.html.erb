@@ -1,0 +1,24 @@
+<h1><span class="colorLetters">Pu</span>blic</h1>
+
+<div class="PublicContainer">
+    <ul class="list-group">
+     <% @users.each do |user| %>
+        <li class="list-group-item">
+            <p><%= user.firstname %></p> 
+            <p><%= user.lastname %></p> 
+            <p><%= user.email %></p>
+        </li>
+    <% end %>
+    </ul>
+</div>
+
+
+    @user_waiting = User.waiting
+    @user_treated = User.treated
+    
+    <% @users.each do |user| %>
+    <% if user.status === nil %>
+        <div class="bol">
+        </div>
+    <% end %>
+    <% end %>

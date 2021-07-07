@@ -33,19 +33,26 @@
     <p class="titleBox">Public</p>
         <div class="numberDynamic"><%= @users.count(1) %></div>
     </div>
+   
     <div class="CreDash">
       <p class="titleBox">Cre</p>
-     
+      <% @users.each do |user| %>
+        <% if user.cre? %>
+        <div class="numberDynamic"><%= user.cre %></div>
+        <% end %>
+        <% end %>
     </div>
+    
   </div>
   <div class="BoxOffreDashboard">
     <div class="OffreDash">
             <p class="titleBox">Offres d'emploi</p>
-               <div class="numberDynamic"><%= @offres.count(1) %></div>
+               <div class="numberDynamic"><%= @offres.count %></div>
                <br>
                <br>
-                   <% @offres.each do |offre| %>
                <div class="ListOffers">
+                   <% @offres.each do |offre| %>
+               
                <ul>
                   <li><%= offre.poste %></li>
                   <li><%= offre.contrat %></li>  
@@ -53,8 +60,9 @@
                   <li><%= offre.salaire %> € par mois.</li>
                </ul>
                <div class="separeBar"></div>
-               </div>
+               
       <% end %>
+      </div>
     </div>
   </div>
 </div>

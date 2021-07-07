@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_01_125807) do
+ActiveRecord::Schema.define(version: 2021_07_07_122450) do
 
   create_table "offres", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "poste"
@@ -25,11 +25,17 @@ ActiveRecord::Schema.define(version: 2021_07_01_125807) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "publics", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "firstname", default: "", null: false
     t.string "lastname", default: "", null: false
+    t.integer "status"
     t.boolean "cre", default: false
     t.string "domaine", default: "", null: false
     t.string "entreprise", default: "", null: false

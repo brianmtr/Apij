@@ -1,0 +1,22 @@
+<h1><span class="colorLetters">Chargé</span> de Relation Entreprise</h1>
+
+<div class="CreContainer">
+    <ul class="list-group">
+            <li class="list-group-name">
+            <p>Prénom Nom</p> 
+            <p>Entreprise</p> 
+            <p>Domaine</p> 
+            <p>Email</p>
+        </li>
+     <% @users.each do |user| %>
+     <% if user.cre? %>
+        <li class="list-group-item">
+            <p><%= user.firstname %> <%= user.lastname %></p> 
+            <p><%= user.entreprise %></p> 
+            <p><%= user.domaine %></p> 
+            <p><%= user.email %></p>
+        </li>
+    <% end %>
+    <% end %>
+    </ul>
+</div>

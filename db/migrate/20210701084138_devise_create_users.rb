@@ -9,7 +9,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       ##user public
       t.string :firstname,          null: false, default: ""
       t.string :lastname,           null: false, default: ""
-
+      t.integer :status
+      
       ##user cre
       t.boolean :cre,               default: "false"
       t.string :domaine,            null: false, default: ""

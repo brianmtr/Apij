@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
+  def index
 
+  end
   def show
     @user   = current_user
-    @cres = Cre.all
+   
   end
 
   def create
