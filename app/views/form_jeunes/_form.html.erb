@@ -1,0 +1,95 @@
+<%= form_with(model: form_jeune) do |form| %>
+  <% if form_jeune.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(form_jeune.errors.count, "error") %> prohibited this form_jeune from being saved:</h2>
+
+      <ul>
+        <% form_jeune.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="fieldBox">
+
+<h3>Informations conseiller</h3>
+  <div class="fieldFormJeune">
+    <%= form.label :conseiller %>
+    <%= form.text_field :advised %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :Date_entretien %>
+    <%= form.date_select :maintenance_date %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :ml %>
+    <%= form.check_box :ml %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :plie %>
+    <%= form.check_box :plie %>
+  </div>
+
+
+<h3>Informations Jeune</h3>
+  <div class="fieldFormJeune">
+    <%= form.label :firstname %>
+    <%= form.text_field :firstname %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :lastname %>
+    <%= form.text_field :lastname %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :born %>
+    <%= form.date_select :born %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :tel %>
+    <%= form.text_field :tel %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :mail %>
+    <%= form.text_field :mail %>
+  </div>
+
+
+    <div class="fieldFormJeune">
+    <%= form.label :Inscrit_à_Pole_Emploi %>
+    <%= form.check_box :registered_PE %>
+  </div>  
+  <p>Si Oui depuis quand ?</p>
+
+      <div class="fieldFormJeune">
+    <%= form.label :"0_à_6_mois" %>
+    <%= form.check_box :inf_to_six_month %>
+  </div>  
+  
+        <div class="fieldFormJeune">
+    <%= form.label :"6_à_12_mois" %>
+    <%= form.check_box :between_six_and_twelve_month %>
+  </div>  
+
+        <div class="fieldFormJeune">
+    <%= form.label :"plus_de_24_mois" %>
+    <%= form.check_box :sup_to_two_years %>
+  </div>  
+  
+  
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+  </div>
+<% end %>

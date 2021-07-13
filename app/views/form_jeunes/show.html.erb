@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<div class="showFormJeune">
+
+
+
+
+<h3>Information conseiller</h3>
+<p>
+  <strong>conseiller</strong>
+  <%= @form_jeune.advised %>
+</p>
+<p>
+  <strong>date entretien</strong>
+  <%= @form_jeune.maintenance_date %>
+</p>
+
+<% if @form_jeune.ml %>
+  <p>Fait parti de la mission locale</p>
+<% end %>
+
+<% if @form_jeune.plie %>
+<p>plie</p>
+<% end %>
+
+<h3>Information jeune</h3>
+<p>
+  <strong>Prénom:</strong>
+  <%= @form_jeune.firstname %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @form_jeune.lastname %>
+</p>
+
+<p>
+  <strong>Date de naissance:</strong>
+  <%= @form_jeune.born %>
+</p>
+
+<p>
+  <strong>Adresse:</strong>
+  <%= @form_jeune.address %>
+</p>
+
+<p>
+  <strong>Portable:</strong>
+  <%= @form_jeune.tel %>
+
+<p>
+  <strong>Email:</strong>
+  <%= @form_jeune.mail %>
+</p>
+
+<% if @form_jeune.registered_PE && @form_jeune.inf_to_six_month %>
+    <p>Inscrit à Pôle Emploi depuis moins de 6 mois</p>
+<% elsif @form_jeune.registered_PE && @form_jeune.between_six_and_twelve_month %>
+    <p>Inscrit à Pôle Emploi entre 6 et 12 mois.</p>
+<% elsif @form_jeune.registered_PE && @form_jeune.sup_to_two_years %>
+    <p>Inscrit à Pôle Emploi depuis plus de 2 ans.</p>
+<%end %>
+<%= link_to 'Edit', edit_form_jeune_path(@form_jeune) %> |
+<%= link_to 'Back', form_jeunes_path %>
+</div>

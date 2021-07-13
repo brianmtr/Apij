@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :form_jeunes
   get 'cre/index'
   namespace :secteurs do
     namespace :quesnoy do

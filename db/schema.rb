@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_07_122450) do
+ActiveRecord::Schema.define(version: 2021_07_13_063830) do
+
+  create_table "form_jeunes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "advised"
+    t.datetime "maintenance_date"
+    t.boolean "ml"
+    t.boolean "plie"
+    t.string "firstname"
+    t.string "lastname"
+    t.datetime "born"
+    t.string "address"
+    t.string "tel"
+    t.string "mail"
+    t.boolean "registered_PE"
+    t.boolean "inf_to_six_month"
+    t.boolean "between_six_and_twelve_month"
+    t.boolean "sup_to_two_years"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "offres", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "poste"

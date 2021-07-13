@@ -1,0 +1,27 @@
+// Place all the styles related to the form_jeunes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.showFormJeune {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.fieldFormJeune{
+    width: 100%;
+}
+
+.fieldBox {
+    margin-top: 100px;
+    width: 30%;
+    margin-left: 35%;
+    color: #fff;
+}
+
+.fieldFormJeune input, textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.fieldFormJeune textarea {
+    height: 100px;
+}

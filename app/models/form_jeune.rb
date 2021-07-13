@@ -1,0 +1,2 @@
+class FormJeune < ApplicationRecord
+end

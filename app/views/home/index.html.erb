@@ -37,8 +37,10 @@
     <div class="CreDash">
       <p class="titleBox">Cre</p>
       <% @users.each do |user| %>
+
         <% if user.cre? %>
-        <div class="numberDynamic"><%= user.cre %></div>
+        <div class="numberDynamic"><%= User.where(cre: true).count %></div>
+        
         <% end %>
         <% end %>
     </div>

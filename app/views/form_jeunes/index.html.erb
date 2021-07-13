@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Formulaire</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Birth</th>
+      <th>Address</th>
+      <th>Tel</th>
+      <th>Mail</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @form_jeunes.each do |form_jeune| %>
+      <tr>
+        <td><%= form_jeune.firstname %></td>
+        <td><%= form_jeune.lastname %></td>
+        <td><%= form_jeune.born %></td>
+        <td><%= form_jeune.address %></td>
+        <td><%= form_jeune.tel %></td>
+        <td><%= form_jeune.mail %></td>
+        <td><%= link_to 'Show', form_jeune %></td>
+        <td><%= link_to 'Edit', edit_form_jeune_path(form_jeune) %></td>
+        <td><%= link_to 'Destroy', form_jeune, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Retour', :back %>

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-
+    @usercres = User.cre
   end
   def show
     @user   = current_user
