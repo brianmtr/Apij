@@ -10,6 +10,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       t.string :firstname,          null: false, default: ""
       t.string :lastname,           null: false, default: ""
       t.integer :status
+      t.references :search_by_rate
       
       ##user cre
       t.boolean :cre,               default: "false"

@@ -1,22 +1,38 @@
+
 <h1><span class="colorLetters">Pu</span>blic</h1>
 
 <div class="PublicContainer">
+<h2>Entretien à prévoir</h2>
     <ul class="list-group">
+    
      <% @users.each do |user| %>
+      <% if user.status === nil %>
         <li class="list-group-item">
             <p><%= user.firstname %></p> 
             <p><%= user.lastname %></p> 
             <p><%= user.email %></p>
+            <p><%= user.created_at %></p>
+            <p><%= link_to 'Entretien effectué', treated_user_path(user.id), method: :put, data: { confirm: 'Êtes vous certain ?' } %></p>
         </li>
+
+    <% end %>
     <% end %>
     </ul>
 </div>
 
-
+    <div class="PublicContainer">
+    <h2>Public inscrit avec entretien</h2>
+    <ul class="list-group">
     
-    <% @users.each do |user| %>
-    <% if user.status === nil %>
-        <div class="bol">
-        </div>
+    <% @form_jeunes.each do |form_jeune| %>
+        <li class="list-group-item">
+            <p><%= form_jeune.firstname %></p> 
+            <p><%= form_jeune.lastname %></p> 
+            <p><%= form_jeune.mail %></p>
+            <td><%= link_to 'Voir', form_jeune %></td>
+            <td><%= link_to 'Modifier', edit_form_jeune_path(form_jeune) %></td>
+            <td><%= link_to 'Supprimer', form_jeune, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </li>
     <% end %>
-    <% end %>
+    </ul>
+</div>

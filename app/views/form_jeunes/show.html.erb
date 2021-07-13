@@ -60,6 +60,6 @@
 <% elsif @form_jeune.registered_PE && @form_jeune.sup_to_two_years %>
     <p>Inscrit à Pôle Emploi depuis plus de 2 ans.</p>
 <%end %>
-<%= link_to 'Edit', edit_form_jeune_path(@form_jeune) %> |
-<%= link_to 'Back', form_jeunes_path %>
+<%= link_to 'Modifier', edit_form_jeune_path(@form_jeune) %> |
+<%= link_to 'Retour', :back %>
 </div>

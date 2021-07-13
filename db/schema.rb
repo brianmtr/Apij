@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_13_063830) do
+ActiveRecord::Schema.define(version: 2021_07_13_070822) do
 
   create_table "form_jeunes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "advised"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 2021_07_13_063830) do
     t.string "firstname", default: "", null: false
     t.string "lastname", default: "", null: false
     t.integer "status"
+    t.bigint "search_by_rate_id"
     t.boolean "cre", default: false
     t.string "domaine", default: "", null: false
     t.string "entreprise", default: "", null: false
@@ -85,6 +86,19 @@ ActiveRecord::Schema.define(version: 2021_07_13_063830) do
     t.index ["firstname"], name: "index_users_on_firstname"
     t.index ["lastname"], name: "index_users_on_lastname"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["search_by_rate_id"], name: "index_users_on_search_by_rate_id"
   end
 
+  create_table "users_jeunes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.integer "state"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.bigint "form_jeune_id"
+    t.index ["form_jeune_id"], name: "index_users_jeunes_on_form_jeune_id"
+    t.index ["user_id"], name: "index_users_jeunes_on_user_id"
+  end
+
+  add_foreign_key "users_jeunes", "form_jeunes"
+  add_foreign_key "users_jeunes", "users"
 end

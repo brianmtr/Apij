@@ -1,11 +1,16 @@
 class UsersController < ApplicationController
   def index
-    @usercres = User.cre
+  
+    
   end
+
+
+
   def show
     @user   = current_user
    
   end
+
 
   def create
     @user = User.new(params[:user])
@@ -23,6 +28,9 @@ class UsersController < ApplicationController
       end
     end
   end
+
+
+
   
       private
       # Use callbacks to share common setup or constraints between actions.
@@ -31,7 +39,7 @@ class UsersController < ApplicationController
       end
 
     def user_params
-        params.require(:user).permit(:firstname, :lastname, :conseiller, :cre, :email, :domaine, :entreprise, :adress)
+        params.require(:user).permit(:firstname, :lastname, :conseiller, :cre, :email, :domaine, :entreprise, :adress, :status, :search, :user_id)
       end
 end
 

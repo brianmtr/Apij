@@ -1,3 +1,5 @@
 class Public < ApplicationRecord
-    enum status: [:waiting, :treated]
+   
+    belongs_to :user
+
 end

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :users_jeunes
   resources :form_jeunes
   get 'cre/index'
   namespace :secteurs do
@@ -337,5 +338,14 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'home#index'
 
-  
+  resources :public do
+  end
+
+  get'search', to:"public#search"
+
+  resources :users, :public do
+    member do
+      put "treated", to: 'treated#update'
+    end
+  end
 end
