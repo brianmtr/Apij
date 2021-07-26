@@ -10,204 +10,411 @@ html, body {
 #boxy {
     background-image: url('background.png');
     background-size: cover;
-    min-height: 1000px;
+    padding-bottom: 0px;
 
     
 }
 
-.top_nav {
-    background-color: #FCB813;
+.BoxOffreDashboard {
     width: 100%;
-    height: 30px;
-
- }
-
- .top_nav a {
-     display: flex;
+}
+.top_nav {
+    display: flex;
     flex-direction: row-reverse;
-    margin-right: 50px;
+    
+    background-color: orange;
+}
+.top_nav a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    font-size: 20px;
- }
-
- .boxAccount {
-    margin-top: 150px;
-     display: flex;
-     justify-content: space-around;
- }
-
-
-
-.CreAccount, .PublicAccount {
-    
-    width: 30%;
-    text-align: center;
-    height: 400px;
-}
-
-
-.logoCo img{
-    width: 10%;
-
-}
-
-.logoCo {
-    display: flex;
-    justify-content: center;
-}
-.container-fluid img {
-    width: 5%;
-    position: absolute;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
 }
 
 .logo img {
-    width: 17%;
-
+    width: 50%;
+    margin-left: 25%;
 }
 
-.TitleCreateAccount h1 {
-    font-size: 50px;
-    color: #fff;
+.connexion h2 {
+    text-align: center;
 }
 
-.connexion h2 a {
-    list-style-type: none;
+.connexion a {
     text-decoration: none;
     color: #fff;
-    font-size: 50px;
-   
 }
 
+.connexion a:hover {
+   color: #007BA0;
+}
+
+.containerDescribe {
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(255, 255, 255, 0.459);
+
+    border-radius: 10px;
+}
+
+.containerDescribe img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.containerDescribe p {
+    margin-top: 20px;
+    width: 80%;
+    text-align: justify;
+    
+}
 
 .containerDashbord {
-    position: relative;
-    bottom: 400px;
-  
-    height: 600px;
-    width: 70%;
-    margin-left: 15%;
-    display: flex;
+    width: 90%;
+    margin-left: 5%;
+
 }
 
-.boxPubliCre {
+.publicDash, .CreDash{
+    background-color: rgba(255, 255, 255, 0.459);
+
+    border-radius: 10px;
+    width: 100%;
     
-    width: 40%;
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
-}
-
-
-
-.publicDash, .CreDash {
-    background-color: rgba(255, 255, 255, 0.459);
-    width: 90%;
-    height: 250px;
-    margin-left: 5%;
-    border-radius: 10px;
-    box-shadow: 20px 20px 50px #3f3f3f57, 
-    -30px -30px 60px #33333385;
-}
-
-.BoxOffreDashboard{
-  
-    width: 60%;
-    height: 600px;
-    display: flex;
-    
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .OffreDash {
     background-color: rgba(255, 255, 255, 0.459);
-    width: 90%;
-    height: 550px;
-    margin-left: 5%;
-    margin-top: 25px;
     border-radius: 10px;
-    box-shadow: 20px 20px 50px #3f3f3f57, 
-    -30px -30px 60px #33333385;
-}
-
-.containerDescribe {
-    position: relative;
-    bottom: 400px;
-    height: 600px;
-    width: 66%;
-    margin-left: 16.7%;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.459);
-    box-shadow: 20px 20px 50px #3f3f3f57, 
-    -30px -30px 60px #33333385;
-    border-radius: 10px;
-
-}
-
-.titleBox {
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .numberDynamic {
-    font-size: 60px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    
+    font-size: 30px;
 }
 
-.ListOffers {
-    margin-top: 10px;
-    overflow: hidden;
-    height: 290px;
-}
-
-.ListOffers ul{
-color: #fff;
-display: flex;
-justify-content: space-around;
-
-}
-
-.ListOffers li {
+.ListOffers ul {
     list-style-type: none;
- 
-}
-
-.separeBar {
+    background-color: rgba(255, 255, 255, 0.459);
+    box-shadow: 20px 20px 50px #3f3f3f57, 
+                -30px -30px 60px #33333385;
     width: 90%;
-    background-color: #fff;
-    height: 1px;
+    border-radius: 10px;
     margin-left: 5%;
+
 }
 
+@media screen and(min-width: 480px) {
+    .logoCo img {
+        width: 40%;
+        margin-left: 30%;
+    }
 
-.containerDescribe {
-    margin-top: 100px;
+    .OffreDash {
+        margin-bottom: 20px;
+    }
 }
 
+@media screen and(min-width: 576px) {
+    .titleBox {
+        font-size: 25px;
+    }
+}
+
+@media screen and(min-width: 772px) {
+    .logo img {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+
+}
+@media screen and(min-width: 992px) {
+    .containerDescribe {
+        display: flex;
+        padding: 10px;
+    }
 .containerDescribe img {
-    width: 40%;
-    height: 450px;
-    margin-top: 75px;
+    width: 35%; 
+    margin-bottom: 10px;
     margin-left: 5%;
+}
+
+.containerDashbord {
+    display: flex;
+}
+
+.OffreDash {
+    width: 95%;
+    margin-left: 5%;
+}
+
+.boxPubliCre {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .presentation {
     width: 40%;
-    height: 450px;
-    margin-top: 75px;
+    height: 400px;
+    margin-right: 5%;
     margin-left: 5%;
     text-align: justify;
     color: #fff;
     font-size: 17px;
+    overflow: hidden;
 }
+
+.publicDash, .CreDash{
+    height: 200px;
+}
+
+.logoCo {
+    width: 50%;
+    margin-left: 25%;
+}
+
+}
+@media screen and(min-width: 1200px) {
+    .containerDashbord {
+        margin-bottom: 50px;
+    }
+
+    .ListOffers ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .containerDescribe img {
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+
+    .containerDescribe p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .OffreDash {
+        height: 100%;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .containerDescribe img {
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+
+    .containerDescribe p {
+        font-size: 21px;
+    }
+}
+// .top_nav {
+//     background-color: #FCB813;
+//     width: 100%;
+//     height: 30px;
+
+//  }
+
+//  .top_nav a {
+//      display: flex;
+//     flex-direction: row-reverse;
+//     margin-right: 50px;
+//     text-decoration: none;
+//     color: #fff;
+//     font-weight: bold;
+//     font-size: 20px;
+//  }
+
+//  .boxAccount {
+//     margin-top: 150px;
+//      display: flex;
+//      justify-content: space-around;
+//  }
+
+
+
+// .CreAccount, .PublicAccount {
+    
+//     width: 30%;
+//     text-align: center;
+//     height: 400px;
+// }
+
+
+// .logoCo img{
+//     width: 10%;
+
+// }
+
+// .logoCo {
+//     display: flex;
+//     justify-content: center;
+// }
+// .container-fluid img {
+//     width: 5%;
+//     position: absolute;
+// }
+
+// .logo {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .logo img {
+//     width: 17%;
+
+// }
+
+// .TitleCreateAccount h1 {
+//     font-size: 50px;
+//     color: #fff;
+// }
+
+// .connexion h2 a {
+//     list-style-type: none;
+//     text-decoration: none;
+//     color: #fff;
+//     font-size: 50px;
+   
+// }
+
+
+// .containerDashbord {
+//     position: relative;
+//     bottom: 400px;
+  
+//     height: 600px;
+//     width: 70%;
+//     margin-left: 15%;
+//     display: flex;
+// }
+
+// .boxPubliCre {
+    
+//     width: 40%;
+//     height: 600px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+    
+// }
+
+
+
+// .publicDash, .CreDash {
+//     background-color: rgba(255, 255, 255, 0.459);
+//     width: 90%;
+//     height: 250px;
+//     margin-left: 5%;
+//     border-radius: 10px;
+//     box-shadow: 20px 20px 50px #3f3f3f57, 
+//     -30px -30px 60px #33333385;
+// }
+
+// .BoxOffreDashboard{
+  
+//     width: 60%;
+//     height: 600px;
+//     display: flex;
+    
+// }
+
+// .OffreDash {
+//     background-color: rgba(255, 255, 255, 0.459);
+//     width: 90%;
+//     height: 550px;
+//     margin-left: 5%;
+//     margin-top: 25px;
+//     border-radius: 10px;
+//     box-shadow: 20px 20px 50px #3f3f3f57, 
+//     -30px -30px 60px #33333385;
+// }
+
+// .containerDescribe {
+//     position: relative;
+//     bottom: 400px;
+//     height: 600px;
+//     width: 66%;
+//     margin-left: 16.7%;
+//     display: flex;
+//     background-color: rgba(255, 255, 255, 0.459);
+//     box-shadow: 20px 20px 50px #3f3f3f57, 
+//     -30px -30px 60px #33333385;
+//     border-radius: 10px;
+
+// }
+
+// .titleBox {
+//     font-size: 40px;
+//     font-weight: bold;
+//     color: #fff;
+// }
+
+// .numberDynamic {
+//     font-size: 60px;
+//     font-weight: bold;
+//     color: #fff;
+//     text-align: center;
+    
+// }
+
+// .ListOffers {
+//     margin-top: 10px;
+//     overflow: hidden;
+//     height: 290px;
+// }
+
+// .ListOffers ul{
+// color: #fff;
+// display: flex;
+// justify-content: space-around;
+
+// }
+
+// .ListOffers li {
+//     list-style-type: none;
+ 
+// }
+
+// .separeBar {
+//     width: 90%;
+//     background-color: #fff;
+//     height: 1px;
+//     margin-left: 5%;
+// }
+
+
+// .containerDescribe {
+//     margin-top: 100px;
+// }
+
+// .containerDescribe img {
+//     width: 40%;
+//     height: 450px;
+//     margin-top: 75px;
+//     margin-left: 5%;
+// }
+
+// .presentation {
+//     width: 40%;
+//     height: 450px;
+//     margin-top: 75px;
+//     margin-left: 5%;
+//     text-align: justify;
+//     color: #fff;
+//     font-size: 17px;
+//     overflow: hidden;
+// }

@@ -27,6 +27,56 @@ ActiveRecord::Schema.define(version: 2021_07_13_070822) do
     t.boolean "inf_to_six_month"
     t.boolean "between_six_and_twelve_month"
     t.boolean "sup_to_two_years"
+    t.boolean "registered_RSA"
+    t.boolean "yes_rsa"
+    t.boolean "no_rsa"
+    t.boolean "qpv"
+    t.string "permis", default: "", null: false
+    t.string "locomotion", default: "", null: false
+    t.string "mobilite_duration", default: "", null: false
+    t.string "mobilite_kilometers", default: "", null: false
+    t.string "specifique_permis", default: "", null: false
+    t.text "formation_diplome"
+    t.text "formation_comments"
+    t.string "obtention_diplome", default: "", null: false
+    t.datetime "date_obtention"
+    t.string "post_exp", default: "", null: false
+    t.string "enterprise_exp", default: "", null: false
+    t.string "mission_exp", default: "", null: false
+    t.string "contrat_exp", default: "", null: false
+    t.string "domain_exp", default: "", null: false
+    t.string "postsearched_exp", default: "", null: false
+    t.string "alternance_exp", default: "", null: false
+    t.text "atouts_bilan"
+    t.text "faiblesses_bilan"
+    t.text "meilleurexp_bilan"
+    t.text "finishedexp_bilan"
+    t.text "courtterme_bilan"
+    t.text "longterme_bilan"
+    t.text "logicielexp_bilan"
+    t.string "loisirs_bilan", default: "", null: false
+    t.text "associatif_bilan"
+    t.text "searchjob_eval"
+    t.text "postulation_eval"
+    t.text "freindirect_eval"
+    t.text "freinindirect_eval"
+    t.text "actifsearch_eval"
+    t.string "typesearchcontrat_eval", default: "", null: false
+    t.string "contrainte_eval", default: "", null: false
+    t.text "connaissancemetier_eval"
+    t.string "conclusion_eval", default: "", null: false
+    t.string "commentaire_eval", default: "", null: false
+    t.string "integration_recom", default: "", null: false
+    t.text "relation_celec"
+    t.string "candidat_situation", default: "", null: false
+    t.string "enterprise_situation", default: "", null: false
+    t.string "post_situation", default: "", null: false
+    t.datetime "date_situation"
+    t.string "sortie_positif", default: "", null: false
+    t.datetime "date_positif"
+    t.string "typeformation_positif", default: "", null: false
+    t.string "enterprise_positif", default: "", null: false
+    t.string "postoccuped_positif", default: "", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

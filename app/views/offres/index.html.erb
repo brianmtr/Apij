@@ -1,21 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-
-
-<p id="notice"><%= notice %></p>
-
 <h1><span class="colorLetters">Offres</span> par communauté</h1>
 
-    <div class="newOffre"><%= link_to 'Créer une offre d\'emploi', new_offre_path %></div>
-
-
-
-
+<div class="newOffre"><%= link_to 'Créer une offre d\'emploi', new_offre_path %></div>
 
 <div class="sectorJobOffres">
     <div class="sectorJob">
         <div class="sectorBox all"><%= link_to 'Tous...', secteurs_all_index_path %></div>
-        
         <div class="sectorBox avesnes"><%= link_to 'Avesnes Sur Helpe', secteurs_avesnes_index_path %> </div>   
         <div class="sectorBox feignie"><%= link_to 'Feignies', secteurs_feignie_index_path %><br></div>       
         <div class="sectorBox louvroil"><%= link_to 'Louvroil', secteurs_louvroil_index_path %></div>

@@ -34,7 +34,7 @@
   </div>
 
 
-<h3>Informations Jeune</h3>
+<h3>Informations Public</h3>
   <div class="fieldFormJeune">
     <%= form.label :firstname %>
     <%= form.text_field :firstname %>
@@ -65,29 +65,301 @@
     <%= form.text_field :mail %>
   </div>
 
-
-    <div class="fieldFormJeune">
+  <div class="fieldFormJeune">
     <%= form.label :Inscrit_à_Pole_Emploi %>
     <%= form.check_box :registered_PE %>
   </div>  
+
   <p>Si Oui depuis quand ?</p>
 
-      <div class="fieldFormJeune">
+  <div class="fieldFormJeune">
     <%= form.label :"0_à_6_mois" %>
     <%= form.check_box :inf_to_six_month %>
   </div>  
   
-        <div class="fieldFormJeune">
+  <div class="fieldFormJeune">
     <%= form.label :"6_à_12_mois" %>
     <%= form.check_box :between_six_and_twelve_month %>
   </div>  
 
-        <div class="fieldFormJeune">
+  <div class="fieldFormJeune">
     <%= form.label :"plus_de_24_mois" %>
     <%= form.check_box :sup_to_two_years %>
   </div>  
   
+  <div class="fieldFormJeune">
+    <%= form.label :"RSA" %>
+    <%= form.check_box :registered_RSA %>
+  </div>  
+
+    <div class="fieldFormJeune">
+    <%= form.label :"QPV" %>
+    <%= form.check_box :qpv %>
+  </div>  
+
+  <h3>Mobilité</h3>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Permis" %>
+    <%= form.select :permis, ['Oui', 'Non', 'En cours'] %>
+  </div>  
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Moyen_de_locomotion" %>
+    <%= form.select :locomotion, ['Transport en commun', 'Famille', 'Voiture', 'scooter', 'autre'] %>
+  </div> 
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Mobilité_durée" %>
+    <%= form.select :mobilite_duration, ['10 minutes', '20 minutes', '30 minutes', '1 Heure', 'plus d\'1 heure'] %>
+  </div> 
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Mobilité_kilomètre" %>
+    <%= form.select :mobilite_kilometers, ['Moins de 5 km', '10 km', '20 km', '30 km', '40 km', 'plus de 50 km'] %>
+  </div> 
+
+  <div class="fieldFormJeune">
+    <%= form.label :Permis_spécifique %>
+    <%= form.text_field :specifique_permis %>
+  </div>
+
+  <h3>Experiences</h3>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Formation_et/ou_diplôme" %>
+    <%= form.text_area :formation_diplome %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Commentaire" %>
+    <%= form.text_area :formation_comments %>
+  </div>
   
+  <div class="fieldFormJeune">
+    <%= form.label :"obtention_du_diplome" %>
+    <%= form.select :obtention_diplome, ['Oui', 'Non'] %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"date_de_l'\obtention" %>
+    <%= form.date_select :date_obtention %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Experience_poste" %>
+    <%= form.text_area :post_exp %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Experience_entreprise" %>
+    <%= form.text_area :enterprise_exp %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Experience_mission" %>
+    <%= form.text_area :mission_exp %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Experience_contrat" %>
+    <%= form.text_area :contrat_exp %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Experience_domaine" %>
+    <%= form.select :domain_exp, ['Agriculture', 'Alimentation',
+    'Animaux', 'Architecture', 'Armée-Sécurité-secours', 'Atisanat', 'Banque-Assurance',
+    'Bâtiment', 'Biologie', 'Commerce_immobilier', 'Communication', 'Spectacle',
+    'Droit', 'Édition-Imprimerie', 'Informatique', 'Enseignement', 'Environnement',
+    'Ressources Humaine', 'Restauration', 'Humanitaire', 'Industrie-Matériaux', 
+    'Sciences Humaines', 'Maintenance', 'Numérique-Multimédia', 'Santé', 'Sciences-Mathématiques',
+    'Secrétariat', 'Social', 'Estétique-Coiffure', 'Sport-Animation', 'Transport-Logistique',
+    'Autres secteurs']%>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Poste_recherché" %>
+    <%= form.text_area :postsearched_exp %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Alternance" %>
+    <%= form.select :alternance_exp, ['Oui', 'Non']%>
+  </div>
+
+  <h3>Bilan parcours professionnel</h3>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Atouts" %>
+    <%= form.text_field :atouts_bilan %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Faiblesses" %>
+    <%= form.text_field :faiblesses_bilan %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Votre_meilleure_experience_et_pourquoi_?" %>
+    <%= form.text_area :meilleurexp_bilan %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Un_poste_que_vous_ne_voulez_plus_occuper_et_pourquoi_?" %>
+    <%= form.text_area :finishedexp_bilan %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Vos_objectifs_à_court_terme:" %>
+    <%= form.text_area :courtterme_bilan %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Vos_objectifs_à_long_terme:" %>
+    <%= form.text_area :longterme_bilan %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Connaissance logiciel:" %>
+    <%= form.text_field :logicielexp_bilan %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Loisirs:" %>
+    <%= form.text_field :loisirs_bilan %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Investissement_associatif:" %>
+    <%= form.text_field :associatif_bilan %>
+  </div>
+
+
+  <h2>Évaluation de l'Investissement du candidat</h2>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Comment_organisez-vous_votre_recherche_d'emploi_?" %>
+    <%= form.text_area :searchjob_eval %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Où_avez-vous_postulé_?" %>
+    <%= form.text_area :postulation_eval %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Freins_direct:" %>
+    <%= form.text_area :freindirect_eval %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Freins_indirect:" %>
+    <%= form.text_area :freinindirect_eval %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"qu'est-ce_qui_vous_motive_à_être_actif_dans_votre_recherche_d\'emploi_?" %>
+    <%= form.text_area :actifsearch_eval %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Quel_type_de_contrat_recherchez_vous_?" %>
+    <%= form.text_area :typesearchcontrat_eval %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Quels_sont_vos_contraintes_?" %>
+    <%= form.text_area :contrainte_eval %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Vos_connaissances_sur_le_métier_?" %>
+    <%= form.text_area :connaissancemetier_eval %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"conclusion:" %>
+    <%= form.text_area :conclusion_eval %>
+  </div>
+  
+  <div class="fieldFormJeune">
+    <%= form.label :"commentaire:" %>
+    <%= form.text_area :commentaire_eval %>
+  </div>
+
+  <h3>Recommandations</h3>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Intégration:" %>
+    <%= form.select :integration_recom, ['Oui', 'Non', 'en attente', 'oui avec coaching']%>
+  </div>
+
+
+<%
+=begin%>
+ fichier cv 
+<%
+=end%>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Suivi_parcours_SelEC:" %>
+    <%= form.text_area :relation_celec %>
+  </div>
+
+<h3>Point situation</h3>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Candidat_sous_contrat:" %>
+    <%= form.select :candidat_situation, ['CDD', 'CDI','SC', 'INT']%>
+
+  </div>
+
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Nom_entreprise:" %>
+    <%= form.text_area :enterprise_situation %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Poste_dans_l\'entreprise:" %>
+    <%= form.text_area :post_situation %>
+  </div>
+
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Depuis_quand_?" %>
+    <%= form.date_select :date_situation %>
+  </div>
+
+<h3>Sortie positive</h3>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"sortie_positif:" %>
+    <%= form.select :sortie_positif, ['CDI','Formation']%>
+  </div>
+
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Depuis_quand_?" %>
+    <%= form.date_select :date_positif %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Type_formation:" %>
+    <%= form.text_area :typeformation_positif %>
+  </div>
+
+    <div class="fieldFormJeune">
+    <%= form.label :"Entreprise:" %>
+    <%= form.text_area :enterprise_positif %>
+  </div>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Poste_occupé_dans_l\'entreprise:" %>
+    <%= form.text_area :postoccuped_positif %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

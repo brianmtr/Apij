@@ -1,3 +1,76 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.fieldBox {
+    width: 100% !important;
+    margin-top: 50px !important;
+    margin-left: 0% !important;
+}
+
+.fieldSessions, .fieldcheckbox, .field, .actions {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.links {
+    width: 80%;
+    margin-left: 10%; 
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and(min-width: 772px) {
+    .fieldSessions, .fieldcheckbox, .field, .actions {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .links {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .links a:hover {
+       color: orange;
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .fieldSessions, .fieldcheckbox, .field, .actions {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .links {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media screen and(min-width: 1500px) {
+    .fieldSessions, .fieldcheckbox, .field, .actions {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .links {
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
+@media screen and(min-width: 1900px) {
+    .fieldSessions, .fieldcheckbox, .field, .actions {
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .links {
+        width: 20%;
+        margin-left: 40%;
+    }
+}

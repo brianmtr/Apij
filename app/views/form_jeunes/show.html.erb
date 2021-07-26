@@ -20,7 +20,7 @@
 <% end %>
 
 <% if @form_jeune.plie %>
-<p>plie</p>
+<p>Fait parti du plie</p>
 <% end %>
 
 <h3>Information jeune</h3>
@@ -60,6 +60,263 @@
 <% elsif @form_jeune.registered_PE && @form_jeune.sup_to_two_years %>
     <p>Inscrit à Pôle Emploi depuis plus de 2 ans.</p>
 <%end %>
+
+<p>
+  <strong>RSA:</strong>
+  <% if @form_jeune.registered_RSA %>
+    Inscrit au rsa
+  <% elsif %> 
+    N'est pas inscrit au rsa
+  <% end %>
+<p>
+
+<p>
+  <strong>QPV:</strong>
+  <%if @form_jeune.qpv %>
+    Oui
+  <% elsif %>
+    Non
+  <% end %>
+<p>
+
+<h3>Mobilité</h3>
+
+<p>
+  <strong>Permis:</strong>
+  <%= @form_jeune.permis %>
+</p>
+
+<p>
+  <strong>Moyen de locomotion:</strong>
+  <%= @form_jeune.locomotion %>
+</p>
+
+<p>
+  <strong>Mobilité durée:</strong>
+  <%= @form_jeune.mobilite_duration %>
+
+<p>
+  <strong>Mobilité kilomètre:</strong>
+  <%= @form_jeune.mobilite_kilometers %>
+</p>
+
+<p>
+  <strong>Permis spécifique:</strong>
+  <%= @form_jeune.specifique_permis %>
+</p>
+
+<h3>Experiences</h3>
+
+<p>
+  <strong>Formation et/ou diplôme:</strong>
+  <%= @form_jeune.formation_diplome %>
+</p>
+
+<p>
+  <strong>Commentaire:</strong>
+  <%= @form_jeune.formation_comments %>
+</p>
+
+<p>
+  <strong>obtention du diplome:</strong>
+  <%= @form_jeune.obtention_diplome %>
+  le
+  <%= @form_jeune.date_obtention %>
+</p>
+
+<p>
+  <strong>Expérience sur le poste:</strong>
+  <%= @form_jeune.post_exp %>
+</p>
+
+<p>
+  <strong>Expérience dans l'entreprise:</strong>
+  <%= @form_jeune.enterprise_exp %>
+</p>
+
+<p>
+  <strong>Expérience mission:</strong>
+  <%= @form_jeune.mission_exp %>
+</p>
+
+<p>
+  <strong>Expérience contrat:</strong>
+  <%= @form_jeune.contrat_exp %>
+</p>
+
+<p>
+  <strong>Domaine d'Experience:</strong>
+  <%= @form_jeune.domain_exp %>
+</p>
+
+<p>
+  <strong>Poste recherché:</strong>
+  <%= @form_jeune.postsearched_exp %>
+</p>
+
+<p>
+  <strong>Alternance:</strong>
+  <%= @form_jeune.alternance_exp %>
+</p>
+
+  <h3>Bilan parcours professionnel</h3>
+
+<p>
+  <strong>Atouts:</strong>
+  <%= @form_jeune.atouts_bilan %>
+</p>
+
+<p>
+  <strong>Faiblesses:</strong>
+  <%= @form_jeune.faiblesses_bilan %>
+</p>
+
+<p>
+  <strong>Votre meilleure experience et pourquoi ?</strong>
+  <%= @form_jeune.meilleurexp_bilan %>
+</p>
+
+<p>
+  <strong>Un poste que vous ne voulez plus occuper et pourquoi ?</strong>
+  <%= @form_jeune.finishedexp_bilan %>
+</p>
+
+<p>
+  <strong>Vos objectifs à court terme:</strong>
+  <%= @form_jeune.courtterme_bilan %>
+</p>
+
+<p>
+  <strong>Vos objectifs à long terme:</strong>
+  <%= @form_jeune.longterme_bilan %>
+</p>
+
+<p>
+  <strong>Connaissance logiciel:</strong>
+  <%= @form_jeune.logicielexp_bilan %>
+</p>
+
+<p>
+  <strong>Quels sont vos loisirs ?</strong>
+  <%= @form_jeune.loisirs_bilan %>
+</p>
+
+<p>
+  <strong>Investissement_associatif:</strong>
+  <%= @form_jeune.associatif_bilan %>
+</p>
+
+  <h3>Évaluation de l'Investissement du candidat</h3>
+
+<p>
+  <strong>Comment organisez-vous votre recherche d'emploi ?</strong>
+  <%= @form_jeune.searchjob_eval %>
+</p>
+
+<p>
+  <strong>Où avez-vous postulé ?</strong>
+  <%= @form_jeune.postulation_eval %>
+</p>
+
+<p>
+  <strong>Freins direct:</strong>
+  <%= @form_jeune.freindirect_eval %>
+</p>
+
+<p>
+  <strong>Freins indirect:</strong>
+  <%= @form_jeune.freinindirect_eval %>
+</p>
+
+<p>
+  <strong>qu'est-ce qui vous motive à être actif dans votre recherche d 'emploi?</strong>
+  <%= @form_jeune.actifsearch_eval %>
+</p>
+
+<p>
+  <strong>Quel type de contrat recherchez vous ?</strong>
+  <%= @form_jeune.typesearchcontrat_eval %>
+</p>
+
+<p>
+  <strong>Quels sont vos contraintes ?</strong>
+  <%= @form_jeune.contrainte_eval %>
+</p>
+
+<p>
+  <strong>Vos connaissances sur le métier ?</strong>
+  <%= @form_jeune.connaissancemetier_eval %>
+</p>
+
+<p>
+  <strong>conclusion:</strong>
+  <%= @form_jeune.conclusion_eval %>
+</p>
+
+<p>
+  <strong>commentaire:</strong>
+  <%= @form_jeune.commentaire_eval %>
+</p>
+
+  <h3>Recommandations</h3>
+
+<p>
+  <strong>Intégration:</strong>
+  <%= @form_jeune.integration_recom %>
+</p>
+
+<p>
+  <strong>Suivi parcours SelEC:</strong>
+  <%= @form_jeune.relation_celec %>
+</p>
+
+<p>
+  <strong>Candidat sous contrat:</strong>
+  <%= @form_jeune.candidat_situation %>
+</p>
+
+<p>
+  <strong>Nom de entreprise::</strong>
+  <%= @form_jeune.enterprise_situation %>
+</p>
+
+<p>
+  <strong>Poste dans l'entreprise:</strong>
+  <%= @form_jeune.post_situation %>
+</p>
+
+<p>
+  <strong>Depuis quand ?</strong>
+  <%= @form_jeune.date_situation %>
+</p>
+
+<h3>Sortie positive</h3>
+
+<p>
+  <strong>sortie positive:</strong>
+  <%= @form_jeune.sortie_positif %>
+</p>
+
+<p>
+  <strong>Depuis quand ?</strong>
+  <%= @form_jeune.date_positif %>
+</p>
+
+<p>
+  <strong>Type formation:</strong>
+  <%= @form_jeune.typeformation_positif %>
+</p>
+
+<p>
+  <strong>Entreprise:</strong>
+  <%= @form_jeune.enterprise_positif %>
+</p>
+
+<p>
+  <strong>Poste occupé dans l'entreprise:</strong>
+  <%= @form_jeune.postoccuped_positif %>
+</p>
+
 <%= link_to 'Modifier', edit_form_jeune_path(@form_jeune) %> |
 <%= link_to 'Retour', :back %>
 </div>

@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+
  .colorLetters {
     color: #FCB813;
 }
@@ -70,4 +72,44 @@ h1 {
     margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 220px;
+    background-color: #FCB813;
+}
+
+p {
+    margin: auto;
+}
+
+.logo-appi img {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.container-footer p {
+    width: 50%;
+    text-align: center;
+}
+
+.container-footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-footer a:hover{
+    text-decoration: none;
+    color: #007BA0;
+    font-weight: bold;
+}
+
+.container-footer {
+    display: flex;
+}
+
+.copyright {
+    text-align: center;
 }

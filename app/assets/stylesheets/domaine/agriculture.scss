@@ -1,3 +1,21 @@
 // Place all the styles related to the domaine/agriculture controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.accordion-item {
+    background-color: rgba(252, 252, 252, 0.863);
+}
+
+.accordion-body {
+    background-color: #ffc10762;
+}
+
+.accordion-item {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#boxy {
+    padding-bottom: 20px;
+}

@@ -3,7 +3,7 @@
 
 
 
-<% if user_signed_in? %>
+<% if user_signed_in? && current_user.conseiller? %>
 <div class="logoCo">
     <%= image_tag("logo_appijob.png", :alt => "logo_événement_proposé") %>
 </div>
@@ -25,9 +25,8 @@
         </div>
     </div>
 </div>
-<% if user_signed_in? %>
+<% if user_signed_in? && current_user.conseiller? %>
 <div class="containerDashbord">
-  
   <div class="boxPubliCre">
     <div class="publicDash">
     <p class="titleBox">Public</p>

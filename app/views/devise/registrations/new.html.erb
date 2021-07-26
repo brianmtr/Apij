@@ -5,12 +5,12 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="fieldSessions">
-    <%= f.label :firstname %><br />
+    <%= f.label :prénom %><br />
     <%= f.text_field :firstname %>
   </div>
 
     <div class="fieldSessions">
-    <%= f.label :Nom %><br />
+    <%= f.label :nom %><br />
     <%= f.text_field :lastname %>
   </div>
 
@@ -20,7 +20,7 @@
   </div>
 
   <div class="fieldSessions">
-    <%= f.label :password %>
+    <%= f.label :Mot_de_passe %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
@@ -28,7 +28,7 @@
   </div>
 
   <div class="fieldSessions">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :confirmer_mot_de_passe %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
@@ -69,6 +69,7 @@
     <%= f.submit "S'inscrire" %>
   </div>
 <% end %>
-
+<div class="links">
 <%= render "devise/shared/links" %>
+</div>
 </div>
