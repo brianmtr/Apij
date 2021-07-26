@@ -19,17 +19,21 @@
 
 .sectorJob {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding-top: 25px;
     padding-bottom: 25px;
     width: 95%;
-    margin-left: 2.5%;
+    
+    
 }
 
 .sectorBox {
     background-color: green;
-    width: 20%;
-    height: 200px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    height: 300px;
     display: flex;
     background-size: contain;
     background-repeat: no-repeat;
@@ -37,6 +41,8 @@
     -30px -30px 60px #00000028;
     background-color: rgba(255, 255, 255, 0.603);
 }
+
+
 
 .sectorBox a {
     color: orange !important;
@@ -59,7 +65,7 @@
     width: 90%;
     margin-left: 5%;
     display: flex;
-    height: 400px;
+    height: 1000px;
     justify-content: space-around;
 }
 
@@ -71,7 +77,7 @@
     box-shadow: 20px 20px 50px #0000001c, 
     -30px -30px 60px #00000028;
     background-color: rgba(255, 255, 255, 0.603);
-  
+    
 }
 
 .sectorBoxOffres p {
@@ -111,7 +117,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    
 }
 
 .field input, select {
@@ -119,13 +124,10 @@
     height: 35px;
 }
 
-
-
 .actions {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 30px;
-  
 }
 
 p {
@@ -133,3 +135,48 @@ p {
 }
 
 
+@media screen and(min-width: 576px) {
+    .sectorJob {
+        width: 40%;
+        display: contents;
+    }
+    .sectorJobOffres {
+        height: 160px;
+    }
+
+    .sectorBox {
+        height: 95px;
+    }
+
+    
+}
+
+@media screen and(min-width: 1200px) {
+    .sectorBox {
+        height: 150px;
+    }
+
+    .sectorJobOffres {
+        height: 240px;
+    }
+}
+
+@media screen and(min-width: 1500px) {
+    .sectorBox {
+        height: 190px;
+    }
+
+    .sectorJobOffres {
+        height: 260px;
+    }
+}
+
+@media screen and(min-width: 1900px) {
+    .sectorBox {
+        height: 230px;
+    }
+
+    .sectorJobOffres {
+        height: 360px;
+    }
+}
