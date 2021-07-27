@@ -68,10 +68,8 @@
   </div>
 </div>
 <% end %>
-
+<% if user_signed_in? %>
 <div class="containerDescribe">
-
-   
       <%= image_tag("imgGomeYellow.png", :alt => "image_home") %>
       <p class="presentation">Traduction de H. Rackham (1914)
          "But I must explain to you how all this mistaken idea of 
@@ -97,3 +95,4 @@
          avoids a pain that produces no resultant pleasure?"
       </p> 
 </div>
+<% end %>

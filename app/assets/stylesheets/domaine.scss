@@ -1,6 +1,9 @@
 // Place all the styles related to the domaine controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
 .sectorJob {
 
     display: flex;
@@ -8,12 +11,12 @@
     padding-top: 25px;
     padding-bottom: 25px;
     width: 95%;
-    margin-left: 2.5%;
+   
     
 
 }
 
-.sectorBox {
+.sectorBox, .sectorBoxLast {
     background-color: green;
     width: 20%;
     height: 200px;
@@ -26,7 +29,7 @@
 }
 
 
-.sectorBox a {
+.sectorBox a, .sectorBoxLast a {
     color: orange !important;
     list-style-type: none;
     text-decoration: none;
@@ -36,13 +39,15 @@
     bottom: 30px;
 }
 
-.sectorBox:hover {
+.sectorBox:hover, .sectorBoxLast:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
 
     -webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
+
+
 
 .Agriculture {
     background-image: url('agricol.png');
@@ -310,8 +315,8 @@
 
 .test {
     background-color: #007BA0;
-    width: 60%;
-    margin-left: 20%;
+    width: 90%;
+	margin-left: 5%;
     border-radius: 20px;
     padding-top: 10px;
     box-shadow: 20px 20px 50px #0000001c, 
@@ -362,3 +367,88 @@
     margin-left: 20%;
 }
 
+@media screen and (min-width: 576px) {
+	.sectorJob {
+		width: 40%;
+		display: inline-flex;
+		margin-left: 5%;
+	}
+
+	.sectorJobLast {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-around;
+	}
+
+	.sectorBoxLast {
+		width: 37%;
+		height: 90px;
+		margin-left: 7%;
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (min-width: 772px) {
+
+}
+
+@media screen and (min-width: 992px) {
+	.sectorJob {
+		width: 90% !important;
+		display: flex !important;
+		margin-left: 5%;
+		flex-direction: row !important;
+	}
+
+	.sectorBox {
+		width: 20% !important;
+		margin-left: 0% !important;
+	}
+
+	.sectorJobLast {
+		display: flex;
+		align-content: space-around;
+	}
+
+	.sectorBoxLast {
+		width: 17%;
+		height: 90px;
+		margin-left: 6.5%;
+		margin-bottom: 60px;
+		align-content: space-around;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+	.sectorJobLast {
+		display: flex;
+		align-content: space-around;
+		width: 90%;
+		margin-left: 2.5%;
+	}
+
+	.sectorBoxLast {
+		width: 20%;
+		height: 160px;
+		margin-left: 5%;
+		margin-bottom: 60px;
+
+		align-content: space-around;
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+	.sectorBoxLast {
+		height: 190px;
+
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	.sectorBoxLast {
+		height: 230px;
+
+	}
+}

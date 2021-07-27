@@ -117,6 +117,17 @@ p {
     text-align: center;
 }
 
+.nav-item a, .navbar-brand, .btn-outline {
+    color: #fff !important;
+}
+
+.navbar {
+    box-shadow: 20px 20px 50px #0000001c, 
+    -30px -30px 60px #00000028;
+    width: 100%;
+
+}
+
 @media screen and (min-width: 480px) {
     .logo-appi img {
         width: 30%;
