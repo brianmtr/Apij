@@ -23,6 +23,16 @@
     color: #fff;
 }
 
+.unhappy {
+    text-align: center;
+}
+
+.button_to{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 @media screen and(min-width: 772px) {
     .fieldSessions, .fieldcheckbox, .field, .actions {
         width: 50%;

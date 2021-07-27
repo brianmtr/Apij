@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  get 'legalnotice/index'
   resources :users_jeunes
   resources :form_jeunes
   get 'cre/index'

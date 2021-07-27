@@ -1,0 +1,2 @@
+module LegalnoticeHelper
+end

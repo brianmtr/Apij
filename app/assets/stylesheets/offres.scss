@@ -78,6 +78,7 @@
     -30px -30px 60px #00000028;
     background-color: rgba(255, 255, 255, 0.603);
     
+
 }
 
 .sectorBoxOffres p {
@@ -108,9 +109,7 @@
     color: #fff;
 }
 .allField {
-   
-    width: 30%;
-    margin-left: 35%;
+    width: 100%;
 }
 
 .field {
@@ -135,11 +134,43 @@ p {
 }
 
 
+
+  .linkOffre {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .linkOffre a {
+      text-decoration: none;
+      color: #fff;
+  }
+  .linkOffre a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.containerCard {
+    width: 90% !important;
+    margin-left: 4% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 90% !important;
+    margin: 0 !important;
+    margin-left: 5% !important;
+    margin-top: 20px !important;  
+}
+
+
 @media screen and(min-width: 576px) {
     .sectorJob {
         width: 40%;
         display: contents;
     }
+
     .sectorJobOffres {
         height: 160px;
     }
@@ -151,6 +182,19 @@ p {
     
 }
 
+@media screen and(min-width: 772px) {
+    .card {
+        width: 40% !important;
+        margin: 0 !important;
+        margin-left: 6% !important;
+        margin-top: 20px !important;
+    }
+
+    .containerCard {
+        flex-direction: row;
+    }
+}
+
 @media screen and(min-width: 1200px) {
     .sectorBox {
         height: 150px;
@@ -158,6 +202,11 @@ p {
 
     .sectorJobOffres {
         height: 240px;
+    }
+
+    .card {
+        width: 30% !important;
+        margin-left: 2.5% !important;
     }
 }
 
@@ -169,6 +218,13 @@ p {
     .sectorJobOffres {
         height: 260px;
     }
+
+    .card {
+        width: 21.5% !important;
+        margin-left: 2.5% !important;
+        margin-top: 40px !important;
+    }
+    
 }
 
 @media screen and(min-width: 1900px) {
