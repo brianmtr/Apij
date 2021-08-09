@@ -1,0 +1,2 @@
+module Candidat::SanteHelper
+end

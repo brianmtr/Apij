@@ -49,6 +49,13 @@ h2 {
      color: orange;
  } 
 
+ .block {
+     height: 260px;
+     padding-top: 100px;
+ }
+
+
+
 @media screen and (min-width: 992px) {
     .list-group-item {
         flex-direction: row;

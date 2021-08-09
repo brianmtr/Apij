@@ -56,3 +56,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.2'
+gem 'searchkick'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'shrine', '~> 3.4'
+gem 'fastimage', '~> 2.2', '>= 2.2.4'

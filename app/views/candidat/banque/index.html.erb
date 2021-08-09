@@ -1,0 +1,29 @@
+<h1><span class="colorLetters">Candidat</span> / Banque et Assurance</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @candidats.each do |candidat| %>
+     <% if candidat.domain_exp === 'Banque-Assurance' %>
+      <tr>
+        <td><%= candidat.firstname %></td>
+        <td><%= candidat.lastname %></td>
+        <td><%= candidat.email %></td>
+        <td><a href="<%= candidat.image_url %>" download>Télécharger le CV</a></td>
+
+
+<% if current_user.conseiller? %>
+        <td><%= link_to 'Editer', edit_candidat_path(candidat) %></td>
+        <td><%= link_to 'Supprimer', candidat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+<% end %>
+    <% end %>
+    <% end %>
+  </tbody>
+</table>

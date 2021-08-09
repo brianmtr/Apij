@@ -1,0 +1,2 @@
+module Candidat::TransportHelper
+end

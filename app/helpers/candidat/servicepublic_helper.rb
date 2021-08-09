@@ -1,0 +1,2 @@
+module Candidat::ServicepublicHelper
+end

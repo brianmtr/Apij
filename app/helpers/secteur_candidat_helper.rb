@@ -1,0 +1,2 @@
+module SecteurCandidatHelper
+end

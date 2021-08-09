@@ -1,0 +1,2 @@
+module Candidat::ArtHelper
+end

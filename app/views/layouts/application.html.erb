@@ -22,12 +22,14 @@
   <% end %>
 </div>
 
+
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #007BA0;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">App'iJob</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <% if user_signed_in? %>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
@@ -52,7 +54,15 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/form_jeunes/new">Formulaire</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/conseiller/index">Conseiller</a>
+        </li>
         <% end %>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/candidats">Candidature</a>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/users/edit">Mon compte</a>
         </li>
@@ -61,13 +71,20 @@
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
         </li>
       </ul>
-      <form class="d-flex" action="/search">
-        <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline" type="submit">Search</button>
+
+   
+      <% if user_signed_in? && current_user.conseiller? %>
+      <form class="d-flex" action="/books">
+       <input type="text" id="query" name="query">
+       <script src="book.js"></script>
+        <button class="btn btn-outline" type="submit">Recherche</button>
       </form>
     </div>
   </div>
+  <% end %>
+  <% end %>
 </nav>
+
     <%= yield %>
   <footer>
     <div class="logo-footer">
@@ -76,7 +93,8 @@
    </div></a>
 </div>
 <div class="container-footer">
-          <p><a class ="contact-footer" href="/contacts/new">Contactez-nous</a></p>
+
+          <p><a class ="contact-footer" href="mailto:brian.mtr@outlook.fr">Contactez-nous</a></p>
           <p><a class ="contact-footer" href="/legalnotice/index">Mentions légales</a></p>
 <br>
 

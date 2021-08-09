@@ -11,8 +11,6 @@ html, body {
     background-image: url('background.png');
     background-size: cover;
     padding-bottom: 0px;
-
-    
 }
 
 .BoxOffreDashboard {
@@ -76,10 +74,8 @@ html, body {
 
 .publicDash, .CreDash{
     background-color: rgba(255, 255, 255, 0.459);
-
     border-radius: 10px;
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,11 +90,16 @@ html, body {
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    overflow: hidden !important;
+    height: 440px !important;
 }
 
 .numberDynamic {
     font-size: 30px;
 }
+
+
+
 
 .ListOffers ul {
     list-style-type: none;
@@ -175,7 +176,7 @@ html, body {
 }
 
 .publicDash, .CreDash{
-    height: 200px;
+   height: 130px;
 }
 
 .logoCo {

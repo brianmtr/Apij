@@ -1,6 +1,107 @@
 Rails.application.routes.draw do
 
 
+
+  namespace :secteur_candidat do
+    get 'landrecies/index'
+  end
+  namespace :secteur_candidat do
+    get 'quesnoy/index'
+  end
+  namespace :secteur_candidat do
+    get 'aulnoye/index'
+  end
+  namespace :secteur_candidat do
+    get 'jeumont/index'
+  end
+  namespace :secteur_candidat do
+    get 'maubeuge/index'
+  end
+  namespace :secteur_candidat do
+    get 'haumont/index'
+  end
+  namespace :secteur_candidat do
+    get 'fourmies/index'
+  end
+  namespace :secteur_candidat do
+    get 'louvroil/index'
+  end
+  namespace :secteur_candidat do
+    get 'feignie/index'
+  end
+  namespace :secteur_candidat do
+    get 'avesnes/index'
+  end
+  namespace :secteur_candidat do
+    get 'all/index'
+  end
+  get 'secteur_candidat/index'
+  namespace :candidat do
+    get 'transport/index'
+  end
+  namespace :candidat do
+    get 'tourisme/index'
+  end
+  namespace :candidat do
+    get 'support/index'
+  end
+  namespace :candidat do
+    get 'spectacle/index'
+  end
+  namespace :candidat do
+    get 'servicepublic/index'
+  end
+  namespace :candidat do
+    get 'service/index'
+  end
+  namespace :candidat do
+    get 'sante/index'
+  end
+  namespace :candidat do
+    get 'restauration/index'
+  end
+  namespace :candidat do
+    get 'maintenance/index'
+  end
+  namespace :candidat do
+    get 'industrie/index'
+  end
+  namespace :candidat do
+    get 'espacevert/index'
+  end
+  namespace :candidat do
+    get 'communication/index'
+  end
+  namespace :candidat do
+    get 'commerce/index'
+  end
+  namespace :candidat do
+    get 'collectivite/index'
+  end
+  namespace :candidat do
+    get 'batiment/index'
+  end
+  namespace :candidat do
+    get 'banque/index'
+  end
+  namespace :candidat do
+    get 'association/index'
+  end
+  namespace :candidat do
+    get 'art/index'
+  end
+  namespace :candidat do
+    get 'animals/index'
+  end
+  namespace :candidat do
+    get 'agriculture/index'
+  end
+  get 'candidat/index'
+  resources :candidats
+  get 'candidats/candidature_agriculture/index'
+  get 'candidats/candidature_domaine/index'
+  get 'conseiller/index'
+  resources :books
   get 'legalnotice/index'
   resources :users_jeunes
   resources :form_jeunes
@@ -330,19 +431,24 @@ Rails.application.routes.draw do
   end
 
   
-  get 'public/index'
+
    get 'domaine/index'
   resources :offres
+
   get 'home_two/index'
   devise_for :users
   get 'home/index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
   root 'home#index'
 
+  get 'books/index'
+  resources :books
+
+  get 'public/index'
   resources :public do
   end
 
-  get'search', to:"public#search"
+  resources :role, only: [ :update ]
 
   resources :users, :public do
     member do

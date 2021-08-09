@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<% if current_user.conseiller? %>
 
 <div class="showFormJeune">
 
@@ -156,20 +157,18 @@
   <%= @form_jeune.alternance_exp %>
 </p>
 
+<p>
+  <strong>cv:</strong>
+<%= image_tag @form_jeune.image_url, height: 100 %>
+  
+
+
+</p>
+
   <h3>Bilan parcours professionnel</h3>
 
 <p>
-  <strong>Atouts:</strong>
-  <%= @form_jeune.atouts_bilan %>
-</p>
-
-<p>
-  <strong>Faiblesses:</strong>
-  <%= @form_jeune.faiblesses_bilan %>
-</p>
-
-<p>
-  <strong>Votre meilleure experience et pourquoi ?</strong>
+  <strong>Atouts:</strong>Backperience et pourquoi ?</strong>
   <%= @form_jeune.meilleurexp_bilan %>
 </p>
 
@@ -317,3 +316,6 @@
 <%= link_to 'Modifier', edit_form_jeune_path(@form_jeune) %> |
 <%= link_to 'Retour', :back %>
 </div>
+<% elsif %>
+    <h1 class="block">Désolé ! Tu n'as pas accès a cette page</h1>
+<% end %>

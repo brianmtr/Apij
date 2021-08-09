@@ -1,0 +1,22 @@
+// Place all the styles related to the Books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+table {
+    width: 80%;
+    box-shadow: 20px 20px 50px #0000001c, 
+    -30px -30px 60px #00000028;
+    background-color: rgba(255, 255, 255, 0.603);
+}
+
+thead {
+    background-color: rgba(255, 255, 255, 0.719)
+}
+
+.container_book {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+}

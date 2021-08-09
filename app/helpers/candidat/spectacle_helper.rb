@@ -1,0 +1,2 @@
+module Candidat::SpectacleHelper
+end

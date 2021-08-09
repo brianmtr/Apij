@@ -9,4 +9,6 @@ class User < ApplicationRecord
 
          enum status: [:waiting, :treated]
          validates_acceptance_of :rgpd, accept: "1"
+
+       
 end

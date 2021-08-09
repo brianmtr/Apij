@@ -126,6 +126,7 @@ class FormJeunesController < ApplicationController
         :typeformation_positif,
         :enterprise_positif,
         :postoccuped_positif,
+        :image,
       )
     end
 end

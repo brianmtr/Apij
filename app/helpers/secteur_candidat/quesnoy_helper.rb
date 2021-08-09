@@ -1,0 +1,2 @@
+module SecteurCandidat::QuesnoyHelper
+end

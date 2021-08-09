@@ -1,0 +1,56 @@
+<%= form_with(model: candidat) do |form| %>
+  <% if candidat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(candidat.errors.count, "error") %> prohibited this candidat from being saved:</h2>
+
+      <ul>
+        <% candidat.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :prénom %>
+    <%= form.text_field :firstname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nom %>
+    <%= form.text_field :lastname %>
+  </div>
+
+    <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :commune %>
+    <%= form.select :commune, [
+      'Toutes','Landrecies', 'Avesnes-Sur-Helpe', 'Feignies', 'Louvroil', 'Fourmies',
+      'Haumont', 'Jeumont', 'Aunloye-Aymeries', 'Quesnoy', 'Maubeuge']%>
+  </div>
+
+    <div class="field">
+    <%= form.label :"domaine_d\'experience" %>
+    <%= form.select :domain_exp, ['Agriculture', 'Espace-verts',
+    'Animaux', 'Ouvrage-d\'art', 'Banque-Assurance',
+    'Commerce-Vente', 'Communication', 'bâtiment', 'Restauration',
+    'Tourisme-Loisirs', 'Industrie', 'Maintenance', 'Santé', 'Service-à-la-personne',
+    'Spectacle', 'Support-à-l\'entreprise', 'Transport-Logistique', 'Pôle-collectivités',
+    'Service-public', 'Association','collectivité', 'Autres secteurs']%>
+  </div>
+
+
+
+    <div class="field">
+    <%= form.label :ajouter_un_cv %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+// Place all the styles related to the Candidats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.linkCandidature {
+    text-align: center;
+    height: 150px;
+}
+
+.linkCandidature a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 25px;
+    
+}
+
+.linkCandidature a:hover {
+    color: orange;
+    border: 1px solid orange;
+    background-color: white;
+}

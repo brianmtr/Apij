@@ -1,3 +1,4 @@
+<% if current_user.conseiller? %>
 <%= form_with(model: form_jeune) do |form| %>
   <% if form_jeune.errors.any? %>
     <div id="error_explanation">
@@ -333,6 +334,12 @@
 =end%>
 
   <div class="fieldFormJeune">
+    <%= form.label :image %>
+    <%= form.file_field :image, value: form_jeune.cached_image_data %>
+  </div>
+
+
+  <div class="fieldFormJeune">
     <%= form.label :"Suivi_parcours_SelEC:" %>
     <%= form.text_area :relation_celec %>
   </div>
@@ -353,7 +360,8 @@
     <%= form.label :"Poste_dans_l\'entreprise:" %>
     <%= form.text_area :post_situation %>
   </div>
-<br>
+<br>3 errors prohibited this user from being saved:
+Email can't be blank
 
   <div class="fieldFormJeune">
     <%= form.label :"Depuis_quand_?" %>
@@ -392,4 +400,7 @@
     <%= form.submit %>
   </div>
   </div>
+<% end %>
+<% elsif %>
+      <h1 class="block">Désolé ! Tu n'as pas accès a cette page</h1>
 <% end %>

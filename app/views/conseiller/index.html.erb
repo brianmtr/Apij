@@ -1,0 +1,22 @@
+<h1><span class="colorLetters">Réglage</span> compte conseiller</h1>
+
+ <% @users.each do |user| %>
+    <% if user_signed_in? &&  current_user.conseiller? %>
+    
+        <li class="list-group-item">
+            <p><%= user.firstname %> <%= user.lastname %></p> 
+            <p><%= user.entreprise %></p> 
+            <p><%= user.domaine %></p> 
+            <p><%= user.email %></p>
+            <% if user.conseiller? %>
+                <p>Conseiller</p>
+            <% elsif user.cre? %>
+                <p>Cre</p>
+            <% elsif %>
+                <p>Candidat</p>
+            <% end %>
+            <p><a href='mailto:'<%= user.email %>''>envoyer mail</a></p>
+            <p><%= link_to 'Changer rôle', role_path(user), method: :put, data: { confirm: 'Êtes-vous sûr ? Un utilisateur classique ne pourra pas accèder au panneau d\'administration.' } %></p>
+        </li>
+    <% end %>
+<% end %>

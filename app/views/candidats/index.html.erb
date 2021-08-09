@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+  <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
+    <h1><span class="colorLetters">Rechercher</span> Candidature par:</h1>
+      <div class="test">
+        <div class="sectorJob">
+          <div class="sectorBox Agriculture"><%= link_to 'Domaine de métiers', candidat_index_path %> </div>
+
+          <div class="sectorBox espacevert"><%= link_to 'Secteurs', secteur_candidat_index_path %></div>
+         
+          <%
+=begin%>
+ <div class="sectorBox animals"><%= link_to 'Permis', domaine_animals_index_path %></div> 
+<%
+=end%>
+            
+        </div>
+      </div>
+    <div class="linkCandidature">
+    <br>
+      <%= link_to 'Déposer une candidature', new_candidat_path %>
+    </div>
+  <% elsif %>
+    <h1>Déposez votre Candidature</h1>
+    <div class="linkCandidature">
+      <%= link_to 'Déposer sa candidature', new_candidat_path %>
+    </div>
+  <% end %>
+
+
+<br>
+
+

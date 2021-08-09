@@ -1,10 +1,38 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<br>
+<h2>Mon profil</h2>
 
+<br>
+<br>
+<% if user_signed_in? && current_user.conseiller? %>
+  <div class="field account-show-p">
+    <p>Vous avez un compte conseiller</p>
+  </div>
+<% elsif  user_signed_in? && current_user.cre? %>
+  <div class="field account-show-p">
+    <p>Vous avez un compte cre</p>
+  </div>
+<% elsif %>
+  <div class="field account-show-p">
+    <p>Vous avez un compte public</p>
+  </div>
+<% end %>
+
+<div class="field account-show-p">
+<p>Votre adresse E-mail est : <%= @user.email %></p>
+</div>
+
+<div class="field account-show-p">
+<p>Votre compte a été crée le : <%= @user.created_at.to_formatted_s(:db) %></p>
+</div>
+<br>
+<br>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 <% if current_user.id %>
+<br>
+<h2>Changer mon mot de passe</h2>
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
@@ -13,21 +41,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.label :nouveau_mot_de_passe %>
+    <em><%= @minimum_password_length %> caractères minimum</em>
     <%= f.password_field :password, autocomplete: "Nouveau mot de passe" %>
     <% if @minimum_password_length %>
       <br />
-      <em><%= @minimum_password_length %> caractères minimum</em>
+      
     <% end %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :confirmer_nouveau_mot_de_passe %>
     <%= f.password_field :password_confirmation, autocomplete: "Confirmer nouveau mot de passe" %>
   </div>
 <% end %>
   <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.label :ancien_mot_de_passe %>
     <%= f.password_field :current_password, autocomplete: "Ancien mot de passe" %>
   </div>
 
@@ -38,6 +67,8 @@
 
 <h3 style="color: white; text-align: center;">Supprimer mon comtpe</h3>
 
-<p class="unhappy">Unhappy? <%= button_to "Supprimer mon compte", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
+<p class="unhappy"><%= button_to "Supprimer mon compte", registration_path(resource_name), data: { confirm: "êtes vous sûres ?" }, method: :delete %></p>
+<br>
+<p class="unhappy">
 <%= link_to "Retour", :back %>
+</p>

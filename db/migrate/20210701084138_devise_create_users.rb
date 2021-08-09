@@ -11,13 +11,14 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       t.string :lastname,           null: false, default: ""
       t.integer :status
       t.references :search_by_rate
-      
+      t.references :rate
+
       ##user cre
       t.boolean :cre,               default: "false"
       t.string :domaine,            null: false, default: ""
       t.string :entreprise,         null: false, default: ""
       t.string :adress,             null: false, default: ""
-
+      
       ##user conseiller
       t.boolean :conseiller,        default: "false"
 

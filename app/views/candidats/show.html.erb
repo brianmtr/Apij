@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prénom:</strong>
+  <%= @candidat.firstname %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @candidat.lastname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @candidat.email %>
+</p>
+
+<p>
+  <strong>Domaine:</strong>
+  <%= @candidat.domain_exp %>
+</p>
+       
+<p>
+ <td><a href="<%= @candidat.image_url %>" download>Télécharger le CV</a></td>
+
+</p>
+
+<%= link_to 'Editer', edit_candidat_path(@candidat) %> |
+<%= link_to 'Retour', candidats_path %>

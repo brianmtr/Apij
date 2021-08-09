@@ -10,7 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_13_070822) do
+ActiveRecord::Schema.define(version: 2021_08_09_093251) do
+
+  create_table "books", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "candidats", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.string "commune"
+    t.string "domain_exp", default: "", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.text "image_data"
+  end
+
+  create_table "candidatures", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "index"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "form_jeunes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "advised"
@@ -79,6 +104,7 @@ ActiveRecord::Schema.define(version: 2021_07_13_070822) do
     t.string "postoccuped_positif", default: "", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "image_data"
   end
 
   create_table "offres", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -106,6 +132,7 @@ ActiveRecord::Schema.define(version: 2021_07_13_070822) do
     t.string "lastname", default: "", null: false
     t.integer "status"
     t.bigint "search_by_rate_id"
+    t.bigint "rate_id"
     t.boolean "cre", default: false
     t.string "domaine", default: "", null: false
     t.string "entreprise", default: "", null: false
@@ -135,6 +162,7 @@ ActiveRecord::Schema.define(version: 2021_07_13_070822) do
     t.index ["entreprise"], name: "index_users_on_entreprise"
     t.index ["firstname"], name: "index_users_on_firstname"
     t.index ["lastname"], name: "index_users_on_lastname"
+    t.index ["rate_id"], name: "index_users_on_rate_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["search_by_rate_id"], name: "index_users_on_search_by_rate_id"
   end

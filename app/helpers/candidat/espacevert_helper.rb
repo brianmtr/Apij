@@ -1,0 +1,2 @@
+module Candidat::EspacevertHelper
+end

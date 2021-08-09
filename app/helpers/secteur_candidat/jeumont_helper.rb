@@ -1,0 +1,2 @@
+module SecteurCandidat::JeumontHelper
+end
