@@ -130,15 +130,13 @@ ActiveRecord::Schema.define(version: 2021_08_09_093251) do
     t.string "encrypted_password", default: "", null: false
     t.string "firstname", default: "", null: false
     t.string "lastname", default: "", null: false
-    t.integer "status"
-    t.bigint "search_by_rate_id"
-    t.bigint "rate_id"
-    t.boolean "demandecre", default: false
-    t.boolean "demandeconseiller", default: false
+    t.string "demandecre", default: "", null: false
+    t.string "demandeconseiller", default: "", null: false
     t.string "domaine", default: "", null: false
     t.string "entreprise", default: "", null: false
     t.string "adress", default: "", null: false
     t.boolean "conseiller", default: false
+    t.boolean "cre", default: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -157,26 +155,14 @@ ActiveRecord::Schema.define(version: 2021_08_09_093251) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["adress"], name: "index_users_on_adress"
+    t.index ["demandeconseiller"], name: "index_users_on_demandeconseiller"
+    t.index ["demandecre"], name: "index_users_on_demandecre"
     t.index ["domaine"], name: "index_users_on_domaine"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["entreprise"], name: "index_users_on_entreprise"
     t.index ["firstname"], name: "index_users_on_firstname"
     t.index ["lastname"], name: "index_users_on_lastname"
-    t.index ["rate_id"], name: "index_users_on_rate_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-    t.index ["search_by_rate_id"], name: "index_users_on_search_by_rate_id"
   end
 
-  create_table "users_jeunes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "state"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.bigint "user_id"
-    t.bigint "form_jeune_id"
-    t.index ["form_jeune_id"], name: "index_users_jeunes_on_form_jeune_id"
-    t.index ["user_id"], name: "index_users_jeunes_on_user_id"
-  end
-
-  add_foreign_key "users_jeunes", "form_jeunes"
-  add_foreign_key "users_jeunes", "users"
 end

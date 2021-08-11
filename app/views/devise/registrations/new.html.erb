@@ -33,24 +33,13 @@
   </div>
 
 <div class="cre">
-  <h3 class="title">Vous êtes un chargé de Rela tion Entreprise ?</h3>
+  <h3 class="title">Vous êtes un chargé de Relation Entreprise ou conseiller ?</h3>
   
 <div class="fieldcheckbox">
-  <%= f.check_box :demandecre %>
-  <%= f.label :demandecre, 'Je suis un Chargé de Relation Entreprise.' %>
+     <%= f.label :demandecre %><br>
+    <%= f.select :demandecre, ['CRE', 'Conseiller']%>
 </div>
 
-<div class="fieldSessions">
-     <%= f.label :domaine %><br>
-    <%= f.select :domaine, ['Agriculture', 'Alimentation',
-    'Animaux', 'Architecture', 'Armée-Sécurité-secours', 'Atisanat', 'Banque-Assurance',
-    'Bâtiment', 'Biologie', 'Commerce_immobilier', 'Communication', 'Spectacle',
-    'Droit', 'Édition-Imprimerie', 'Informatique', 'Enseignement', 'Environnement',
-    'Ressources Humaine', 'Restauration', 'Humanitaire', 'Industrie-Matériaux', 
-    'Sciences Humaines', 'Maintenance', 'Numérique-Multimédia', 'Santé', 'Sciences-Mathématiques',
-    'Secrétariat', 'Social', 'Estétique-Coiffure', 'Sport-Animation', 'Transport-Logistique',
-    'Autres secteurs']%>
-</div>
 <div class="fieldSessions">
     <%= f.label :entreprise %><br/>
     <%= f.text_field :entreprise %>
