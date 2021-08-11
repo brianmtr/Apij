@@ -133,7 +133,8 @@ ActiveRecord::Schema.define(version: 2021_08_09_093251) do
     t.integer "status"
     t.bigint "search_by_rate_id"
     t.bigint "rate_id"
-    t.boolean "cre", default: false
+    t.boolean "demandecre", default: false
+    t.boolean "demandeconseiller", default: false
     t.string "domaine", default: "", null: false
     t.string "entreprise", default: "", null: false
     t.string "adress", default: "", null: false
@@ -156,7 +157,6 @@ ActiveRecord::Schema.define(version: 2021_08_09_093251) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["adress"], name: "index_users_on_adress"
-    t.index ["cre"], name: "index_users_on_cre"
     t.index ["domaine"], name: "index_users_on_domaine"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["entreprise"], name: "index_users_on_entreprise"
