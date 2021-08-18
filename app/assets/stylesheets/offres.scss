@@ -28,7 +28,65 @@
     
 }
 
+.all {
+    background-image: url(all.png);
+    background-position: center;
+}
+
+.avesnes {
+    background-image: url(avesnes.png);
+    background-position: center;
+}
+
+.feignie {
+    background-image: url(feignies.png);
+    background-position: center;
+}
+
+.louvroil {
+    background-image: url(louvroil.png);
+    background-position: center;
+}
+
+.fourmies {
+    background-image: url(fourmies.png);
+    background-position: center;
+}
+
+.haumont {
+    background-image: url(haumont.png);
+    background-position: center;
+}
+
+.maubeuge {
+    background-image: url(maubeuge.png);
+    background-position: center;
+}
+
+.jeumont {
+    background-image: url(jeumont.png);
+    background-position: center;
+}
+
+.aulnoye {
+    background-image: url(aulnoye.png);
+    background-position: center;
+}
+
+
+.quesnoy {
+    background-image: url(quesnoye.png);
+    background-position: center;
+}
+
+.landrecies {
+    background-image: url(landrecies2.png);
+    background-position: center;
+}
+
+
 .sectorBox {
+
     background-color: green;
     width: 90%;
     margin-left: 5%;
@@ -60,6 +118,7 @@
     -webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
+
 
 .sectorJobOffres{
     width: 90%;

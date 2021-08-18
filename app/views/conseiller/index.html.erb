@@ -2,21 +2,37 @@
 
  <% @users.each do |user| %>
     <% if user_signed_in? &&  current_user.conseiller? %>
-    
+        <% if user.demandecre === "CRE" || user.demandecre === "Conseiller" %>
         <li class="list-group-item">
             <p><%= user.firstname %> <%= user.lastname %></p> 
             <p><%= user.entreprise %></p> 
             <p><%= user.domaine %></p> 
             <p><%= user.email %></p>
-            <% if user.conseiller? %>
-                <p>Conseiller</p>
-            <% elsif user.cre? %>
+            
+            <% if user.demandecre === 'CRE'  && user.cre != true %>
+                <p>Demande de compte Cre</p>
+            <% elsif user.demandecre === 'Conseiller' && user.conseiller != true %>
+                <p>Demande de compte Conseiller</p>
+            <% elsif user.demandecre === 'CRE' && user.cre = true %>
                 <p>Cre</p>
-            <% elsif %>
-                <p>Candidat</p>
+            <% elsif user.demandecre === 'Conseiller' && user.conseiller = true %>
+                <p>Conseiller</p>
             <% end %>
-            <p><a href='mailto:'<%= user.email %>''>envoyer mail</a></p>
-            <p><%= link_to 'Changer rôle', role_path(user), method: :put, data: { confirm: 'Êtes-vous sûr ? Un utilisateur classique ne pourra pas accèder au panneau d\'administration.' } %></p>
-        </li>
+        
     <% end %>
+
+
+                <%
+=begin%>
+ <p><a href='mailto:'<%= user.email %>''>envoyer mail</a></p> 
+<%
+=end%>
+                <p><%= link_to 'Passer en conseiller', role_path(user), method: :put, data: { confirm: 'Êtes-vous sûr ? Un utilisateur classique ne pourra pas accèder au panneau d\'administration.' } %></p>
+                <p><%= link_to 'Passer en CRE', rolecre_path(user), method: :put, data: { confirm: 'Êtes-vous sûr ? Un utilisateur classique ne pourra pas accèder au panneau d\'administration.' } %></p>
+
+             </li>
+
+    <% end %>
+
+         
 <% end %>

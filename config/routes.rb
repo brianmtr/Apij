@@ -451,7 +451,7 @@ Rails.application.routes.draw do
   end
 
   resources :role, only: [ :update ]
-
+  resources :rolecre, only: [ :update ]
   resources :users, :public do
     member do
       put "treated", to: 'treated#update'
