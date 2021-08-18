@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
 
     def configure_devise_parameters
-        devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:firstname, :lastname, :email, :domaine, :entreprise, :adress, :cre, :conseiller, :password, :password_confirmation, :rgpd) }
+        devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:firstname, :lastname, :email, :entreprise, :adress, :codepostal, :scolorise, :inscritml, :telephone, :etrecontacte, :cre, :conseiller, :password, :password_confirmation, :rgpd, :Agriculture, :Alimentation, :Animaux, :Architecture, :Armée_Sécurité_secours, :Artisanat, :Banque_Assurance, :Bâtiment, :Biologie, :Commerce_immobilier, :Communication, :Spectacle, :Droit, :Edition_Imprimerie, :Informatique, :Enseignement, :Environnement, :Ressources_Humaine, :Restauration, :Humanitaire, :Industrie_Matériaux, :Sciences_Humaines, :Maintenance, :Numérique_Multimédia, :Santé, :Sciences_Mathématiques, :Secrétariat, :Social, :Estétique_Coiffure, :Sport_Animation, :Transport_Logistique, :rayonsearch) }
     end    
 
 

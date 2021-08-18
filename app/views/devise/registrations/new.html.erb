@@ -14,6 +14,233 @@
     <%= f.text_field :lastname %>
   </div>
 
+    <div class="fieldSessions">
+      <%= f.label :adresse %><br />
+      <%= f.text_field :adress %>
+    </div>
+
+    <div class="fieldSessions">
+      <%= f.label :code_postal %><br />
+      <%= f.text_field :codepostal %>
+    </div>
+    
+    <div class="fieldSessions">
+      <%= f.label :telephone %><br />
+      <%= f.text_field :telephone %>
+    </div>
+
+    <div class="fieldSessions">
+      <%= f.label :etes_vous_scolarisé_? %><br>
+      <%= f.select :scolorise, ['Oui', 'Non'] %>
+    </div>
+
+    <div class="fieldSessions">
+      <%= f.label :etes_vous_inscrit_à_la_mission_locale_? %><br>
+      <%= f.select :inscritml, ['Oui', 'Non'] %>
+    </div>
+
+    <div class="fieldSessions">
+      <%= f.label :Souhaitez_vous_être_contacté_par_un_conseillé_? %>
+      <%= f.select :etrecontacte, ['Oui', 'Non'] %>
+    </div>
+<br>
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item-inscription">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Vos catégories des métiers
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+  <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Agriculture %>
+      <%= f.label :Agriculture %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Alimentation %>
+      <%= f.label :Alimentation %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Animaux %>
+      <%= f.label :Animaux %>
+   </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Architecture %>
+      <%= f.label :Architecture %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Armée_Sécurité_secours %>
+      <%= f.label :Armée_Sécurité_secours %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Artisanat %>
+      <%= f.label :Artisanat %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Banque_Assurance %>
+      <%= f.label :Banque_Assurance %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Bâtiment %>
+      <%= f.label :Bâtiment %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Biologie%>    
+      <%= f.label :Biologie %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Commerce_immobilier %>
+      <%= f.label :Commerce_immobilier %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Communication %>
+      <%= f.label :Communication %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Spectacle %>
+      <%= f.label :Spectacle %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Droit %>
+      <%= f.label :Droit %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Edition_Imprimerie %>
+      <%= f.label :Edition_Imprimerie %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Informatique %>
+      <%= f.label :Informatique %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Enseignement %>
+      <%= f.label :Enseignement %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Environnement %>
+      <%= f.label :Environnement %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Ressources_Humaine %>
+      <%= f.label :Ressources_Humaine %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Restauration %>
+      <%= f.label :Restauration %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Humanitaire %>
+      <%= f.label :Humanitaire %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Sciences_Humaines %>
+      <%= f.label :Sciences_Humaines %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Maintenance %>
+      <%= f.label :Maintenance %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Numérique_Multimédia %>
+      <%= f.label :Numérique_Multimédia %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Santé %>
+      <%= f.label :Santé %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Sciences_Mathématiques %>
+      <%= f.label :Sciences_Mathématiques %>
+    </div>
+
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Industrie_Matériaux %>
+      <%= f.label :Industrie_Matériaux %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Secrétariat %>
+      <%= f.label :Secrétariat %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Social %>
+      <%= f.label :Social %>
+
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Estétique_Coiffure %>
+      <%= f.label :Estétique_Coiffure %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Sport_Animation %>
+      <%= f.label :Sport_Animation %>
+
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Sport_Animation %>
+      <%= f.label :Sport_Animation %>
+
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= f.check_box :Transport_Logistique %>
+      <%= f.label :Transport_Logistique %>
+
+    </div>      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+<%
+=begin%>
+ ['', 'Alimentation',
+      'Animaux', 'Architecture', 'Armée-Sécurité-secours', 'Artisanat', 'Banque-Assurance',
+      'Bâtiment', 'Biologie', 'Commerce_immobilier', 'Communication', 'Spectacle',
+      'Droit', 'Édition-Imprimerie', 'Informatique', 'Enseignement', 'Environnement',
+      'Ressources_Humaine', 'Restauration', 'Humanitaire', 'Industrie-Matériaux', 
+      'Sciences Humaines', 'Maintenance', 'Numérique-Multimédia', 'Santé', 'Sciences-Mathématiques',
+      'Secrétariat', 'Social', 'Estétique-Coiffure', 'Sport-Animation', 'Transport-Logistique',
+      'Autres secteurs'] 
+<%
+=end%>
+    <div class="fieldSessions">
+      <%= f.label :rayon_de_recherche %>
+      <%= f.select :rayonsearch, ['0 km à 5 km', '5 km à 10 km', '10 km à 20 km', 'plus de 20 km'] %>
+    </div>
+
   <div class="fieldSessions">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -36,29 +263,18 @@
   <h3 class="title">Vous êtes un chargé de Rela tion Entreprise ?</h3>
   
 <div class="fieldcheckbox">
-  <%= f.check_box :cre %>
-  <%= f.label :cre, 'Je suis un Chargé de Relation Entreprise.' %>
+  <%= f.check_box :demandecre %>
+  <%= f.label :demandecre, 'Demander un compte CRE.' %>
 </div>
 
-<div class="fieldSessions">
-     <%= f.label :domaine %><br>
-    <%= f.select :domaine, ['Agriculture', 'Alimentation',
-    'Animaux', 'Architecture', 'Armée-Sécurité-secours', 'Atisanat', 'Banque-Assurance',
-    'Bâtiment', 'Biologie', 'Commerce_immobilier', 'Communication', 'Spectacle',
-    'Droit', 'Édition-Imprimerie', 'Informatique', 'Enseignement', 'Environnement',
-    'Ressources Humaine', 'Restauration', 'Humanitaire', 'Industrie-Matériaux', 
-    'Sciences Humaines', 'Maintenance', 'Numérique-Multimédia', 'Santé', 'Sciences-Mathématiques',
-    'Secrétariat', 'Social', 'Estétique-Coiffure', 'Sport-Animation', 'Transport-Logistique',
-    'Autres secteurs']%>
+<div class="fieldcheckbox">
+  <%= f.check_box :demandeconseiller %>
+  <%= f.label :demandeconseiller, 'Demander un compte Conseiller.' %>
 </div>
-<div class="fieldSessions">
-    <%= f.label :entreprise %><br/>
-    <%= f.text_field :entreprise %>
-</div>
-<div class="fieldSessions">
-    <%= f.label :adresse %><br />
-    <%= f.text_field :adress %>
-</div>
+
+
+
+
 </div>
 <div class="fieldcheckbox">
     <%= f.check_box :rgpd %>

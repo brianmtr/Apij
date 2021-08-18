@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container-event-show">
+    <div class="date-title-address-show">
+
+        <p class="title-event-show">
+            <strong><%= @event.title %></strong>
+        </p>
+<div class="align-address-date">
+        <p>
+            <strong><%= @event.date %></strong>
+        </p>
+        <p>
+            <strong><%= @event.address %></strong>
+        </p>
+        </div>
+    </div>
+
+    <p class="event-describe">
+        <%= @event.description %>
+    </p>
+
+    <p class="image-show">
+        <%= image_tag @event.image_url %>
+    </p>
+
+    <%= link_to 'Retour', :back %>
+</div>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

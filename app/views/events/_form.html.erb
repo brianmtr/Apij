@@ -1,0 +1,49 @@
+<%= form_with(model: event) do |form| %>
+  <% if event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+        <% event.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <p class="event-field"><%= form.label :titre %> (12 caractères maximum)</p>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <p class="event-field"><%= form.label :date %> et heure (exemple: 20/03/2000 18:20)</p>
+    <%= form.datetime_field :date %>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :adresse %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+  <%= form.label :Choisir_une_image %>
+  <%= form.file_field :image %>
+  </div>
+
+    <div class="field">
+  <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
+   <p>Pour une meilleure experience visuelle,<br> veuillez mettre des images 1900*600, <a href="https://www.iloveimg.com/fr/recadrer-image"><br>Cliquer ici pour recadrer</a></p>
+  <% end %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

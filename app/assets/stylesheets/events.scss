@@ -1,0 +1,56 @@
+
+
+.cardHome {
+    background-color: rgba(255, 255, 255, 0.459);
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.linkHomeEvent {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+.eventInfos {
+    width: 80%;
+    margin-left: 10%;
+}
+.eventIMG {
+ width: 100%;
+}
+
+.eventIMG img {
+    width: 100%;
+}
+
+.EventInfos {
+    width: 40%;
+}
+
+.centerLink {
+    text-align: center;
+}
+
+.newEvent a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.newEvent a:hover {
+    color: orange;
+
+}
+
+.newEvent {
+    text-align: center;
+}

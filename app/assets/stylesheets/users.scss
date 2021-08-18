@@ -33,6 +33,16 @@
     margin-top: 20px;
 }
 
+.accordion-item-inscription {
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fieldSessionsAccordion {
+    width: 80%;
+}
+
 @media screen and(min-width: 772px) {
     .fieldSessions, .fieldcheckbox, .field, .actions {
         width: 50%;
@@ -47,6 +57,12 @@
     .links a:hover {
        color: orange;
     }
+
+    .accordion-item-inscription {
+        width: 50%;
+        margin-left: 25%;
+        background-color: rgb(255, 255, 255);
+    }
 }
 
 @media screen and(min-width: 1200px) {
@@ -58,6 +74,12 @@
     .links {
         width: 40%;
         margin-left: 30%;
+    }
+
+    .accordion-item-inscription {
+        width: 40%;
+        margin-left: 30%;
+        background-color: rgb(255, 255, 255);
     }
 }
 
@@ -71,6 +93,12 @@
         width: 30%;
         margin-left: 35%;
     }
+
+    .accordion-item-inscription {
+        width: 30%;
+        margin-left: 35%;
+        background-color: rgb(255, 255, 255);
+    }
 }
 
 @media screen and(min-width: 1900px) {
@@ -82,5 +110,11 @@
     .links {
         width: 20%;
         margin-left: 40%;
+    }
+
+    .accordion-item-inscription {
+        width: 20%;
+        margin-left: 40%;
+        background-color: rgb(255, 255, 255);
     }
 }

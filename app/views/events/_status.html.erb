@@ -1,0 +1,36 @@
+
+      <div class="cardHome">
+
+        <div class="eventIMG">
+          <scope="col"> <%= image_tag event.image_url %></scope="col">
+        </div>
+
+        <%
+=begin%>
+ <div class="eventInfos">
+          <scope="col"><strong><%= event.title.upcase %></strong></scope="col"><br>
+          <scope="col"><%= event.date %></scope="col"><br>
+          <scope="col"><%= event.address %></scope="col"><br>
+          <br>
+          <scope="col"><%= event.description %></scope="col"><br>
+        </div>  
+<%
+=end%>
+        <%
+=begin%>
+ <div class="linkHomeEvent">
+          <%= link_to 'Voir évenement', event_path(event.id) %>
+        </div>   
+<%
+=end%>
+        <br>
+        <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
+          <div class="linkHomeEvent">
+            <%= link_to 'Show', event %>
+            <%= link_to 'Edit', edit_event_path(event) %>
+            <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </div>
+        <% end %>
+      </div>
+<br>
+<br>

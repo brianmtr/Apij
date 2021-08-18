@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Événements</h1>
+
+    <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
+        <div class="newEvent">
+            <%= link_to 'Créer un événement', new_event_path %>
+        </div>
+    <% end %>
+<br>
+<% @events.each do |event| %>
+    <%= render 'status', event: event %>
+<% end %>
+<br>
+
