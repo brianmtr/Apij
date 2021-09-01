@@ -3,6 +3,6 @@ class HomeController < ApplicationController
     @users = User.all
     @offres = Offre.all
     @candidats = Candidat.all
-    @events = Event.all
+    @events = Event.all.limit(1)
   end
 end

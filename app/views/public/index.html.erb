@@ -2,28 +2,43 @@
 
 <h1><span class="colorLetters">Pu</span>blic</h1>
 
+
+
+
 <div class="PublicContainer">
 <h2>Entretien à prévoir</h2>
     <ul class="list-group">
-    
-     <% @users.each do |user| %>
-      <% if user.cre? || user.conseiller? %>
 
+
+       <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+         <thead>
+          <tr>
+            <th class="th-sm">Prénom, Nom</th>
+            <th class="th-sm">Domaine</th>
+            <th class="th-sm">Addresse</th>
+            <th class="th-sm">Email</th>
+            <th class="th-sm">Validation entretien</th>
+         </tr>
+        </thead>
+             <% @users.each do |user| %>
+      <% if user.cre? || user.conseiller? %>
       <% elsif %>
-    <% if user.status? %>
+      <% if user.status? %>
       <% elsif %>
-        <li class="list-group-item">
-            <p><%= user.firstname %></p> 
-            <p><%= user.lastname %></p> 
-            <p><%= user.email %></p>
-            <p><%= user.created_at %></p>
-            <div class="linkPublic">
-            <%= link_to 'Entretien effectué', treated_user_path(user.id), method: :put, data: { confirm: 'Êtes vous certain ?' } %>
-            </div>
-        </li>
-    <% end %>
-    <% end %>
-    <% end %>
+        <tbody>
+         <tr>
+            <td><%= user.firstname %><span> </span><%= user.lastname %></td>
+            <td><%= user.domaine %></td>
+            <td><%= user.adress %></td>
+            <td><%= user.email %></td>
+            <td><div class="linkPublic"><%= link_to 'Entretien effectué', treated_user_path(user.id), method: :put, data: { confirm: 'Êtes vous certain ?' } %></div></td>
+         </tr>
+        </tbody>
+            <% end %>
+  <% end %>
+<% end %>
+      </table>
+
     </ul>
 </div>
 
@@ -31,18 +46,37 @@
     <h2>Public inscrit avec entretien</h2>
     <ul class="list-group">
     
-    <% @form_jeunes.each do |form_jeune| %>
-        <li class="list-group-item">
-            <p><%= form_jeune.firstname %></p> 
-            <p><%= form_jeune.lastname %></p> 
-            <p><%= form_jeune.mail %></p>
-        <div class="linkPublicTwo">
-            <%= link_to 'Voir', form_jeune %>
-            <%= link_to 'Modifier', edit_form_jeune_path(form_jeune) %>
-            <%= link_to 'Supprimer', form_jeune, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
-        </li>
-    <% end %>
+
+
+      <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+        <thead>
+         <tr>
+            <th class="th-sm">Prénom, Nom</th>
+            <th class="th-sm">Domaine</th>
+            <th class="th-sm">Addresse</th>
+            <th class="th-sm">Email</th>
+            <th class="th-sm">Informations</th>
+         </tr>
+        </thead>
+            <% @form_jeunes.each do |form_jeune| %>
+        <tbody>
+         <tr>
+            <td><%= form_jeune.firstname %><span> </span><%= form_jeune.lastname %></td>
+            <td><%= form_jeune.domain_exp %></td>
+            <td><%= form_jeune.address %></td>
+            <td><%= form_jeune.mail %></td>
+            <td>
+                <div class="linkPublicTwo">
+                    <%= link_to 'Voir', form_jeune %>
+                    <%= link_to 'Modifier', edit_form_jeune_path(form_jeune) %>
+                    <%= link_to 'Supprimer', form_jeune, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </div>
+            </td>
+         </tr>
+        </tbody>
+        <% end %>
+      </table>
+    
     </ul>
 </div>
 

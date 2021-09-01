@@ -32,7 +32,7 @@
 <div class="containerDashbord">
   <div class="boxPubliCre">
     <div class="publicDash">
-    <p class="titleBox">Public</p>
+    <p class="titleBox">Candidats</p>
         <div class="numberDynamic"><%= @users.count(1) %></div>
     </div>
         <div class="publicDash">
@@ -40,17 +40,7 @@
         <div class="numberDynamic"><%= @candidats.count(1) %></div>
     </div>
    
-    <div class="publicDash">
-   
-      <p class="titleBox">Cre</p>
-      <% @users.each do |user| %>
 
-        <% if user.cre? %>
-        <div class="numberDynamic"><%= @users.where(cre: true).count(1) %></div>
-        
-        <% end %>
-        <% end %>
-    </div>
     
   </div>
   <div class="BoxOffreDashboard">
@@ -106,5 +96,29 @@
          avoids a pain that produces no resultant pleasure?"
       </p> 
 </div>
+<br>
+<br>
+
+
+   <% @events.each do |event| %>
+  
+   <h2><span class="colorLetters">Évén</span>ements</h2>
+       <div class="cardHome">
+
+        <div class="eventIMG">
+          <scope="col"> <%= image_tag event.image_url %></scope="col">
+        </div>
+
+        <br>
+        <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
+          <div class="linkHomeEvent">
+            <%= link_to 'En savoir plus', event %>
+            <%= link_to 'Editer événement', edit_event_path(event) %>
+            <%= link_to 'Supprimer événement', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </div>
+        <% end %>
+      </div>
+
+   <% end %>
 
 <% end %>
