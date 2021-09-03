@@ -18,7 +18,7 @@
         <div class="connexion">
         <h2>
           <% if user_signed_in? %>
-          <% else %>
+          <% elsif %>
             <%= link_to 'Se connecter', new_user_session_path %>
           <% end %>
           </h2>

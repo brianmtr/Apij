@@ -17,9 +17,16 @@
   <div id="boxy" background-image="../images/background.png"> 
   <div class="top_nav">
 
-  <% if user_signed_in? %>
-    <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %>
-  <% end %>
+        <div class="connexion">
+          <% if user_signed_in? %>
+            <%= form_for(current_user,
+              url: destroy_user_session_path, html: { method: :delete }) do |f| %>
+              <%= f.submit "Log out" %>
+            <% end %> 
+         <% else %>
+            <%= link_to 'Connexion', new_user_session_path %>
+          <% end %>
+          </div>
 </div>
 
 

@@ -439,6 +439,7 @@ Rails.application.routes.draw do
 
   get 'home_two/index'
   devise_for :users
+  resources :users
   get 'home/index'
 
   root 'home#index'
