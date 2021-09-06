@@ -7,6 +7,7 @@
     <%= csp_meta_tag %>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -17,16 +18,7 @@
   <div id="boxy" background-image="../images/background.png"> 
   <div class="top_nav">
 
-        <div class="connexion">
-          <% if user_signed_in? %>
-            <%= form_for(current_user,
-              url: destroy_user_session_path, html: { method: :delete }) do |f| %>
-              <%= f.submit "Log out" %>
-            <% end %> 
-         <% else %>
-            <%= link_to 'Connexion', new_user_session_path %>
-          <% end %>
-          </div>
+       <br>
 </div>
 
 
@@ -84,11 +76,16 @@
 
    
       <% if user_signed_in? && current_user.conseiller? %>
-      <form class="d-flex" action="/books">
-       <input type="text" id="query" name="query">
-       <script src="book.js"></script>
-        <button class="btn btn-outline" type="submit">Recherche</button>
-      </form>
+ <div class="connexion">
+          <% if user_signed_in? %>
+            <%= form_for(current_user,
+              url: destroy_user_session_path, html: { method: :delete }) do |f| %>
+              <%= f.submit "Déconnexion" %>
+            <% end %> 
+            <% else %>
+            <%= link_to 'Connexion', new_user_session_path %>
+          <% end %>
+          </div>
     </div>
   </div>
   <% end %>

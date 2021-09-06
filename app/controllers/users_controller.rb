@@ -1,9 +1,11 @@
 class UsersController < ApplicationController
   def index
+    @users = User.all
   end
 
   def show
-    @user   = current_user
+    @user   = current_user            
+
   end
 
   def create
@@ -21,6 +23,14 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+    def destroy
+      @user = User.find(params[:id])
+      if @user.present?
+        @user.destroy
+      end
+      redirect_to public_index_url
   end
 
       private

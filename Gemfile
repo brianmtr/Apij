@@ -61,3 +61,4 @@ gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'shrine', '~> 3.4'
 gem 'fastimage', '~> 2.2', '>= 2.2.4'
+gem "bootstrap-table-rails"

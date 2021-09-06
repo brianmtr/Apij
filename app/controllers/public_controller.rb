@@ -5,9 +5,5 @@ class PublicController < ApplicationController
     @users_jeunes = UsersJeune.all
     
   end
-
-
-
-
 end
 

@@ -1,55 +1,74 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
 <% if current_user.conseiller? %>
 
 <h1><span class="colorLetters">Pu</span>blic</h1>
 
-
-
-
 <div class="PublicContainer">
-<h2>Entretien à prévoir</h2>
-    <ul class="list-group">
-
-
-       <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-         <thead>
-          <tr>
-            <th class="th-sm">Prénom, Nom</th>
-            <th class="th-sm">Domaine</th>
-            <th class="th-sm">Addresse</th>
-            <th class="th-sm">Email</th>
-            <th class="th-sm">Validation entretien</th>
-         </tr>
-        </thead>
-             <% @users.each do |user| %>
-      <% if user.cre? || user.conseiller? %>
-      <% elsif %>
-      <% if user.status? %>
-      <% elsif %>
-        <tbody>
-         <tr>
-            <td><%= user.firstname %><span> </span><%= user.lastname %></td>
-            <td><%= user.domaine %></td>
-            <td><%= user.adress %></td>
-            <td><%= user.email %></td>
-            <td><div class="linkPublic"><%= link_to 'Entretien effectué', treated_user_path(user.id), method: :put, data: { confirm: 'Êtes vous certain ?' } %></div></td>
-         </tr>
-        </tbody>
-            <% end %>
-  <% end %>
-<% end %>
-      </table>
-
-    </ul>
+  <h2>Entretien à prévoir</h2>
+  <ul class="list-group">
+    <div class="search-list">
+      <table class="table" id="myTable">
+        <thead>
+        <tr>
+          <th class="th-sm">Prénom, Nom</th>
+          <th class="th-sm">Domaine</th>
+          <th class="th-sm">Addresse</th>
+          <th class="th-sm">Email</th>
+          <th class="th-sm">Validation entretien</th>
+        </tr> 
+      </thead>
+      <% @users.each do |user| %>
+        <% if user.cre? || user.conseiller? %>
+        <% elsif %>
+        <% if user.status? %>
+        <% elsif %>
+          <tbody>
+            <tr>
+              <td><%= user.firstname %><span> </span><%= user.lastname %></td>
+              <td><%= user.domaine %></td>
+              <td><%= user.adress %></td>
+              <td><%= user.email %></td>
+              <td><div class="linkPublic"><%= link_to 'Entretien effectué', user, method: :delete, data: { confirm: 'Êtes-vous certain ?' } %></div></td>
+            </tr>
+          </tbody>
+        <% end %>
+      <% end %>
+    <% end %>
+  </table>
+  </ul>
 </div>
 
+  
+
+
+
+
     <div class="PublicContainer">
-    <h2>Public inscrit avec entretien</h2>
+    <h2>Candidats</h2>
     <ul class="list-group">
     
 
 
-      <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-        <thead>
+<div class="container search-table">
+            <div class="search-box">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Rechercher un candidat :</h5>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" id="myInput" type="text" placeholder="Recherche.."> 
+
+                    </div> 
+                </div>
+            </div>
+            <div class="search-listTwo">
+                <table class="table" id="myTable">
+                       <thead>
          <tr>
             <th class="th-sm">Prénom, Nom</th>
             <th class="th-sm">Domaine</th>
@@ -75,7 +94,11 @@
          </tr>
         </tbody>
         <% end %>
-      </table>
+                </table>
+
+            </div>
+        </div>
+
     
     </ul>
 </div>
@@ -83,3 +106,53 @@
 <% elsif %>
 <h1 class="block">Désolé ! Tu n'as pas accès a cette page</h1>
 <% end %>
+
+
+
+
+
+        <style>
+
+        .table {
+          margin-left: 0%;
+        }
+        .search-table{
+
+    margin-top: 5%;
+}
+.search-box{
+    background: #c1c1c1;
+    border: 1px solid #ababab;
+    padding: 3%;
+}
+.search-box input:focus{
+    box-shadow:none;
+    border:2px solid #eeeeee;
+}
+.search-list{
+    background: #fff;
+    border: 1px solid #ababab;
+    border-top: none;
+    width: 65%;
+    margin-left: 17.5%;
+}
+.search-list h3{
+    background: #eee;
+    padding: 3%;
+    margin-bottom: 0%;
+}
+.search-listTwo {
+  background-color: white;
+}
+        </style>
+
+                                 <script>
+                            $(document).ready(function () {
+                                $("#myInput").on("keyup", function () {
+                                    var value = $(this).val().toLowerCase();
+                                    $("#myTable tr").filter(function () {
+                                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                    });
+                                });
+                            });
+                        </script>
