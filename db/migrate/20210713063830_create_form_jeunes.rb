@@ -50,6 +50,7 @@ class CreateFormJeunes < ActiveRecord::Migration[6.1]
     t.string :mission_exp,            null: false, default: ""
     t.string :contrat_exp,            null: false, default: ""
     t.string :domain_exp,             null: false, default: ""
+    t.string :metier_exp,             null: false, default: ""
     t.string :postsearched_exp,       null: false, default: ""
     t.string :alternance_exp,         null: false, default: ""
 

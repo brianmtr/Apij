@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_18_080145) do
+ActiveRecord::Schema.define(version: 2021_09_07_124200) do
 
   create_table "books", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "firstname"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2021_08_18_080145) do
     t.string "index"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "image_data"
   end
 
   create_table "events", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -79,6 +80,7 @@ ActiveRecord::Schema.define(version: 2021_08_18_080145) do
     t.string "mission_exp", default: "", null: false
     t.string "contrat_exp", default: "", null: false
     t.string "domain_exp", default: "", null: false
+    t.string "metier_exp", default: "", null: false
     t.string "postsearched_exp", default: "", null: false
     t.string "alternance_exp", default: "", null: false
     t.text "atouts_bilan"

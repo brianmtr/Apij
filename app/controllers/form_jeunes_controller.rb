@@ -94,6 +94,7 @@ class FormJeunesController < ApplicationController
         :mission_exp,
         :contrat_exp,
         :domain_exp,
+        :metier_exp,
         :postsearched_exp,
         :alternance_exp,
         :atouts_bilan,

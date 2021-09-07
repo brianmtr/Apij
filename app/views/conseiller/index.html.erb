@@ -1,27 +1,46 @@
 <h1><span class="colorLetters">Réglage</span> compte conseiller</h1>
-
+ 
+   
+      <table class="tableCre" id="myTable">
+        <thead>
+        <tr>
+          <th class="th-sm">Prénom, Nom</th>
+          <th class="th-sm">Email</th>
+          <th class="th-sm">Statut</th>
+          <th class="th-sm">Rôle</th>
+        </tr> 
+      </thead>
+          <tbody>
  <% @users.each do |user| %>
-    <% if user_signed_in? &&  current_user.conseiller? %>
-        <% if user.demandecre === "CRE" || user.demandecre === "Conseiller" %>
-            <li class="list-group-item">
-                <p><%= user.firstname %> <%= user.lastname %></p> 
-                <p><%= user.entreprise %></p> 
-                <p><%= user.domaine %></p> 
-                <p><%= user.email %></p>
+   <% if user_signed_in? &&  current_user.conseiller? %>
+        <% if user.demandecre === "OUI" || user.demandeconseiller === "OUI" %>
+    
+            <tr>
+                <td><p><%= user.firstname %> <%= user.lastname %></p> </td>
+                <td><p><%= user.email %></p></td>
             
-                <% if user.demandecre === 'CRE'  && user.cre != true %>
+                <td><% if user.demandecre === 'OUI'  && user.cre != true %>
                     <p>Demande de compte Cre</p>
-                <% elsif user.demandecre === 'Conseiller' && user.conseiller != true %>
+                <% elsif user.demandeconseiller === 'OUI' && user.conseiller != true %>
                     <p>Demande de compte Conseiller</p>
-                <% elsif user.demandecre === 'CRE' && user.cre = true %>
+                <% elsif user.demandecre === 'OUI' && user.cre = true %>
                     <p>Cre</p>
-                <% elsif user.demandecre === 'Conseiller' && user.conseiller = true %>
+                <% elsif user.demandeconseiller === 'OUI' && user.conseiller = true %>
                     <p>Conseiller</p>
+                <% end %></td>
+               <td><% if user.demandeconseiller === "OUI" %>
+                    <p><%= link_to 'Passer en conseiller', role_path(user), method: :put, data: { confirm: 'Êtes-vous sûr ? Un utilisateur classique pourra accèder au panneau d\'administration.' } %></p>
                 <% end %>
-        
-                <p><%= link_to 'Passer en conseiller', role_path(user), method: :put, data: { confirm: 'Êtes-vous sûr ? Un utilisateur classique ne pourra pas accèder au panneau d\'administration.' } %></p>
-                <p><%= link_to 'Passer en CRE', rolecre_path(user), method: :put, data: { confirm: 'Êtes-vous sûr ? Un utilisateur classique ne pourra pas accèder au panneau d\'administration.' } %></p>
-            </li>
-        <% end %>
+                <% if user.demandecre === "OUI" %>
+                    <p><%= link_to 'Passer en CRE', rolecre_path(user), method: :put, data: { confirm: 'Êtes-vous sûr ? Un utilisateur classique pourra accèder au panneau d\'administration.' } %></p>
+                <% end %></td>
+               </tr>
+                       <% end %>
     <% end %>   
 <% end %>
+
+          </tbody>
+  </table>
+
+
+  

@@ -23,3 +23,43 @@
     border: 1px solid orange;
     background-color: white;
 }
+
+.tableCre {
+    margin-left: 10%;
+    width: 80% !important;
+
+}
+
+.tableCre p {
+    color: black;
+}
+
+.tableCre :link {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #FCB813;
+    border: none;
+}
+
+.tableCre a {
+    color: #fff;
+}
+
+
+.tableCre :link:hover {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    border: 1px solid orange;
+
+}
+
+.tableCre a:hover {
+    color: orange;
+}

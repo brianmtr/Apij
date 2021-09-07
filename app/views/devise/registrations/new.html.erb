@@ -113,7 +113,7 @@
       <%= f.label :Spectacle %>
     </div>
 
-    <div class="fieldcheckboxaccordion">
+    <div class="fieldcheckboxaccordion">dsonn
       <%= f.check_box :Droit %>
       <%= f.label :Droit %>
     </div>
@@ -263,13 +263,15 @@
   <h3 class="title">Vous êtes un chargé de Relation Entreprise ou conseiller ?</h3>
   
 <div class="fieldcheckbox">
-  <%= f.check_box :demandecre %>
+  
   <%= f.label :demandecre, 'Demander un compte CRE.' %>
+  <%= f.select :demandecre, ['NON', 'OUI'] %>
+
 </div>
 
 <div class="fieldcheckbox">
-  <%= f.check_box :demandeconseiller %>
   <%= f.label :demandeconseiller, 'Demander un compte Conseiller.' %>
+  <%= f.select :demandeconseiller, ['NON','OUI'] %>
 </div>
 
 

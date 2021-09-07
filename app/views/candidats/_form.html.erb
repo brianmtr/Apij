@@ -45,10 +45,12 @@
 
 
 
-    <div class="field">
-    <%= form.label :ajouter_un_cv %>
-    <%= form.file_field :image %>
-  </div>
+## With
+<div class="field">
+ <%= form.label :image %>
+ <%= form.file_field :image %>
+</div>
+
 
   <div class="actions">
     <%= form.submit %>

@@ -57,13 +57,14 @@ class CandidatsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_candidat
-      @candidat = Candidat.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def candidat_params
-      params.require(:candidat).permit(:firstname, :lastname, :email, :domain_exp, :image, :commune ) 
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_candidat
+    @candidat = Candidat.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def candidat_params
+    params.require(:candidat).permit(:firstname, :lastname, :email, :domain_exp, :image, :commune, :image_data)
+  end
 end
