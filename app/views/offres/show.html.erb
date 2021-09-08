@@ -1,40 +1,46 @@
 <p id="notice"><%= notice %></p>
+<div class="offreShow">
+  <div class="offreShowTop">
+    <p>
+      <strong><%= @offre.poste %></strong>
+      
+    </p>
+    <p>
+      
+      <%= @offre.commune %>
+    </p>
+  </div>
 
-<p>
-  <strong>Poste:</strong>
-  <%= @offre.poste %>
-</p>
+  <div class="offreShowTop">
+    <p>
+     
+      <%= @offre.adress %>
+    </p>
+    <p>
+     
+      <%= @offre.email %>
+    </p>
+  </div>
 
-<p>
-  <strong>salaire:</strong>
-  <%= @offre.salaire %>
-</p>
+  <div class="offreShowjob">
+  <p>
+    salaire:
+    <%= @offre.salaire %>
+  </p>
+  <p>
 
-<p>
-  <strong>commune:</strong>
-  <%= @offre.commune %>
-</p>
+    <%= @offre.contrat %>
+  </p>
+  </div>
+  <p>
+  <br>
+    <strong>description:</strong><br>
+    
+    <%= @offre.description %>
+  </p>
+</div>
 
-<p>
-  <strong>adresse:</strong>
-  <%= @offre.adress %>
-</p>
-
-<p>
-  <strong>email:</strong>
-  <%= @offre.email %>
-</p>
-
-<p>
-  <strong>contrat de travail:</strong>
-  <%= @offre.contrat %>
-</p>
-
-<p>
-  <strong>description:</strong>
-  <%= @offre.description %>
-</p>
-
-
-<%= link_to 'Edit', edit_offre_path(@offre) %> |
-<%= link_to 'Back', offres_path %>
+<div class="linkShow">
+<%= link_to 'Editer', edit_offre_path(@offre) %> |
+<%= link_to 'Retour', offres_path %>
+</div>

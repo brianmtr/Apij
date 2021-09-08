@@ -227,7 +227,45 @@ p {
     width: 90%;
 }
 
+.offreShow {
+    box-shadow: 20px 20px 50px #0000001c, 
+    -30px -30px 60px #00000028;
+    background-color: rgba(255, 255, 255, 0.603);
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius:10px;
+    padding: 10px;
+}
+
+.offreShow strong {
+    color: #000;
+}
+
+.offreShowTop {
+
+  
+}
+
+.offreShowjob {
+   
+}
+
+.linkShow {
+    text-align: center;
+}
+
+.linkShow a {
+    text-decoration: none;
+    color: #fff;
+}
+
 @media screen and(min-width: 576px) {
+
+    .offreShow {
+        margin-top: 50px;
+        width: 90%;
+    }
     .sectorJob {
         width: 40%;
         display: contents;
@@ -245,6 +283,15 @@ p {
 }
 
 @media screen and(min-width: 772px) {
+
+    .offreShow {
+
+        margin-top: 50px;
+        width: 70%;
+        margin-left: 15%;
+
+    }
+
     .card {
         width: 40% !important;
         margin: 0 !important;
@@ -273,6 +320,15 @@ p {
 }
 
 @media screen and(min-width: 1500px) {
+
+    .offreShow {
+
+        margin-top: 100px;
+        width: 60%;
+        margin-left: 20%;
+
+    }
+
     .sectorBox {
         height: 190px;
     }

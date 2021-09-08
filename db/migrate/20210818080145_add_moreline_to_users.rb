@@ -26,7 +26,9 @@ class AddMorelineToUsers < ActiveRecord::Migration[6.1]
     add_column :users, :Ressources_Humaine,     :boolean
     add_column :users, :Restauration,           :boolean
     add_column :users, :Humanitaire,            :boolean
-    add_column :users, :Industrie_Matériaux,    :boolean
+    add_column :users, :Industrie_Agroalimentaire,    :boolean
+    add_column :users, :Industrie_Metallurgie,        :boolean
+    add_column :users, :Industrie_Automobile,         :boolean
     add_column :users, :Sciences_Humaines,      :boolean
     add_column :users, :Maintenance,            :boolean
     add_column :users, :Numérique_Multimédia,   :boolean
@@ -37,7 +39,8 @@ class AddMorelineToUsers < ActiveRecord::Migration[6.1]
     add_column :users, :Estétique_Coiffure,     :boolean
     add_column :users, :Sport_Animation,        :boolean
     add_column :users, :Transport_Logistique,   :boolean
-    
+    add_column :users, :Non_marchant,           :boolean
+
     add_column :users, :rayonsearch,            :string
   end
 end

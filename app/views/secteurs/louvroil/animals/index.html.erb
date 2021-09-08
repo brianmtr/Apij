@@ -3,7 +3,7 @@
  <div class="containerCard">
 
  <% @offres.each do |offre| %>
- <% if offre.commune === ' Louvroil' && offre.domaine === 'Soins aux animaux' %>
+ <% if offre.commune === 'Louvroil' && offre.domaine === 'Soins aux animaux' %>
 <div class="card">
     <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
     <br>

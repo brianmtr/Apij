@@ -1,0 +1,2 @@
+module Candidat::IndustrieautomobileHelper
+end

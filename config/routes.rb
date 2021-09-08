@@ -2,6 +2,100 @@ Rails.application.routes.draw do
 
 
 
+  namespace :candidat do
+    get 'industrieautomobile/index'
+  end
+  namespace :candidat do
+    get 'industriemetallurgie/index'
+  end
+  namespace :candidat do
+    get 'industrieagroalimentaire/index'
+  end
+  namespace :domaine do
+    get 'industrieautomobile/index'
+  end
+  namespace :domaine do
+    get 'industriemetallurgie/index'
+  end
+  namespace :domaine do
+    get 'industrieagroalimentaire/index'
+  end
+  namespace :secteurs do
+    namespace :all do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :all do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :all do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :candidat do
+    get 'nonmarchant/index'
+  end
+  namespace :domaine do
+    get 'nonmarchant/index'
+  end
+  namespace :secteurs do
+    namespace :quesnoy do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maubeuge do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvroil do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jeumont do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :haumont do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :fourmies do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :feignie do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aulnoye do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :avesnes do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :landrecies do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :all do
+      get 'nonmarchant/index'
+    end
+  end
   resources :events
   
   namespace :secteur_candidat do

@@ -1,0 +1,2 @@
+module Domaine::IndustrieautomobileHelper
+end
