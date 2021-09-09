@@ -1,42 +1,167 @@
-
-
 <h1><span class="colorLetters">Offres</span> par commune</h1>
 
 <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
 <div class="newOffre"><%= link_to 'Créer une offre d\'emploi', new_offre_path %></div>
 <% end %>
 
-<div class="sectorJobOffres">
-    <div class="sectorJob">
-        <div class="sectorBox all"><%= link_to 'Tous...', secteurs_all_index_path %></div>
-        <div class="sectorBox avesnes"><%= link_to 'Avesnes Sur Helpe', secteurs_avesnes_index_path %> </div>   
-        <div class="sectorBox feignie"><%= link_to 'Feignies', secteurs_feignie_index_path %><br></div>       
-        <div class="sectorBox louvroil"><%= link_to 'Louvroil', secteurs_louvroil_index_path %></div>
-    </div>
-</div>
+        <ul class="list-group">
+            <div class="container search-table">
+                <div class="search-box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5>Rechercher une commune :</h5>
+                        </div>
+                        
+                        <div class="col-md-9">
+                            <input class="form-control" id="myInput" type="text" placeholder="Recherche.."> 
+                        </div> 
+                    </div>
+                </div>
+                <div class="search-listTwo">
+                    <div class="hiddenElem">
+                        <table class="table" id="myTable"> 
+                            <thead>
+                                <tr class="tr-thead">
+                                    <th class="th-sm ">Communes</th>
+                                    <th class="th-sm">Offres</th>
+                                </tr>
+                             </thead>                        
+                            <tbody>     
+                                <tr><td><div class="city all"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Toutes les communes', secteurs_all_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdfourmies"><%= Offre.count(1) %> disponibles</td></tr>
+                                <% end %>
 
-<div class="sectorJobOffres">
-    <div class="sectorJob">
-        <div class="sectorBox fourmies"><%= link_to 'Fourmies', secteurs_fourmies_index_path %></div>
-        <div class="sectorBox haumont"><%= link_to 'Haumont', secteurs_haumont_index_path %></div> 
-        <div class="sectorBox maubeuge"><%= link_to 'Maubeuge', secteurs_maubeuge_index_path %></div>
-        <div class="sectorBox jeumont"><%= link_to 'Jeumont', secteurs_jeumont_index_path %></div>
-    </div> 
-</div>
+                                <tr><td><div class="city landrecies"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Landrecies', secteurs_landrecies_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Landrecies').count(1) %> disponibles</td></tr>
+                                <% end %>
+                            
+                                <tr><td><div class="city quesnoy"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Le Quesnoy', secteurs_quesnoy_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Quesnoy').count(1) %> disponibles</td></tr>
+                                <% end %>
 
-<div class="sectorJobOffres">
-    <div class="sectorJob">
-        <div class="sectorBox aulnoye"><%= link_to 'Aulnoye-Aymeries', secteurs_aulnoye_index_path %></div>
-        <div class="sectorBox quesnoy"><%= link_to 'Le Quesnoy', secteurs_quesnoy_index_path %></div>
-        <div class="sectorBox landrecies"><%= link_to 'Landrecies', secteurs_landrecies_index_path %></div>
-        <div class="sectorBox blank"></div>
-    </div> 
-</div>
+                                <tr><td><div class="city fourmies"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Fourmies', secteurs_fourmies_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Fourmies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city avesnes"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Avesnes Sur Helpe', secteurs_avesnes_index_path %> </div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Avesnes-Sur-Helpe').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city feignie"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Feignies', secteurs_feignie_index_path %><br></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Feignies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city haumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Haumont', secteurs_haumont_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Haumont').count(1) %> disponibles</td></tr>
+                                <% end %>
 
 
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Maubeuge', secteurs_maubeuge_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Maubeuge').count(1) %> disponibles</td></tr>
+                                <% end %>
+                                
+                                <tr><td><div class="city louvroil"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Louvroil', secteurs_louvroil_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Louvroil').count(1) %> disponibles</td></tr>
+                                <% end %>
+                                
+                                <tr><td><div class="city jeumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Jeumont', secteurs_jeumont_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Jeumont').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                               <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Aulnoye-Aymeries', secteurs_aulnoye_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Aunloye-Aymeries').count(1) %> disponibles</td></tr>
+                                <% end %>
+                            </tbody>
+                        </table>       
+                    </div>
+                </div>
+            </div>
+        </ul>
+
+<style>
+    .tdland:nth-of-type(1), 
+    .tdfourmies:nth-of-type(1) {
+        display:none;
+    }
+
+    .table {
+        margin-left: 0%;
+    }
+
+    .table a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .search-table {
+        margin-top: 5%;
+    }
+
+    .search-box {
+        background: #c1c1c1;
+        border: 1px solid #ababab;
+        padding: 3%;
+    }
+
+    .search-box input:focus {
+        box-shadow:none;
+        border:2px solid #eeeeee;
+    }
+
+    .search-list {
+        background: #fff;
+        border: 1px solid #ababab;
+        border-top: none;
+        width: 65%;
+        margin-left: 17.5%;
+    }
+
+    .search-list h3 {
+        background: #eee;
+        padding: 3%;
+        margin-bottom: 0%;
+    }
+
+    .search-listTwo {
+        background-color: white;
+    }
+
+    .hiddenElem {
+        height: 300px;
+        overflow: auto;
+    }
 
 
+    .search-box {
+        position: sticky;
+    }
 
+    .tr-thead {
+        justify-content: center;
+    }
+</style>
 
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
 
 
