@@ -82,6 +82,16 @@
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Aunloye-Aymeries').count(1) %> disponibles</td></tr>
                                 <% end %>
+
+                                <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Aibes', secteurs_aibes_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Aibes').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Assevent', secteurs_assevent_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Assevent').count(1) %> disponibles</td></tr>
+                                <% end %>
                             </tbody>
                         </table>       
                     </div>

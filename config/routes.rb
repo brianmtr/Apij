@@ -2,6 +2,242 @@ Rails.application.routes.draw do
 
 
 
+  namespace :secteurs do
+    namespace :assevent do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :assevent do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'assevent/index'
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'industrieagroautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'industrieagrometallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :aibes do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'aibes/index'
+  end
   namespace :candidat do
     get 'industrieautomobile/index'
   end

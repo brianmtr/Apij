@@ -81,6 +81,21 @@
     background-position: center;
 }
 
+.industrieagroalimentaire {
+    background-image: url(transport.png);
+    background-position: center;
+}
+
+.industriemetallurgie {
+    background-image: url(transport.png);
+    background-position: center;
+}
+
+.industrieautomobile {
+    background-image: url(transport.png);
+    background-position: center;
+}
+
 .collectivite {
     background-image: url(collectivite.png);
     background-position: center;
@@ -99,4 +114,34 @@
 .sante {
     background-image: url(sante.png);
     background-position: center;
+}
+
+.badge {
+    background-color: red ;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100%;
+
+    padding-top: 10px;
+    width: 40px !important;
+   
+}
+
+.containerBadge {
+
+    width: 100%;
+    position: absolute;
+}
+
+
+.badge p {
+    font-size: 20px;
+    
+}
+
+
+.containerBadge:nth-of-type(n+2),
+.badge:nth-of-type(n+2)
+{
+    display: none;
 }

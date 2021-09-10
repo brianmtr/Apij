@@ -56,7 +56,9 @@
 .communication, .banque, .batiment, .restauration,
 .maintenance, .service, .spectacle, .animals,
 .support, .transport, .collectivite, .art,
-.servicePublic, .association, .sante, .commerce {
+.servicePublic, .association, .sante, .commerce, 
+.industrieautomobile, .industriemetallurgie,
+.industrieagroalimentaire {
     -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
