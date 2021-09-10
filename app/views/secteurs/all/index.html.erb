@@ -43,7 +43,7 @@
      <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_all_banque_index_path %>
         <% @offres.each do |offre| %>
         <div class="containerBadge">
-            <div class="badge"><p><%= @offres.where(domaine: 'Banque, assur. immo.').count(1) %><p></div>
+            <div class="badge"><p><%= @offres.where(domaine: 'Banque, assurance, immobilier').count(1) %><p></div>
             </div> 
         <% end %>
      </div>
@@ -67,7 +67,7 @@
     <div class="sectorBox batiment"><%= link_to 'Bâtiment/Travaux public', secteurs_all_batiment_index_path %>
         <% @offres.each do |offre| %>
         <div class="containerBadge">
-            <div class="badge"><p><%= @offres.where(domaine: 'Bâtiment/Travaux public').count(1) %><p></div>
+            <div class="badge"><p><%= @offres.where(domaine: 'Bâtiment').count(1) %><p></div>
             </div> 
         <% end %>
     </div>
@@ -78,7 +78,7 @@
     <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration', secteurs_all_restauration_index_path %>
         <% @offres.each do |offre| %>
         <div class="containerBadge">
-            <div class="badge"><p><%= @offres.where(domaine: 'Hôtellerie/Restauration').count(1) %><p></div>
+            <div class="badge"><p><%= @offres.where(domaine: 'Restauration').count(1) %><p></div>
             </div> 
         <% end %>
 </div>
@@ -146,7 +146,7 @@
     <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', secteurs_all_spectacle_index_path %>
         <% @offres.each do |offre| %>
         <div class="containerBadge">
-            <div class="badge"><p><%= @offres.where(domaine: 'Spectacle/Événementiel').count(1) %><p></div>
+            <div class="badge"><p><%= @offres.where(domaine: 'Spectacle').count(1) %><p></div>
             </div> 
         <% end %>
     </div>

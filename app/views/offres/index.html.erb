@@ -92,6 +92,13 @@
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Assevent').count(1) %> disponibles</td></tr>
                                 <% end %>
+
+                                <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Bachant', secteurs_bachant_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Bachant').count(1) %> disponibles</td></tr>
+                                <% end %>
+                            </tbody>
+
                             </tbody>
                         </table>       
                     </div>

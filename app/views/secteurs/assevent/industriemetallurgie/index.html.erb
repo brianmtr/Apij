@@ -1,9 +1,9 @@
-<h1>Assevent: Industrie Automobile</h1>
+<h1>Assevent: Industrie Metallurgie</h1>
 
  <div class="containerCard">
 
  <% @offres.each do |offre| %>
- <% if offre.commune === 'Assevent' && offre.domaine === 'Industrie Automobile' %>
+ <% if offre.commune === 'Assevent' && offre.domaine === 'Industrie Metallurgie' %>
 <div class="card">
     <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
     <br>

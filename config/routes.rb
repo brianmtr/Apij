@@ -3,6 +3,124 @@ Rails.application.routes.draw do
 
 
   namespace :secteurs do
+    namespace :bachant do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :bachant do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'bachant/index'
+  end
+  namespace :secteurs do
     namespace :assevent do
       get 'transport/index'
     end
