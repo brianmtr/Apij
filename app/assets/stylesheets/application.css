@@ -86,8 +86,9 @@ h1 {
  
  footer {
     width: 100%;
-    margin-top: 220px;
+    margin-top: 201px;
     background-color: #FCB813;
+    position: absolute;
 }
 
 p {
