@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_07_124200) do
+ActiveRecord::Schema.define(version: 2021_09_21_104548) do
 
   create_table "books", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "firstname"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2021_09_07_124200) do
     t.string "domain_exp", default: "", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "image_data"
   end
 
   create_table "candidatures", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -35,6 +36,10 @@ ActiveRecord::Schema.define(version: 2021_09_07_124200) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "image_data"
+  end
+
+  create_table "city", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "maubeuge"
   end
 
   create_table "events", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -129,6 +134,10 @@ ActiveRecord::Schema.define(version: 2021_09_07_124200) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "maubeuge", default: "Maubeuge", null: false
+    t.string "avesnes", default: "Avesnes Sur Helpe", null: false
+    t.string "feignies", default: "Feignie", null: false
+    t.string "louvroil", default: "Louvroil", null: false
   end
 
   create_table "publics", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
