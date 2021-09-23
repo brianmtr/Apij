@@ -16,7 +16,9 @@
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
+  <%
+=begin%>
+ <div class="field">
     <p class="event-field"><%= form.label :date %> et heure (exemple: 20/03/2000 18:20)</p>
     <%= form.datetime_field :date %>
   </div>
@@ -30,7 +32,9 @@
   <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description %>
-  </div>
+  </div> 
+<%
+=end%>
 
   <div class="field">
   <%= form.label :Choisir_une_image %>

@@ -16,6 +16,15 @@
     width: 100%;
 }
 
+.linkHomeEvent a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.linkHomeEvent a:hover {
+    color: orange;
+}
 
 
 .eventInfos {

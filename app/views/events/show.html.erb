@@ -33,9 +33,8 @@
     <p class="image-show">
         <%= image_tag @event.image_url %>
     </p>
-
-    <%= link_to 'Retour', :back %>
 </div>
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<div class="linkCandidats">
+    <%= link_to 'Editer', edit_event_path(@event) %> |
+    <%= link_to 'Retour', events_path %>
+</div>

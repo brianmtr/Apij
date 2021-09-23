@@ -112,7 +112,12 @@
         <br>
         <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
           <div class="linkHomeEvent">
-            <%= link_to 'En savoir plus', event %>
+            <%
+=begin%>
+ <%= link_to 'En savoir plus', event %> 
+<%
+=end%>
+
             <%= link_to 'Editer événement', edit_event_path(event) %>
             <%= link_to 'Supprimer événement', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </div>

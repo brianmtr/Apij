@@ -26,9 +26,8 @@
         <br>
         <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
           <div class="linkHomeEvent">
-            <%= link_to 'Show', event %>
-            <%= link_to 'Edit', edit_event_path(event) %>
-            <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <%= link_to 'Editer', edit_event_path(event) %>
+            <%= link_to 'Supprimer', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </div>
         <% end %>
       </div>

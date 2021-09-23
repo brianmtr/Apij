@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+
+<div class="candidatsShow">
+  <div class="candidatsShowTop">
 <p>
   <strong>Prénom:</strong>
   <%= @candidat.firstname %>
@@ -19,11 +22,17 @@
   <strong>Domaine:</strong>
   <%= @candidat.domain_exp %>
 </p>
-       
+<button>    
 <p>
  <td><a href="<%= @candidat.image_url %>" download>Télécharger le CV</a></td>
-
 </p>
+</button>
+</div>
 
+</div>
+<div class="linkCandidats">
 <%= link_to 'Editer', edit_candidat_path(@candidat) %> |
 <%= link_to 'Retour', candidats_path %>
+</div>
+
+
