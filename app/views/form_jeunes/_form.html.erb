@@ -21,7 +21,7 @@
 
   <div class="fieldFormJeune dateEntretien">
     <%= form.label :Date_entretien %>
-    <%= form.date_select :maintenance_date %>
+    <%= form.date_select :maintenance_date, order: [:day, :month, :year], prompt: { day: 'Jour', month: 'Mois', year: 'Année' }, start_year: Date.today.year - 0, end_year: Date.today.year - 100  %>
   </div>
 
   <div class="fieldFormJeune Ml">
@@ -34,37 +34,42 @@
     <%= form.check_box :plie %>
     <%= form.label :plie %>
   </div>
+
+    <div class="fieldFormJeune">
+    <%= form.label :autres %>
+    <%= form.text_field :autres %>
+  </div>
 </div>
 
 <div class="boxInfoPublic">
 <h3>Informations Public</h3>
   <div class="fieldFormJeune">
-    <%= form.label :firstname %>
+    <%= form.label :prénom %>
     <%= form.text_field :firstname %>
   </div>
 <br>
   <div class="fieldFormJeune">
-    <%= form.label :lastname %>
+    <%= form.label :nom %>
     <%= form.text_field :lastname %>
   </div>
 <br>
   <div class="fieldFormJeune BornForm">
-    <%= form.label :born %>
-    <%= form.date_select :born %>
+    <%= form.label :date_de_naissance %>
+    <%= form.date_select :born, order: [:day, :month, :year], prompt: { day: 'Jour', month: 'Mois', year: 'Année' }, start_year: Date.today.year - 0, end_year: Date.today.year - 100  %>
   </div>
 <br>
   <div class="fieldFormJeune">
-    <%= form.label :address %>
+    <%= form.label :adresse %>
     <%= form.text_field :address %>
   </div>
 <br>
   <div class="fieldFormJeune">
-    <%= form.label :tel %>
+    <%= form.label :téléphone %>
     <%= form.text_field :tel %>
   </div>
 <br>
   <div class="fieldFormJeune">
-    <%= form.label :mail %>
+    <%= form.label :email %>
     <%= form.text_field :mail %>
   </div>
 <br>
@@ -99,6 +104,11 @@
     <%= form.check_box :qpv %>
     <%= form.label :"QPV" %>
   </div>  
+
+      <div class="fieldFormJeune PEForm">
+    <%= form.check_box :RQTH %>
+    <%= form.label :"RQTH" %>
+  </div>  
 </div>
 
   <h3>Mobilité</h3>
@@ -131,7 +141,7 @@
   <h3>Experiences</h3>
 
   <div class="fieldFormJeune">
-    <%= form.label :"Formation_et/ou_diplôme" %>
+    <%= form.label :"Formation_et/ou_dernier_diplôme" %>
     <%= form.text_area :formation_diplome %>
   </div>
 <br>
@@ -149,12 +159,12 @@
 
   <div class="fieldFormJeune BornForm ">
     <%= form.label :"date_de_l'\obtention" %>
-    <%= form.date_select :date_obtention %>
+    <%= form.date_select :date_obtention, order: [:day, :month, :year], prompt: { day: 'Jour', month: 'Mois', year: 'Année' }, start_year: Date.today.year - 0, end_year: Date.today.year - 100 %>
   </div>
 <br>
 
   <div class="fieldFormJeune">
-    <%= form.label :"Experience_poste" %>
+    <%= form.label :"Experience_métier" %>
     <%= form.text_area :post_exp %>
   </div>
 <br>
@@ -167,13 +177,13 @@
 <br>
 
   <div class="fieldFormJeune">
-    <%= form.label :"Experience_mission" %>
+    <%= form.label :"Activité_mission" %>
     <%= form.text_area :mission_exp %>
   </div>
 <br>
 
   <div class="fieldFormJeune">
-    <%= form.label :"Experience_contrat" %>
+    <%= form.label :"Type_de_contrat" %>
     <%= form.text_area :contrat_exp %>
   </div>
 <br>
@@ -189,7 +199,7 @@
 <br>
 
   <div class="fieldFormJeune">
-    <%= form.label :"Poste_occupé" %>
+    <%= form.label :"Si actif,_poste_occupé_actuellement" %>
     <%= form.text_area :metier_exp %>
   </div>
 <br>
@@ -201,7 +211,7 @@
 
   <div class="fieldFormJeune BornForm">
     <%= form.label :"Alternance" %>
-    <%= form.select :alternance_exp, ['Oui', 'Non']%>
+    <%= form.select :alternance_exp, ['Contrat pro', 'Apprentissage', 'Non']%>
   </div>
 
   <h3>Bilan parcours professionnel</h3>
@@ -233,6 +243,12 @@
   <div class="fieldFormJeune">
     <%= form.label :"Vos_objectifs_à_court_terme:" %>
     <%= form.text_area :courtterme_bilan %>
+  </div>
+<br>
+
+  <div class="fieldFormJeune">
+    <%= form.label :"Vos_objectifs_à_moyen_terme:" %>
+    <%= form.text_area :moyenterme_bilan %>
   </div>
 <br>
 
@@ -337,7 +353,7 @@
 =end%>
 
   <div class="fieldFormJeune">
-    <%= form.label :image %>
+    <%= form.label :Ajouter_un_CV %>
     <%= form.file_field :image, value: form_jeune.cached_image_data %>
   </div>
 
@@ -363,25 +379,24 @@
     <%= form.label :"Poste_dans_l\'entreprise:" %>
     <%= form.text_area :post_situation %>
   </div>
-<br>3 errors prohibited this user from being saved:
-Email can't be blank
+<br>
 
   <div class="fieldFormJeune">
     <%= form.label :"Depuis_quand_?" %>
-    <%= form.date_select :date_situation %>
+    <%= form.date_select :date_situation, order: [:day, :month, :year], prompt: { day: 'Jour', month: 'Mois', year: 'Année' }, start_year: Date.today.year - 0, end_year: Date.today.year - 100  %>
   </div>
 
 <h3>Sortie positive</h3>
 
   <div class="fieldFormJeune BornForm">
     <%= form.label :"sortie_positif:" %>
-    <%= form.select :sortie_positif, ['CDI','Formation']%>
+    <%= form.select :sortie_positif, ['CDI','Formation','CDD de plus de 6 mois et 1 jour']%>
   </div>
 <br>
 
   <div class="fieldFormJeune BornForm">
     <%= form.label :"Depuis_quand_?" %>
-    <%= form.date_select :date_positif %>
+    <%= form.date_select :date_positif, order: [:day, :month, :year], prompt: { day: 'Jour', month: 'Mois', year: 'Année' }, start_year: Date.today.year - 0, end_year: Date.today.year - 100  %>
   </div>
 <br>
   <div class="fieldFormJeune">

@@ -5,6 +5,7 @@ class AddMorelineToUsers < ActiveRecord::Migration[6.1]
     add_column :users, :scolorise,              :string
     add_column :users, :inscritml,              :string
     add_column :users, :etrecontacte,           :string
+    add_column :users, :inscritplie,            :string
 
     add_column :users, :Agriculture,            :boolean
     add_column :users, :Alimentation,           :boolean

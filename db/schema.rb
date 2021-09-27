@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2021_09_21_104548) do
     t.datetime "maintenance_date"
     t.boolean "ml"
     t.boolean "plie"
+    t.string "autres"
     t.string "firstname"
     t.string "lastname"
     t.datetime "born"
@@ -71,6 +72,7 @@ ActiveRecord::Schema.define(version: 2021_09_21_104548) do
     t.boolean "yes_rsa"
     t.boolean "no_rsa"
     t.boolean "qpv"
+    t.boolean "RQTH"
     t.string "permis", default: "", null: false
     t.string "locomotion", default: "", null: false
     t.string "mobilite_duration", default: "", null: false
@@ -93,6 +95,7 @@ ActiveRecord::Schema.define(version: 2021_09_21_104548) do
     t.text "meilleurexp_bilan"
     t.text "finishedexp_bilan"
     t.text "courtterme_bilan"
+    t.text "moyenterme_bilan"
     t.text "longterme_bilan"
     t.text "logicielexp_bilan"
     t.string "loisirs_bilan", default: "", null: false
@@ -179,6 +182,7 @@ ActiveRecord::Schema.define(version: 2021_09_21_104548) do
     t.string "scolorise"
     t.string "inscritml"
     t.string "etrecontacte"
+    t.string "inscritplie"
     t.boolean "Agriculture"
     t.boolean "Alimentation"
     t.boolean "Animaux"

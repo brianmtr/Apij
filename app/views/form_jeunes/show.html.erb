@@ -21,6 +21,12 @@
 <p>Fait parti du plie</p>
 <% end %>
 
+
+<p>
+  <strong>Autres:</strong>
+  <%= @form_jeune.autres %>
+</p>
+
 <h3>Information jeune</h3>
 <p>
   <strong>Prénom:</strong>
@@ -76,6 +82,17 @@
     Non
   <% end %>
 <p>
+
+
+<p>
+  <strong>RQTH:</strong>
+  <%if @form_jeune.RQTH %>
+    Oui
+  <% elsif %>
+    Non
+  <% end %>
+<p>
+
 
 <h3>Mobilité</h3>
 
@@ -187,6 +204,12 @@
   <%= @form_jeune.courtterme_bilan %>
 </p>
 
+
+<p>
+  <strong>Vos objectifs à moyen terme:</strong>
+  <%= @form_jeune.moyenterme_bilan %>
+</p>
+
 <p>
   <strong>Vos objectifs à long terme:</strong>
   <%= @form_jeune.longterme_bilan %>
@@ -245,7 +268,7 @@
 </p>
 
 <p>
-  <strong>Vos connaissances sur le métier ?</strong>
+  <strong>Vos connaissances sur le métier ciblé ?</strong>
   <%= @form_jeune.connaissancemetier_eval %>
 </p>
 

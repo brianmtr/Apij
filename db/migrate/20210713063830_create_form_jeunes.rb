@@ -8,6 +8,8 @@ class CreateFormJeunes < ActiveRecord::Migration[6.1]
     t.datetime "maintenance_date"
     t.boolean "ml"
     t.boolean "plie"
+    t.string "autres"
+
 
     # public
 
@@ -30,7 +32,7 @@ class CreateFormJeunes < ActiveRecord::Migration[6.1]
     t.boolean "yes_rsa"
     t.boolean "no_rsa"
     t.boolean "qpv"
-
+    t.boolean "RQTH"
     # Mobilité
 
     t.string :permis,               null: false, default: ""
@@ -61,6 +63,7 @@ class CreateFormJeunes < ActiveRecord::Migration[6.1]
     t.text :meilleurexp_bilan
     t.text :finishedexp_bilan
     t.text :courtterme_bilan
+    t.text :moyenterme_bilan
     t.text :longterme_bilan
 
     t.text :logicielexp_bilan
