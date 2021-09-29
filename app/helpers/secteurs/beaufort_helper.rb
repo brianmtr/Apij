@@ -1,0 +1,2 @@
+module Secteurs::BeaufortHelper
+end
