@@ -1,0 +1,2 @@
+module Secteurs::NoyellessursambreHelper
+end

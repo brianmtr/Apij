@@ -1,9 +1,9 @@
-<h1>Gognies-chaussée: Service public</h1>
+<h1>Leval: Service public</h1>
 
  <div class="containerCard">
 
  <% @offres.each do |offre| %>
- <% if offre.commune === 'Gognies-chaussée' && offre.domaine === 'Service public' %>
+ <% if offre.commune === 'Leval' && offre.domaine === 'Service public' %>
 <div class="card">
     <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
     <br>

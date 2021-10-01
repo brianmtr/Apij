@@ -1,0 +1,2 @@
+module Secteurs::LimontfontaineHelper
+end
