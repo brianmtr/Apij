@@ -1,0 +1,26 @@
+<h1>Houdain-lez-bavay: Installation et Maintenance</h1>
+
+ <div class="containerCard">
+
+ <% @offres.each do |offre| %>
+ <% if offre.commune === 'Houdain-lez-bavay' && offre.domaine === 'Maintenance' %>
+<div class="card">
+    <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
+    <br>
+    <p><%= offre.contrat %> </p>
+    <p><%= offre.salaire %> € par mois</p>
+    <p><%= offre.email %></p>
+    <div class="scroller">
+    <small><%= offre.description %></small>
+    </div>   
+    <br>
+    <p class="link">
+      <%= link_to 'Editer', edit_offre_path(offre) %>
+      <%= link_to 'Supprimer', offre, method: :delete, data: { confirm: 'Êtes-vous certain ?' } %>
+      <a href="mailto:<%= offre.email %>">POSTULER</a>
+    </p>
+    
+  </div>  
+    <% end %>
+ <% end %>
+</div>

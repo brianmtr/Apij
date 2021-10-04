@@ -1,9 +1,9 @@
-<h1>Limont-fontaine: Espace vert</h1>
+<h1>Limont-fontaine: Communication, média et Multimédia</h1>
 
  <div class="containerCard">
 
  <% @offres.each do |offre| %>
- <% if offre.commune === 'Limont-fontaine' && offre.domaine === 'Espaces verts' %>
+ <% if offre.commune === 'Limont-fontaine' && offre.domaine === 'Communication' %>
 <div class="card">
     <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
     <br>

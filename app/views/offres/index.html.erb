@@ -32,19 +32,9 @@
                                     <td class="tdfourmies"><%= Offre.count(1) %> disponibles</td></tr>
                                 <% end %>
 
-                                <tr><td><div class="city landrecies"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Landrecies', secteurs_landrecies_index_path %></div></td>
+                                <tr><td><div class="city avesnes"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Anor', secteurs_anor_index_path %> </div></td>
                                 <% @offres.each do |offre| %>
-                                    <td class="tdland"><%= Offre.where(commune:'Landrecies').count(1) %> disponibles</td></tr>
-                                <% end %>
-                            
-                                <tr><td><div class="city quesnoy"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Le Quesnoy', secteurs_quesnoy_index_path %></div></td>
-                                <% @offres.each do |offre| %>
-                                    <td class="tdland"><%= Offre.where(commune:'Quesnoy').count(1) %> disponibles</td></tr>
-                                <% end %>
-
-                                <tr><td><div class="city fourmies"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Fourmies', secteurs_fourmies_index_path %></div></td>
-                                <% @offres.each do |offre| %>
-                                    <td class="tdland"><%= Offre.where(commune:'Fourmies').count(1) %> disponibles</td></tr>
+                                    <td class="tdland"><%= Offre.where(commune:'Anor').count(1) %> disponibles</td></tr>
                                 <% end %>
 
                                 <tr><td><div class="city avesnes"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Avesnes Sur Helpe', secteurs_avesnes_index_path %> </div></td>
@@ -62,19 +52,34 @@
                                     <td class="tdland"><%= Offre.where(commune:'Assevent').count(1) %> disponibles</td></tr>
                                 <% end %>
 
+                                <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Audignies', secteurs_audignies_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Audignies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
                                 <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Aulnoye-Aymeries', secteurs_aulnoye_index_path %></div></td>
                                 <% @offres.each do |offre| %>
-                                    <td class="tdland"><%= Offre.where(commune:'Aunloye-Aymeries').count(1) %> disponibles</td></tr>
+                                    <td class="tdland"><%= Offre.where(commune:'Aulnoye-Aymeries').count(1) %> disponibles</td></tr>
                                 <% end %>
 
                                 <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Bachant', secteurs_bachant_index_path %></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Bachant').count(1) %> disponibles</td></tr>
                                 <% end %>
+
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Baives', secteurs_baives_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Baives').count(1) %> disponibles</td></tr>
+                                <% end %>
                 
                                 <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Beaufort', secteurs_beaufort_index_path %></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Beaufort').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Bellignies', secteurs_bellignies_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Bellignies').count(1) %> disponibles</td></tr>
                                 <% end %>
 
                                 <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Berlaimont', secteurs_berlaimont_index_path %></div></td>
@@ -136,10 +141,20 @@
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Élesmes').count(1) %> disponibles</td></tr>
                                 <% end %>
+
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Eppe-sauvage', secteurs_eppesauvage_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Eppe-sauvage').count(1) %> disponibles</td></tr>
+                                <% end %>
                             
                                 <tr><td><div class="city feignie"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Feignies', secteurs_feignie_index_path %><br></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Feignies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city aulnoye"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Féron', secteurs_feron_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Féron').count(1) %> disponibles</td></tr>
                                 <% end %>
 
                                 <tr><td><div class="city feignie"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Ferrière-la-grande', secteurs_ferrierelagrande_index_path %><br></div></td>
@@ -152,9 +167,24 @@
                                     <td class="tdland"><%= Offre.where(commune:'Ferrière-la-petite').count(1) %> disponibles</td></tr>
                                 <% end %>
 
+                                <tr><td><div class="city fourmies"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Fourmies', secteurs_anor_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Fourmies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city feignie"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Glageon', secteurs_glageon_index_path %><br></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Glageon').count(1) %> disponibles</td></tr>
+                                <% end %>
+
                                 <tr><td><div class="city feignie"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Gognies-chaussée', secteurs_gognieschaussee_index_path %><br></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Gognies-chaussée').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city feignie"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Gussignies', secteurs_gussignies_index_path %><br></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Gussignies').count(1) %> disponibles</td></tr>
                                 <% end %>
 
                                 <tr><td><div class="city haumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Haumont', secteurs_haumont_index_path %></div></td>
@@ -162,9 +192,24 @@
                                     <td class="tdland"><%= Offre.where(commune:'Haumont').count(1) %> disponibles</td></tr>
                                 <% end %>
 
+                                <tr><td><div class="city haumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Hon-hergies', secteurs_honhergies_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Hon-hergies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city haumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Houdain-lez-bavay', secteurs_houdainlezbavay_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Houdain-lez-bavay').count(1) %> disponibles</td></tr>
+                                <% end %>
+
                                 <tr><td><div class="city jeumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Jeumont', secteurs_jeumont_index_path %></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Jeumont').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city landrecies"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Landrecies', secteurs_landrecies_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Landrecies').count(1) %> disponibles</td></tr>
                                 <% end %>
 
                                 <tr><td><div class="city jeumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Leval', secteurs_leval_index_path %></div></td>
@@ -172,9 +217,19 @@
                                     <td class="tdland"><%= Offre.where(commune:'Leval').count(1) %> disponibles</td></tr>
                                 <% end %>
 
+                                <tr><td><div class="city quesnoy"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Le Quesnoy', secteurs_quesnoy_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Quesnoy').count(1) %> disponibles</td></tr>
+                                <% end %>
+
                                 <tr><td><div class="city jeumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Limont-fontaine', secteurs_limontfontaine_index_path %></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Limont-fontaine').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city jeumont"><input type="checkbox" id="horns" name="horns"> <%= link_to 'La longueville', secteurs_longueville_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'La longueville').count(1) %> disponibles</td></tr>
                                 <% end %>
 
                                 <tr><td><div class="city louvroil"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Louvroil', secteurs_louvroil_index_path %></div></td>
@@ -202,6 +257,11 @@
                                     <td class="tdland"><%= Offre.where(commune:'Monceau-saint-waast').count(1) %> disponibles</td></tr>
                                 <% end %>
 
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Moustier-en-fagne', secteurs_moustierenfagne_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Moustier-en-fagne').count(1) %> disponibles</td></tr>
+                                <% end %>
+
                                 <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Neuf-mesnil', secteurs_neufmesnil_index_path %></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Neuf-mesnil').count(1) %> disponibles</td></tr>
@@ -215,6 +275,11 @@
                                 <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Obrechies', secteurs_obrechies_index_path %></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Obrechies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Ohain', secteurs_ohain_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Ohain').count(1) %> disponibles</td></tr>
                                 <% end %>
 
                                 <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Pont-sur-sambre', secteurs_pontsursambre_index_path %></div></td>
@@ -252,6 +317,16 @@
                                     <td class="tdland"><%= Offre.where(commune:'Sassegnies').count(1) %> disponibles</td></tr>
                                 <% end %>
 
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Taisnières-sur-hon', secteurs_taisnieressurhon_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Taisnières-sur-hon').count(1) %> disponibles</td></tr>
+                                <% end %>                               
+
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Trelon', secteurs_trelon_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Trelon').count(1) %> disponibles</td></tr>
+                                <% end %>
+
                                 <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Vieux-mesnil', secteurs_vieuxmesnil_index_path %></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Vieux-mesnil').count(1) %> disponibles</td></tr>
@@ -261,6 +336,18 @@
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Villers-sire-nicole').count(1) %> disponibles</td></tr>
                                 <% end %>
+
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Wignehies', secteurs_wignehies_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Wignehies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+                                <tr><td><div class="city maubeuge"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Willies', secteurs_willies_index_path %></div></td>
+                                <% @offres.each do |offre| %>
+                                    <td class="tdland"><%= Offre.where(commune:'Willies').count(1) %> disponibles</td></tr>
+                                <% end %>
+
+
                             </tbody>
                         </table>       
                     </div>

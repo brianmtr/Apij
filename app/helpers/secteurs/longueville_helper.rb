@@ -1,0 +1,2 @@
+module Secteurs::LonguevilleHelper
+end
