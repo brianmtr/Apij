@@ -1,0 +1,8 @@
+require "test_helper"
+
+class Secteurs::Jenlain::AssociationControllerTest < ActionDispatch::IntegrationTest
+  test "should get index" do
+    get secteurs_jenlain_association_index_url
+    assert_response :success
+  end
+end
