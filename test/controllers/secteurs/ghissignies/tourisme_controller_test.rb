@@ -1,0 +1,8 @@
+require "test_helper"
+
+class Secteurs::Ghissignies::TourismeControllerTest < ActionDispatch::IntegrationTest
+  test "should get index" do
+    get secteurs_ghissignies_tourisme_index_url
+    assert_response :success
+  end
+end

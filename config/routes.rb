@@ -4,6 +4,2366 @@ Rails.application.routes.draw do
 
 
   namespace :secteurs do
+    namespace :hecq do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :hecq do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'hecq/index'
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :poixdunord do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'poixdunord/index'
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :neuvilleenavesnois do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'neuvilleenavesnois/index'
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :englefontaine do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'englefontaine/index'
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :salesches do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'salesches/index'
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :raucourtaubois do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'raucourtaubois/index'
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :louvigniesquesnoy do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'louvigniesquesnoy/index'
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ghissignies do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'ghissignies/index'
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :beaudignies do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'beaudignies/index'
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :jolimetz do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'jolimetz/index'
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :potelle do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'potelle/index'
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :ruesnes do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'ruesnes/index'
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :sepmeries do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'sepmeries/index'
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :maresches do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'maresches/index'
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :villerspol do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'villerspol/index'
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :orsinval do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'orsinval/index'
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :frasnoy do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'frasnoy/index'
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :gommegnies do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'gommegnies/index'
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :preuxausart do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'preuxausart/index'
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'transport/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'tourisme/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'support/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'spectacle/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'servicepublic/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'service/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'sante/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'restauration/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'nonmarchant/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'maintenance/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'industriemetallurgie/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'industrieautomobile/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'industrieagroalimentaire/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'espacevert/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'communication/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'commerce/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'collectivite/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'batiment/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'banque/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'association/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'art/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'animals/index'
+    end
+  end
+  namespace :secteurs do
+    namespace :wargnieslepetit do
+      get 'agriculture/index'
+    end
+  end
+  namespace :secteurs do
+    get 'wargnieslepetit/index'
+  end
+  namespace :secteurs do
     namespace :wargnieslegrand do
       get 'transport/index'
     end
