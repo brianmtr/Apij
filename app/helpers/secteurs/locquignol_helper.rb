@@ -1,0 +1,2 @@
+module Secteurs::LocquignolHelper
+end
