@@ -1,0 +1,25 @@
+<h1>Dourlers: Industrie Metallurgie</h1>
+
+ <div class="containerCard">
+
+ <% @offres.each do |offre| %>
+ <% if offre.commune === 'Dourlers' && offre.domaine === 'Industrie Metallurgie' %>
+<div class="card">
+    <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
+    <br>
+    <p><%= offre.contrat %> </p>
+    <p><%= offre.salaire %> € par mois</p>
+    <p><%= offre.email %></p>
+    <div class="scroller">
+    <small><%= offre.description %></small>
+    </div>    <br>
+    <p class="link">
+      <%= link_to 'Editer', edit_offre_path(offre) %>
+      <%= link_to 'Supprimer', offre, method: :delete, data: { confirm: 'Êtes-vous certain ?' } %>
+      <a href="mailto:<%= offre.email %>">POSTULER</a>
+    </p>
+    
+  </div>  
+    <% end %>
+ <% end %>
+</div>

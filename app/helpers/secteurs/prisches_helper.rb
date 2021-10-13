@@ -1,0 +1,2 @@
+module Secteurs::PrischesHelper
+end
