@@ -68,6 +68,7 @@
                 <table class="table" id="myTable">
                        <thead>
          <tr>
+            <th class="th-sm">Statut</th>
             <th class="th-sm">Prénom, Nom</th>
             <th class="th-sm">Domaine</th>
             <th class="th-sm">Métier</th>
@@ -79,6 +80,14 @@
             <% @form_jeunes.each do |form_jeune| %>
         <tbody>
          <tr>
+         <% if form_jeune.status === 'Disponible' %>
+            <td><p>..🟢</p></td>
+          <% elsif form_jeune.status === 'Vérifier disponibilité' %>
+            <td><p>..🟠</p></td>
+          <% elsif form_jeune.status === 'Indisponible' %>
+            <td><p>..🔴</p></td>
+         <% end %> 
+           
             <td><%= form_jeune.firstname %><span> </span><%= form_jeune.lastname %></td>
             <td><%= form_jeune.domain_exp %></td>            
             <td><%= form_jeune.metier_exp %></td>

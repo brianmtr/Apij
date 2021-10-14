@@ -69,6 +69,7 @@ class FormJeunesController < ApplicationController
         :ml, 
         :plie,
         :autres,
+        :status,
         :firstname, 
         :lastname, 
         :born, 

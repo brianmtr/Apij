@@ -9,17 +9,17 @@ class CreateFormJeunes < ActiveRecord::Migration[6.1]
     t.boolean "ml"
     t.boolean "plie"
     t.string "autres"
-
+    
 
     # public
-
+    t.string "status"
     t.string "firstname"
     t.string "lastname"
     t.datetime "born"
     t.string "address"
     t.string "tel"
     t.string "mail"
-
+    
     # pole emploi
 
     t.boolean "registered_PE"

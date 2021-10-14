@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 2021_09_21_104548) do
     t.boolean "ml"
     t.boolean "plie"
     t.string "autres"
+    t.string "status"
     t.string "firstname"
     t.string "lastname"
     t.datetime "born"

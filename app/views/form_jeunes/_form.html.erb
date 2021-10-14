@@ -43,6 +43,13 @@
 
 <div class="boxInfoPublic">
 <h3>Informations Public</h3>
+
+  <div class="fieldFormJeune">
+    <%= form.label :status %>
+    <%= form.select :status, ['Disponible', 'Vérifier disponibilité', 'Indisponible'] %>
+  </div>
+<br>
+
   <div class="fieldFormJeune">
     <%= form.label :prénom %>
     <%= form.text_field :firstname %>
