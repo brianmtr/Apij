@@ -44,7 +44,7 @@
 <div class="boxInfoPublic">
 <h3>Informations Public</h3>
 
-  <div class="fieldFormJeune">
+  <div class="fieldFormJeune BornForm">
     <%= form.label :status %>
     <%= form.select :status, ['Disponible', 'Vérifier disponibilité', 'Indisponible'] %>
   </div>
@@ -101,7 +101,7 @@
     <%= form.check_box :sup_to_two_years %>
     <%= form.label :"plus_de_24_mois" %>
   </div>  
-  
+  <br>
   <div class="fieldFormJeune PEForm">
     <%= form.check_box :registered_RSA %>
     <%= form.label :"RSA" %>
@@ -120,22 +120,22 @@
 
   <h3>Mobilité</h3>
 
-  <div class="fieldFormJeune" style="text-align: left;">
+  <div class="fieldFormJeune BornForm" style="text-align: left;">
     <%= form.label :"Permis" %>
     <%= form.select :permis, ['Oui', 'Non', 'En cours'] %>
   </div>  
 <br>
-  <div class="fieldFormJeune" style="text-align: left;">
+  <div class="fieldFormJeune BornForm" style="text-align: left;">
     <%= form.label :"Moyen_de_locomotion" %>
     <%= form.select :locomotion, ['Transport en commun', 'Famille', 'Voiture', 'scooter', 'autre'] %>
   </div> 
 <br>
-  <div class="fieldFormJeune" style="text-align: left;">
+  <div class="fieldFormJeune BornForm" style="text-align: left;">
     <%= form.label :"Mobilité_durée" %>
     <%= form.select :mobilite_duration, ['10 minutes', '20 minutes', '30 minutes', '1 Heure', 'plus d\'1 heure'] %>
   </div> 
 <br>
-  <div class="fieldFormJeune" style="text-align: left;">
+  <div class="fieldFormJeune BornForm" style="text-align: left;">
     <%= form.label :"Mobilité_kilomètre" %>
     <%= form.select :mobilite_kilometers, ['Moins de 5 km', '10 km', '20 km', '30 km', '40 km', 'plus de 50 km'] %>
   </div> 
@@ -346,24 +346,17 @@
 
   <h3>Recommandations</h3>
 
-  <div class="fieldFormJeune">
+  <div class="fieldFormJeune BornForm">
     <%= form.label :"Intégration:" %>
     <%= form.select :integration_recom, ['Oui', 'Non', 'en attente', 'oui avec coaching']%>
   </div>
 <br>
 
-
-<%
-=begin%>
- fichier cv 
-<%
-=end%>
-
   <div class="fieldFormJeune">
     <%= form.label :Ajouter_un_CV %>
     <%= form.file_field :image, value: form_jeune.cached_image_data %>
   </div>
-
+<br>
 
   <div class="fieldFormJeune">
     <%= form.label :"Suivi_parcours_SelEC:" %>
@@ -388,7 +381,7 @@
   </div>
 <br>
 
-  <div class="fieldFormJeune">
+  <div class="fieldFormJeune BornForm">
     <%= form.label :"Depuis_quand_?" %>
     <%= form.date_select :date_situation, order: [:day, :month, :year], prompt: { day: 'Jour', month: 'Mois', year: 'Année' }, start_year: Date.today.year - 0, end_year: Date.today.year - 100  %>
   </div>
@@ -422,7 +415,7 @@
   </div>
 <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit value="Valider" %>
   </div>
   </div>
 <% end %>

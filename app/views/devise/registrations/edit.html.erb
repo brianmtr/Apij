@@ -1,6 +1,6 @@
 
 <h1><span class="colorLetters">Mon</span> profil</h1>
-
+<div class="UserShow">
 <% if user_signed_in? && current_user.conseiller? %>
   <div class="field account-show-p">
     <p>Vous avez un compte conseiller</p>
@@ -70,3 +70,5 @@
 <p class="unhappy">
 <%= link_to "Retour", :back %>
 </p>
+
+</div>

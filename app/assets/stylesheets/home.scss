@@ -8,10 +8,15 @@ html, body {
 }
 
 #boxy {
-    background-image: url('background.png');
-    // background-image: url('logoapij.jpeg');
-    background-size: cover;
+    // background-image: url('background.png');
+    background-image: url('logoappij.png');
+    background-size:auto;
     padding-bottom: 0px;
+}
+
+
+h2 {
+    color: black !important;
 }
 
 .BoxOffreDashboard {
@@ -29,8 +34,11 @@ html, body {
 }
 
 .logo img {
-    width: 50%;
-    margin-left: 25%;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 100px;
+    box-shadow: 5px 3px 3px black;
+    margin-bottom: 20px;
 }
 
 .connexion h2 {
@@ -40,8 +48,24 @@ html, body {
 .connexion a {
     text-decoration: none;
     color: #fff;
-}
+    background-color:  orange;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+} 
 
+.connexion a:hover{
+    text-decoration: none;
+    color: orange;
+    background-color:  #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 
+    -12px -12px -16px 0 rgba(0, 0, 0, 0.25),
+    8px 8px -12px 0 rgba(255, 255, 255, 0.3);
+} 
 .connexion a:hover {
    color: #007BA0;
 }
@@ -49,8 +73,10 @@ html, body {
 .containerDescribe {
     width: 90%;
     margin-left: 5%;
-    background-color: rgba(255, 255, 255, 0.459);
-
+    box-shadow: 
+    6px 6px 12px 0 rgba(9, 165, 255, 0.5),
+    -1px -1px 4px 0 rgba(9, 165, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.87);
     border-radius: 10px;
 }
 
@@ -64,7 +90,7 @@ html, body {
     margin-top: 20px;
     width: 80%;
     text-align: justify;
-    
+    color: black;
 }
 
 .containerDashbord {
@@ -73,8 +99,9 @@ html, body {
 
 }
 
-.publicDash{
-    background-color: rgba(255, 255, 255, 0.459);
+
+.publicDashCandidats {
+    background-color: rgba(255, 255, 255, 0.87);
     border-radius: 10px;
     width: 100%;
     height: 200px !important;
@@ -83,10 +110,28 @@ html, body {
     justify-content: space-around;
     text-align: center;
     margin-bottom: 10px;
+    box-shadow: 
+    6px 6px 12px 0 rgba(124, 9, 255, 0.5),
+    -1px -1px 4px 0 rgba(124, 9, 255, 0.5);
+}
+
+.publicDash{
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+    width: 100%;
+    height: 200px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 
+    6px 6px 12px 0 rgba(255, 161, 9, 0.5),
+    -1px -1px 4px 0 rgba(255, 161, 9, 0.5);
 }
 
 .OffreDash {
-    background-color: rgba(255, 255, 255, 0.459);
+    background-color: rgba(255, 255, 255, 0.87);
     border-radius: 10px;
     width: 100%;
     text-align: center;
@@ -94,11 +139,15 @@ html, body {
     margin-bottom: 10px;
     overflow: hidden !important;
     height: 455px !important;
+    box-shadow: 
+    6px 6px 12px 0 rgba(255, 9, 9, 0.5),
+    -1px -1px 4px 0 rgba(255, 0, 0, 0.486);
 }
 
 .numberDynamic {
     font-size: 50px;
     margin-bottom: 17px;
+    
 }
 
 
@@ -113,15 +162,26 @@ html, body {
 
 }
 
+.cardHome {
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 
+    6px 6px 12px 0 rgba(49, 190, 6, 0.637),
+    -1px -1px 4px 0 rgba(49, 190, 6, 0.637);
+}
 
+
+.linkHomeEvent a{
+    color: black;
+}
 
     
 
 
 @media screen and(min-width: 480px) {
     .logoCo img {
-        width: 40%;
-        margin-left: 30%;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 50px;
     }
 
     .OffreDash {
@@ -132,6 +192,7 @@ html, body {
 @media screen and(min-width: 576px) {
     .titleBox {
         font-size: 25px;
+        color:black;
     }
 }
 
@@ -185,8 +246,15 @@ html, body {
 }
 
 .logoCo {
+    width: 25%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.logoCo img {
     width: 50%;
-    margin-left: 25%;
+    margin-left: 15%;
+    margin-top: 15px;
 }
 
 }

@@ -1,6 +1,7 @@
 <h1>Éditer l'offre</h1>
 
 <%= render 'form', offre: @offre %>
-
-<%= link_to 'Voir', @offre %> |
-<%= link_to 'Retour', offres_path %>
+<div class="linkShow">
+    <%= link_to 'Voir', @offre %> |
+    <%= link_to 'Retour', offres_path %>
+</div>

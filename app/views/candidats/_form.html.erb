@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+<div class="formCandidats">
   <div class="field">
     <%= form.label :prénom %>
     <%= form.text_field :firstname %>
@@ -45,7 +45,7 @@
 
 
 
-## With
+
 <div class="field">
  <%= form.label :image %>
  <%= form.file_field :image %>
@@ -53,6 +53,7 @@
 
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit value="Valider" %>
   </div>
 <% end %>
+</div>

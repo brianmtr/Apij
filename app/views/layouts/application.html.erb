@@ -15,12 +15,18 @@
   </head>
 
   <body>
-  <div id="boxy" background-image="../images/background.png"> 
-  <div class="top_nav">
 
-       <br>
+
+<% if current_page? ('/') %>
+  <div class="HomeHeader">
+    <%= image_tag("homeheader.jpg", :alt => "logo_événement_proposé") %>
+  </div>
+<% end %>
+
+    <div id="boxy" background-image="../images/background.png"> 
+      <div class="top_nav">
+    <br>
 </div>
-
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #007BA0;">
   <div class="container-fluid">

@@ -20,7 +20,9 @@
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-
+.HomeHeader  img{
+    width: 100%;
+}
 
  .colorLetters {
     color: #FCB813;

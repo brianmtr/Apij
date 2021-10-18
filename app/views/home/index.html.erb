@@ -1,3 +1,5 @@
+
+
 <p id="notice"><%= notice %></p>
 <div id="boxy" background-image="../images/background.png"> 
 
@@ -5,11 +7,11 @@
 
 <% if user_signed_in? && current_user.conseiller? %>
 <div class="logoCo">
-    <%= image_tag("logo_appijob.png", :alt => "logo_événement_proposé") %>
+    <%= image_tag("Logo-Reussir-en-Sambre-Avesnois.jpg", :alt => "logo_resa") %>
 </div>
 <% else %>
 <div class="logo">
-    <%= image_tag("logo_appijob.png", :alt => "logo_événement_proposé") %>
+    <%= image_tag("Logo-Reussir-en-Sambre-Avesnois.jpg", :alt => "logo_resa") %>
 </div>
 <% end %>
  
@@ -31,7 +33,7 @@
 <% if user_signed_in? && current_user.conseiller? %>
 <div class="containerDashbord">
   <div class="boxPubliCre">
-    <div class="publicDash">
+    <div class="publicDashCandidats">
     <p class="titleBox">Candidats</p>
         <div class="numberDynamic"><%= @users.count(1) %></div>
     </div>

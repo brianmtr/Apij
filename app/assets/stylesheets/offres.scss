@@ -6,16 +6,40 @@
     margin-bottom: 50px;
 }
 
+h1 {
+    color: #000 !important;
+}
 .newOffre a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 30px;
     font-weight: bold;
 }
 
-.newOffre a:hover {
-  color: orange;
-}
+
+
+
+.newOffre a {
+    text-decoration: none;
+    color: #fff;
+    background-color:  orange;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+} 
+
+.newOffre a:hover{
+    text-decoration: none;
+    color: orange;
+    background-color:  #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 
+    -12px -12px -16px 0 rgba(0, 0, 0, 0.25),
+    8px 8px -12px 0 rgba(255, 255, 255, 0.3);
+} 
 
 .sectorJob {
     display: flex;
@@ -28,62 +52,15 @@
     
 }
 
-// .all {
-//     background-image: url(all.png);
-//     background-position: center;
-// }
+.container, .search-table {
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(206, 206, 206, 0.3);
+}
 
-// .avesnes {
-//     background-image: url(avesnes.png);
-//     background-position: center;
-// }
-
-// .feignie {
-//     background-image: url(feignies.png);
-//     background-position: center;
-// }
-
-// .louvroil {
-//     background-image: url(louvroil.png);
-//     background-position: center;
-// }
-
-// .fourmies {
-//     background-image: url(fourmies.png);
-//     background-position: center;
-// }
-
-// .haumont {
-//     background-image: url(haumont.png);
-//     background-position: center;
-// }
-
-// .maubeuge {
-//     background-image: url(maubeuge.png);
-//     background-position: center;
-// }
-
-// .jeumont {
-//     background-image: url(jeumont.png);
-//     background-position: center;
-// }
-
-// .aulnoye {
-//     background-image: url(aulnoye.png);
-//     background-position: center;
-// }
-
-
-// .quesnoy {
-//     background-image: url(quesnoye.png);
-//     background-position: center;
-// }
-
-// .landrecies {
-//     background-image: url(landrecies2.png);
-//     background-position: center;
-// }
-
+.search-box {
+    background-color: rgba(211, 155, 1, 0.603) !important;
+}
 
 .sectorBox {
 
@@ -167,8 +144,18 @@
 .field {
     color: #fff;
 }
+
 .allField {
-    width: 100%;
+
+    width: 80%;
+    margin-left: 10%;
+
+    background-color:  rgba(255, 255, 255, 0.637);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 }
 
 .field {
@@ -224,7 +211,14 @@ p {
 }
 
 .link {
-    width: 90%;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 166, 0, 0.555) !important;
+}
+
+
+.link a:hover {
+    color: white !important;
 }
 
 .offreShow {
@@ -238,6 +232,10 @@ p {
     padding: 10px;
 }
 
+.offreShow p {
+    color: #000;
+}
+
 .offreShow strong {
     color: #000;
 }
@@ -249,7 +247,7 @@ p {
 
 .linkShow a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 @media screen and(min-width: 576px) {
