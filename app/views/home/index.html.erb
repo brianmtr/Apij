@@ -59,7 +59,7 @@
                   <li><%= offre.contrat %></li>  
                   <li><%= offre.commune %></li> 
                   <li><%= offre.salaire %> € par mois.</li>
-                  <li><%= link_to 'Voir offre', offre %></li>
+                  <li class="liHome"><%= link_to 'Voir offre', offre %></li>
                </ul>
                <div class="separeBar"></div>
                
@@ -103,8 +103,8 @@
 
 
    <% @events.each do |event| %>
-  
-   <h2><span class="colorLetters">Évén</span>ements</h2>
+  <h2 class="h2Title"><span class="colorLetters">Évén</span>ements</h2>
+   
        <div class="cardHome">
 
         <div class="eventIMG">
@@ -114,18 +114,12 @@
         <br>
         <% if user_signed_in? && current_user.conseiller? || current_user.cre? %>
           <div class="linkHomeEvent">
-            <%
-=begin%>
- <%= link_to 'En savoir plus', event %> 
-<%
-=end%>
-
             <%= link_to 'Editer événement', edit_event_path(event) %>
             <%= link_to 'Supprimer événement', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </div>
         <% end %>
       </div>
-
+<br>
    <% end %>
 
 <% end %>

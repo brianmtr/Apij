@@ -8,6 +8,8 @@ class OffresController < ApplicationController
 
   # GET /offres/1 or /offres/1.json
   def show
+    @user_offres             = UserOffre.where(offre_id: params[:id]) 
+    @vote_participate       = @user_offres.yes.count
   end
 
   # GET /offres/new
@@ -64,6 +66,6 @@ class OffresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def offre_params
-      params.require(:offre).permit(:poste, :contrat, :email, :domaine, :commune, :adress, :salaire, :description)
+      params.require(:offre).permit(:poste, :contrat, :email, :domaine, :commune, :adress, :salaire, :description, :participate, :state)
     end
 end

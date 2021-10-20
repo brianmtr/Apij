@@ -1,12 +1,14 @@
 class UsersController < ApplicationController
   def index
     @users = User.all
+    @offres = Offre.all
   end
 
   def show
     @user   = current_user            
-
+    @offres = Offre.all
   end
+
 
   def create
     @user = User.new(params[:user])
@@ -42,7 +44,7 @@ class UsersController < ApplicationController
       end
 
     def user_params
-        params.require(:user).permit(:firstname, :lastname, :conseiller, :cre, :email, :domaine, :entreprise, :adress, :status, :search_by_rate, :rate, :user_id, :demandecre, :demandeconseiller)
+        params.require(:user).permit(:firstname, :lastname, :conseiller, :cre, :email, :domaine, :entreprise, :adress, :status, :search_by_rate, :rate, :user_id, :demandecre, :demandeconseiller, :state)
       end
 end
 

@@ -1,7 +1,8 @@
-<h1>Editing Event</h1>
+<h1 class="h2Title"><span class="colorLetters">Editer</span> l'Événement</h1>
 
-<%= render 'form', event: @event %>
-<div class="linkCandidats">
-
-<%= link_to 'Retour', events_path %>
+<div class="eventEdit">
+    <%= render 'form', event: @event %>
+    <div class="linkCandidats">
+        <%= link_to 'Retour', events_path %>
+    </div>
 </div>

@@ -73,3 +73,28 @@
 .newEvent {
     text-align: center;
 }
+
+.eventEdit, .eventNew {
+    text-decoration: none;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    8px 8px -12px 0 rgba(73, 73, 73, 0.3);
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+.eventEdit p, .eventNew p {
+    color: rgb(0, 0, 0);
+
+}
+
+.warningCreateEvent {
+    color: rgb(255, 255, 255);
+    background-color: red;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.452);
+}

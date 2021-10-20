@@ -1,0 +1,49 @@
+<% if user_signed_in? %>
+<br>
+<h2 class="h2Title"><span class="colorLetters">Mon</span> profil</h2>
+
+<div class="UserShow">
+<div class="items-center account-show">
+<h4>Bonjour <%= @user.firstname %> :)</h4>
+</div>
+<%
+=begin%>
+ <div class="field account-show-p">
+<p>Votre adresse E-mail est : <%= @user.email %></p>
+</div>
+
+<div class="field account-show-p">
+<p>Votre compte a été crée le : <%= @user.created_at.to_formatted_s(:db) %></p>
+</div> 
+<%
+=end%>
+
+
+<div class="field account-show-p-participate">
+<br>
+<h2>Les offres auxquels vous avez postulé: </h2>
+</div>
+<div class="containerCard">
+<% @offres.each do |offre| %>
+    <% if offre.user_offres.where(state: "yes", user_id: current_user).exists? %>
+        <div class="card" style="scroller">
+            <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
+            <br>
+            <p><%= offre.contrat %> </p>
+            <p><%= offre.salaire %> € par mois</p>
+            <p><%= offre.email %></p>
+            <div class="scroller">
+                <small><%= offre.description %></small>
+            </div>
+            <br>
+        </div>  
+    <% end %>
+<% end %>
+</div>
+<br>
+<div class="items-center">
+<a href="/users/edit"><button class="button-account">Éditer mon compte</button></a>
+</div>
+</div>
+<% end %>
+

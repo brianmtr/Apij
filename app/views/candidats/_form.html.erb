@@ -26,12 +26,19 @@
     <%= form.text_field :email %>
   </div>
 
-  <div class="field">
-    <%= form.label :commune %>
+    <div class="field">
+    <%= form.label :commune %><br>
     <%= form.select :commune, [
-      'Toutes','Landrecies', 'Avesnes-Sur-Helpe', 'Feignies', 'Louvroil', 'Fourmies',
-      'Haumont', 'Jeumont', 'Aunloye-Aymeries', 'Quesnoy', 'Maubeuge']%>
-  </div>
+      'Amfroipret', 'Anor', 'Aulnoye-Aymeries','Avesnelles', 'Avesnes-Sur-Helpe', 'Aibes', 'Assevent', 'Audignies', 'Bachant', 'Baives', 'Bas lieu', 'Bavay', 'Beaudignies', 'Beaufort', 'Beaurepaire-sur-sambre', 'Beaurieux', 'Bellignies', 'Berelles', 'Berlaimont', 'Bermeries', 'Bersillies', 'Bettignies',
+      'Bettrechies', 'Beugnies', 'Boulogne-sur-helpe', 'Bousies', 'Bousignies-sur-roc', 'Boussières-sur-sambre', 'Boussois', 'Bry', 'Cartignies', 'Cerfontaine', 'Choisies', 'Clairfayts',
+      'Colleret', 'Cousolre', 'Croix-caluyau', 'Damousies', 'Dimechaux', 'Dimont', 'Dompierre-sur-helpe', 'Dourlers', 'Eccles', 'Éclaibes', 'Écuélin', 'Élesmes', 'Englefontaine', 'Eppe-sauvage', 'Eth', 'Etroeungt', 'Le favril', 'Feignies', 'Felleries', 'Féron',
+      'Ferrière-la-grande','Ferrière-la-petite', 'Flamengrie', 'Flaumont-waudrechies', 'Floursies', 'Floyon', 'Fontaine-au-bois', 'Forest-en-cambrésis', 'Fourmies', 'Frasnoy', 'Ghissignies', 'Glageon', 'Gognies-chaussée', 'Gommegnies', 'Grand-fayt', 'Gussignies', 'Hargnies', 'Haumont', 'Haut-lieu', 'Hecq', 'Hestrud', 'Hon-hergies', 'Houdain-lez-bavay', 'Jenlain', 'Jeumont', 'Jolimetz', 'Landrecies', 'Larouillies', 'Leval', 'Lez fontaine', 'Liessies',
+      'Limont-fontaine', 'Locquignol', 'La longueville', 'Louvignies-quesnoy', 'Louvroil', 'Mairieux', 'Marbaix', 'Maresches', 'Maroilles', 'Marpent', 'Maubeuge', 'Mecquignies', 'Monceau-saint-waast', 'Moustier-en-fagne', 
+      'Neuf-mesnil', 'Neuville-en-avesnois', 'Noyelles-sur-sambre', 'Obies', 'Obrechies', 'Ohain', 'Orsinval', 'Poix-du-nord', 'Pont-sur-sambre', 'Potelle', 'Preux-au-bois', 'Preux-au-sart', 'Prisches', 'Quesnoy', 'Quiévelon', 'Raucourt-au-bois',
+      'Recquignies', 'Robersart', 'Rousies', 'Ruesnes', 'Sains du nord', 'Saint-rémy-chaussée', 'Saint-rémy-du-nord', 'Salesches', 'Sassegnies', 'Sémeries', 'Sepmeries', 'Saint-hilaire-sur-helpes', 'Saint-waast-la-vallée',
+      'Taisnières-sur-hon', 'Trelon', 'Vendegies-au-bois', 'Vieux-mesnil', 'Villers-pol', 'Villers-sire-nicole', 'Wargnies-le-grand', 'Wargnies-le-petit', 'Wignehies', 'Willies' 
+    ]%>
+</div>
 
     <div class="field">
     <%= form.label :"domaine_d\'experience" %>
@@ -47,7 +54,7 @@
 
 
 <div class="field">
- <%= form.label :image %>
+ <%= form.label :CV %>
  <%= form.file_field :image %>
 </div>
 

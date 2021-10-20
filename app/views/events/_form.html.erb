@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+<div class="eventNew">
   <div class="field">
     <p class="event-field"><%= form.label :titre %> (12 caractères maximum)</p>
     <%= form.text_field :title %>
@@ -37,7 +37,7 @@
 =end%>
 
   <div class="field">
-  <%= form.label :Choisir_une_image %>
+  <%= form.label :image %>
   <%= form.file_field :image %>
   </div>
 
@@ -51,3 +51,4 @@
     <%= form.submit value="Valider" %>
   </div>
 <% end %>
+</div>

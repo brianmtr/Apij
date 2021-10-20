@@ -26,7 +26,7 @@ h2 {
     display: flex;
     flex-direction: row-reverse;
     
-    background-color: orange;
+    background-color: #990C0C;
 }
 .top_nav a {
     text-decoration: none;
@@ -43,6 +43,7 @@ h2 {
 
 .connexion h2 {
     text-align: center;
+    
 }
 
 .connexion a {
@@ -149,13 +150,28 @@ h2 {
     margin-bottom: 17px;
     
 }
+.liHome a {
+    background-color: orange;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 2.5px;
+}
 
+.liHome a:hover {
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: orange;
+    border-radius: 10px;
+    border-color: 1px solid orange;
+    padding: 2.5px;
+}
 
 .ListOffers ul {
     list-style-type: none;
     background-color: rgba(255, 255, 255, 0.459);
-    box-shadow: 20px 20px 50px #3f3f3f57, 
-                -30px -30px 60px #33333385;
+    box-shadow: 20px 20px 50px #79797957, 
+                -30px -30px 60px #8383835b;
     width: 90%;
     border-radius: 10px;
     margin-left: 5%;
@@ -174,7 +190,15 @@ h2 {
     color: black;
 }
 
-    
+.h2Title {
+    padding: 5px;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.87);
+}
 
 
 @media screen and(min-width: 480px) {

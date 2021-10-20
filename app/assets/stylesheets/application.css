@@ -135,7 +135,7 @@ p {
     box-shadow: 20px 20px 50px #0000001c, 
     -30px -30px 60px #00000028;
     width: 100%;
-
+    background-color: #990C0C !important;
 }
 
 .scroller {

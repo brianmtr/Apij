@@ -1,13 +1,18 @@
 Rails.application.routes.draw do
 
- 
-
-
-  namespace :secteurs do
-    namespace :semeries do
-      get 'transport/index'
+   resources :useroffres
+resources :participate, only: [ :update ]
+  resources :offres do
+    member do
+    
+      put "participate" => "participate#update"
     end
   end
+
+
+  
+
+
   namespace :secteurs do
     namespace :semeries do
       get 'tourisme/index'

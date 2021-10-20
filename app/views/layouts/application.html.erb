@@ -76,7 +76,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/users/edit">Mon compte</a>
+          <a class="nav-link active" aria-current="page" href="/users/show">Mon compte</a>
         </li>
         
         <li class="nav-item">
@@ -85,7 +85,7 @@
       </ul>
 
    
-      <% if user_signed_in? && current_user.conseiller? %>
+   
  <div class="connexion">
           <% if user_signed_in? %>
             <%= form_for(current_user,
@@ -99,7 +99,7 @@
     </div>
   </div>
   <% end %>
-  <% end %>
+ 
 </nav>
 
     <%= yield %>

@@ -1,2 +1,33 @@
-<h1>Secteurs::Audignies::Industrieautomobile#index</h1>
-<p>Find me in app/views/secteurs/audignies/industrieautomobile/index.html.erb</p>
+<h1 class="h2Title">Audignies: Industrie Automobile</h1>
+
+ <div class="containerCard">
+
+ <% @offres.each do |offre| %>
+ <% if offre.commune === 'Audignies' && offre.domaine === 'Industrie Automobile' %>
+<div class="card">
+    <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
+    <br>
+    <p><%= offre.contrat %> </p>
+    <p><%= offre.salaire %> € par mois</p>
+    <p><%= offre.email %></p>
+    <div class="scroller">
+    <small><%= offre.description %></small>
+    </div>       <br>
+    <p class="link">
+      <% if current_user.conseiller? %>
+          <%= link_to 'Editer', edit_offre_path(offre) %>
+          <%= link_to 'Supprimer', offre, method: :delete, data: { confirm: 'Êtes-vous certain ?' } %>
+      <% end %>
+         <a href="mailto:<%= offre.email %>">Postuler</a>   
+    </p>
+  
+    <p class="link">
+      <%= link_to 'j\'ai postulé !', participate_offre_path(offre), method: :put, remote: true, :class => "button-account-participate offre-size" %>
+    </p>
+    
+  </div>  
+    <% end %>
+ <% end %>
+</div>
+
+

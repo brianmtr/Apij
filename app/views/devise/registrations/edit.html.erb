@@ -1,5 +1,8 @@
 
-<h1><span class="colorLetters">Mon</span> profil</h1>
+<h1 class="h2Title"><span class="colorLetters">Mon</span> profil</h1>
+
+
+
 <div class="UserShow">
 <% if user_signed_in? && current_user.conseiller? %>
   <div class="field account-show-p">
@@ -11,7 +14,7 @@
   </div>
 <% elsif %>
   <div class="field account-show-p">
-    <p>Vous avez un compte public</p>
+    <p>Vous avez un compte candidat</p>
   </div>
 <% end %>
 

@@ -1,4 +1,4 @@
-<h1>Toutes les offres pour: Banque, assurance, immobilier</h1>
+<h1 class="h2Title">Toutes les offres pour: Banque, assurance, immobilier</h1>
 
  <div class="containerCard">
 
@@ -14,10 +14,17 @@
     <small><%= offre.description %></small>
     </div>
     <br>
+    <br>
     <p class="link">
-      <%= link_to 'Editer', edit_offre_path(offre) %>
-      <%= link_to 'Supprimer', offre, method: :delete, data: { confirm: 'Êtes-vous certain ?' } %>
-      <a href="mailto:<%= offre.email %>">POSTULER</a>
+      <% if current_user.conseiller? %>
+          <%= link_to 'Editer', edit_offre_path(offre) %>
+          <%= link_to 'Supprimer', offre, method: :delete, data: { confirm: 'Êtes-vous certain ?' } %>
+      <% end %>
+         <a href="mailto:<%= offre.email %>">Postuler</a>   
+    </p>
+  
+    <p class="link">
+      <%= link_to 'j\'ai postulé !', participate_offre_path(offre), method: :put, remote: true, :class => "button-account-participate offre-size" %>
     </p>
     
   </div>  
