@@ -4,5 +4,6 @@ class HomeController < ApplicationController
     @offres = Offre.all
     @candidats = Candidat.all
     @events = Event.all
+    @user   = current_user  
   end
 end

@@ -298,6 +298,21 @@
     <%= f.label :rg, '*Champs obligatoire. J\'accepte que les données saisies soient conservées dans le cadre d\'utilisations sur le site AppiJob.' %>
 </div>
 
+<% if @user.acceptcookies || @user.refusedcookies === 1 %>
+<% else %>
+<div class="container_cookies">
+  <div class="cookiesBox">
+    <p>Ce site utilise des cookies pour améliorer l'expérience de navigation et fournir des fonctionnalités supplémentaires. <a href="/legalnotice/index">Politique de confidentialité</a></p>
+<div class="fieldcheckboxCookies">
+  <%= f.check_box :acceptcookies %>
+  <%= f.label :accepter %>
+
+  <%= f.check_box :refusedcookies %>
+  <%= f.label :Refuser %>
+</div>
+  </div>
+</div>
+<%end %>
   <div class="actions">
     <%= f.submit "S'inscrire" %>
   </div>

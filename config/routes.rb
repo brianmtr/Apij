@@ -9,7 +9,13 @@ resources :participate, only: [ :update ]
     end
   end
 
-
+  resources :accept, only: [ :update ]
+  resources :accept do
+    member do
+    
+      put "accept" => "accept#update"
+    end
+  end
   
 
 

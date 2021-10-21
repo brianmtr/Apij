@@ -194,15 +194,195 @@
     <%= form.text_area :contrat_exp %>
   </div>
 <br>
-  <div class="fieldFormJeune BornForm ">
-    <%= form.label :"Experience_domaine" %>
-    <%= form.select :domain_exp, ['Agriculture et pêche', 'Espaces verts', 'Soins aux animaux',
-    'Ouvrage d\'art', 'Banque, assur. immo.', 'Commerce, Vente', 'Communication', 'Bâtiment',
-    'Restauration', 'Tourisme, Loisirs', 'Industrie Agroalimentaire', 'Industrie Metallurgie', 
-    'Industrie Automobile', 'Maintenance', 'Santé', 'Service à la personne',
-    'Spectacle', 'Support à l\'entreprise', 'Transport, Logistique', 'non marchant',
-    'Association']%>
+
+
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item-inscription">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Vos catégories des métiers
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+  <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Agriculture %>
+      <%= form.label :Agriculture %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Alimentation %>
+      <%= form.label :Alimentation %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Animaux %>
+      <%= form.label :Animaux %>
+   </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Architecture %>
+      <%= form.label :Architecture %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Armée_Sécurité_secours %>
+      <%= form.label :Armée_Sécurité_secours %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Artisanat %>
+      <%= form.label :Artisanat %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Banque_Assurance %>
+      <%= form.label :Banque_Assurance %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Bâtiment %>
+      <%= form.label :Bâtiment %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Biologie%>    
+      <%= form.label :Biologie %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Commerce_immobilier %>
+      <%= form.label :Commerce_immobilier %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Communication %>
+      <%= form.label :Communication %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Spectacle %>
+      <%= form.label :Spectacle %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Droit %>
+      <%= form.label :Droit %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Edition_Imprimerie %>
+      <%= form.label :Edition_Imprimerie %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Informatique %>
+      <%= form.label :Informatique %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Enseignement %>
+      <%= form.label :Enseignement %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Environnement %>
+      <%= form.label :Environnement %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Ressources_Humaine %>
+      <%= form.label :Ressources_Humaine %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Restauration %>
+      <%= form.label :Restauration %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Humanitaire %>
+      <%= form.label :Humanitaire %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Sciences_Humaines %>
+      <%= form.label :Sciences_Humaines %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Maintenance %>
+      <%= form.label :Maintenance %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Numérique_Multimédia %>
+      <%= form.label :Numérique_Multimédia %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Santé %>
+      <%= form.label :Santé %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Sciences_Mathématiques %>
+      <%= form.label :Sciences_Mathématiques %>
+    </div>
+
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Industrie_Agroalimentaire %>
+      <%= form.label :Industrie_Agroalimentaire %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Industrie_Metallurgie %>
+      <%= form.label :Industrie_Metallurgie %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Industrie_Automobile %>
+      <%= form.label :Industrie_Automobile %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Secrétariat %>
+      <%= form.label :Secrétariat %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Social %>
+      <%= form.label :Social %>
+
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Estétique_Coiffure %>
+      <%= form.label :Estétique_Coiffure %>
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Sport_Animation %>
+      <%= form.label :Sport_Animation %>
+
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Non_marchant %>
+      <%= form.label :Non_marchant %>
+
+    </div>
+
+    <div class="fieldcheckboxaccordion">
+      <%= form.check_box :Transport_Logistique %>
+      <%= form.label :Transport_Logistique %>
+
+    </div>      </div>
+    </div>
   </div>
+</div>
+
 <br>
 
   <div class="fieldFormJeune">

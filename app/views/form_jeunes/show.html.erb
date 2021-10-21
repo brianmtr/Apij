@@ -8,15 +8,16 @@
   <strong>conseiller</strong>
   <%= @form_jeune.advised %>
 </p>
+<br>
 <p>
   <strong>date entretien</strong>
   <%= @form_jeune.maintenance_date %>
 </p>
-
+<br>
 <% if @form_jeune.ml %>
   <p>Fait parti de la mission locale</p>
 <% end %>
-
+<br>
 <% if @form_jeune.plie %>
 <p>Fait parti du plie</p>
 <% end %>
@@ -32,31 +33,32 @@
   <strong>Prénom:</strong>
   <%= @form_jeune.firstname %>
 </p>
-
+<br>
 <p>
   <strong>Nom:</strong>
   <%= @form_jeune.lastname %>
 </p>
-
+<br>
 <p>
   <strong>Date de naissance:</strong>
   <%= @form_jeune.born %>
 </p>
-
+<br>
 <p>
   <strong>Adresse:</strong>
   <%= @form_jeune.address %>
 </p>
-
+<br>
 <p>
   <strong>Portable:</strong>
   <%= @form_jeune.tel %>
-
+</p>
+<br>
 <p>
   <strong>Email:</strong>
   <%= @form_jeune.mail %>
 </p>
-
+<br>
 <% if @form_jeune.registered_PE && @form_jeune.inf_to_six_month %>
     <p>Inscrit à Pôle Emploi depuis moins de 6 mois</p>
 <% elsif @form_jeune.registered_PE && @form_jeune.between_six_and_twelve_month %>
@@ -64,7 +66,7 @@
 <% elsif @form_jeune.registered_PE && @form_jeune.sup_to_two_years %>
     <p>Inscrit à Pôle Emploi depuis plus de 2 ans.</p>
 <%end %>
-
+<br>
 <p>
   <strong>RSA:</strong>
   <% if @form_jeune.registered_RSA %>
@@ -73,7 +75,7 @@
     N'est pas inscrit au rsa
   <% end %>
 <p>
-
+<br>
 <p>
   <strong>QPV:</strong>
   <%if @form_jeune.qpv %>
@@ -82,8 +84,7 @@
     Non
   <% end %>
 <p>
-
-
+<br>
 <p>
   <strong>RQTH:</strong>
   <%if @form_jeune.RQTH %>
@@ -100,21 +101,22 @@
   <strong>Permis:</strong>
   <%= @form_jeune.permis %>
 </p>
-
+<br>
 <p>
   <strong>Moyen de locomotion:</strong>
   <%= @form_jeune.locomotion %>
 </p>
-
+<br>
 <p>
   <strong>Mobilité durée:</strong>
   <%= @form_jeune.mobilite_duration %>
-
+</p>
+<br>
 <p>
   <strong>Mobilité kilomètre:</strong>
   <%= @form_jeune.mobilite_kilometers %>
 </p>
-
+<br>
 <p>
   <strong>Permis spécifique:</strong>
   <%= @form_jeune.specifique_permis %>
@@ -126,65 +128,196 @@
   <strong>Formation et/ou diplôme:</strong>
   <%= @form_jeune.formation_diplome %>
 </p>
-
+<br>
 <p>
   <strong>Commentaire:</strong>
   <%= @form_jeune.formation_comments %>
 </p>
-
+<br>
 <p>
   <strong>obtention du diplome:</strong>
   <%= @form_jeune.obtention_diplome %>
   le
   <%= @form_jeune.date_obtention %>
 </p>
-
+<br>
 <p>
   <strong>Expérience sur le poste:</strong>
   <%= @form_jeune.post_exp %>
 </p>
-
+<br>
 <p>
   <strong>Expérience dans l'entreprise:</strong>
   <%= @form_jeune.enterprise_exp %>
 </p>
-
+<br>
 <p>
   <strong>Expérience mission:</strong>
   <%= @form_jeune.mission_exp %>
 </p>
-
+<br>
 <p>
   <strong>Expérience contrat:</strong>
   <%= @form_jeune.contrat_exp %>
 </p>
-
+<br>
 <p>
   <strong>Domaine d'Experience:</strong>
-  <%= @form_jeune.domain_exp %>
-</p>
+  <% if @form_jeune.Agriculture === true %>
+    <p>Agriculture</p>
+  <% end %>
+  
+  <% if @form_jeune.Alimentation === true %>
+    <p>Alimentation</p>
+  <% end %>
+    
+  <% if @form_jeune.Animaux === true %>
+    <p>Animaux</p>
+  <% end %>
+  
+  <% if @form_jeune.Architecture === true %>
+      <p>Architecture</p>
+  <% end %>   
+  
+  <% if @form_jeune.Armée_Sécurité_secours === true %>
+      <p>Armée_Sécurité_secours</p>
+  <% end %>
+  
+  <% if @form_jeune.Artisanat === true %>
+      <p>Artisanat</p>
+  <% end %>
+    
+  <% if @form_jeune.Banque_Assurance === true %>
+      <p>Banque_Assurance</p>
+  <% end %>
+    
+  <% if @form_jeune.Bâtiment === true %>
+      <p>Bâtiment</p>
+  <% end %>
 
+  <% if @form_jeune.Biologie === true %>
+      <p>Biologie</p>
+  <% end %>  
+  
+  <% if @form_jeune.Commerce_immobilier === true %>
+      <p>Commerce_immobilier</p>
+  <% end %> 
+
+  <% if @form_jeune.Communication === true %>
+      <p>Communication</p>
+  <% end %>
+
+  <% if @form_jeune.Spectacle === true %>
+      <p>Spectacle</p>
+  <% end %>
+
+  <% if @form_jeune.Droit === true %>
+      <p>Droit</p>
+  <% end %>
+
+  <% if @form_jeune.Edition_Imprimerie === true %>
+      <p>Edition_Imprimerie</p>
+  <% end %>
+
+  <% if @form_jeune.Informatique === true %>
+      <p>Informatique</p>
+  <% end %>
+
+  <% if @form_jeune.Enseignement === true %>
+      <p>Enseignement</p>
+  <% end %>
+
+  <% if @form_jeune.Environnement === true %>
+      <p>Environnement</p>
+  <% end %>
+
+  <% if @form_jeune.Ressources_Humaine === true %>
+      <p>Ressources_Humaine</p>
+  <% end %>
+
+  <% if @form_jeune.Restauration === true %>
+      <p>Restauration</p>
+  <% end %>
+
+  <% if @form_jeune.Humanitaire === true %>
+      <p>Humanitaire</p>
+  <% end %>
+
+  <% if @form_jeune.Industrie_Agroalimentaire === true %>
+      <p>Industrie_Agroalimentaire</p>
+  <% end %>
+
+  <% if @form_jeune.Industrie_Metallurgie === true %>
+      <p>Industrie_Metallurgie</p>
+  <% end %>
+
+  <% if @form_jeune.Industrie_Automobile === true %>
+      <p>Industrie_Automobile</p>
+  <% end %>
+
+  <% if @form_jeune.Sciences_Humaines === true %>
+      <p>Sciences_Humaines</p>
+  <% end %>
+
+  <% if @form_jeune.Maintenance === true %>
+      <p>Maintenance</p>
+  <% end %>
+
+  <% if @form_jeune.Numérique_Multimédia === true %>
+      <p>Numérique_Multimédia</p>
+  <% end %>
+
+  <% if @form_jeune.Santé === true %>
+      <p>Santé</p>
+  <% end %>
+
+  <% if @form_jeune.Sciences_Mathématiques === true %>
+      <p>Sciences_Mathématiques</p>
+  <% end %>
+
+  <% if @form_jeune.Secrétariat === true %>
+      <p>Secrétariat</p>
+  <% end %>
+
+  <% if @form_jeune.Social === true %>
+      <p>Social</p>
+  <% end %>
+
+  <% if @form_jeune.Estétique_Coiffure === true %>
+      <p>Estétique_Coiffure</p>
+  <% end %>
+
+  <% if @form_jeune.Sport_Animation === true %>
+      <p>Sport_Animation</p>
+  <% end %>
+
+  <% if @form_jeune.Transport_Logistique === true %>
+      <p>Transport_Logistique</p>
+  <% end %>
+
+  <% if @form_jeune.Non_marchant === true %>
+      <p>Non_marchant</p>
+  <% end %>
+</p>
+<br>
 <p>
   <strong>Poste occupé:</strong>
   <%= @form_jeune.metier_exp %>
 </p>
-
+<br>
 <p>
   <strong>Poste recherché:</strong>
   <%= @form_jeune.postsearched_exp %>
 </p>
-
+<br>
 <p>
   <strong>Alternance:</strong>
   <%= @form_jeune.alternance_exp %>
 </p>
-
+<br>
 <p>
   <strong>cv:</strong>
 <%= image_tag @form_jeune.image_url, height: 100 %>
-  
-
-
 </p>
 
   <h3>Bilan parcours professionnel</h3>
@@ -193,38 +326,37 @@
   <strong>Atouts:</strong>Backperience et pourquoi ?</strong>
   <%= @form_jeune.meilleurexp_bilan %>
 </p>
-
+<br>
 <p>
   <strong>Un poste que vous ne voulez plus occuper et pourquoi ?</strong>
   <%= @form_jeune.finishedexp_bilan %>
 </p>
-
+<br>
 <p>
   <strong>Vos objectifs à court terme:</strong>
   <%= @form_jeune.courtterme_bilan %>
 </p>
-
-
+<br>
 <p>
   <strong>Vos objectifs à moyen terme:</strong>
   <%= @form_jeune.moyenterme_bilan %>
 </p>
-
+<br>
 <p>
   <strong>Vos objectifs à long terme:</strong>
   <%= @form_jeune.longterme_bilan %>
 </p>
-
+<br>
 <p>
   <strong>Connaissance logiciel:</strong>
   <%= @form_jeune.logicielexp_bilan %>
 </p>
-
+<br>
 <p>
   <strong>Quels sont vos loisirs ?</strong>
   <%= @form_jeune.loisirs_bilan %>
 </p>
-
+<br>
 <p>
   <strong>Investissement_associatif:</strong>
   <%= @form_jeune.associatif_bilan %>
@@ -236,47 +368,47 @@
   <strong>Comment organisez-vous votre recherche d'emploi ?</strong>
   <%= @form_jeune.searchjob_eval %>
 </p>
-
+<br>
 <p>
   <strong>Où avez-vous postulé ?</strong>
   <%= @form_jeune.postulation_eval %>
 </p>
-
+<br>
 <p>
   <strong>Freins direct:</strong>
   <%= @form_jeune.freindirect_eval %>
 </p>
-
+<br>
 <p>
   <strong>Freins indirect:</strong>
   <%= @form_jeune.freinindirect_eval %>
 </p>
-
+<br>
 <p>
   <strong>qu'est-ce qui vous motive à être actif dans votre recherche d 'emploi?</strong>
   <%= @form_jeune.actifsearch_eval %>
 </p>
-
+<br>
 <p>
   <strong>Quel type de contrat recherchez vous ?</strong>
   <%= @form_jeune.typesearchcontrat_eval %>
 </p>
-
+<br>
 <p>
   <strong>Quels sont vos contraintes ?</strong>
   <%= @form_jeune.contrainte_eval %>
 </p>
-
+<br>
 <p>
   <strong>Vos connaissances sur le métier ciblé ?</strong>
   <%= @form_jeune.connaissancemetier_eval %>
 </p>
-
+<br>
 <p>
   <strong>conclusion:</strong>
   <%= @form_jeune.conclusion_eval %>
 </p>
-
+<br>
 <p>
   <strong>commentaire:</strong>
   <%= @form_jeune.commentaire_eval %>
@@ -288,27 +420,27 @@
   <strong>Intégration:</strong>
   <%= @form_jeune.integration_recom %>
 </p>
-
+<br>
 <p>
   <strong>Suivi parcours SelEC:</strong>
   <%= @form_jeune.relation_celec %>
 </p>
-
+<br>
 <p>
   <strong>Candidat sous contrat:</strong>
   <%= @form_jeune.candidat_situation %>
 </p>
-
+<br>
 <p>
   <strong>Nom de entreprise::</strong>
   <%= @form_jeune.enterprise_situation %>
 </p>
-
+<br>
 <p>
   <strong>Poste dans l'entreprise:</strong>
   <%= @form_jeune.post_situation %>
 </p>
-
+<br>
 <p>
   <strong>Depuis quand ?</strong>
   <%= @form_jeune.date_situation %>
@@ -320,27 +452,27 @@
   <strong>sortie positive:</strong>
   <%= @form_jeune.sortie_positif %>
 </p>
-
+<br>
 <p>
   <strong>Depuis quand ?</strong>
   <%= @form_jeune.date_positif %>
 </p>
-
+<br>
 <p>
   <strong>Type formation:</strong>
   <%= @form_jeune.typeformation_positif %>
 </p>
-
+<br>
 <p>
   <strong>Entreprise:</strong>
   <%= @form_jeune.enterprise_positif %>
 </p>
-
+<br>
 <p>
   <strong>Poste occupé dans l'entreprise:</strong>
   <%= @form_jeune.postoccuped_positif %>
 </p>
-
+<br>
 <%= link_to 'Modifier', edit_form_jeune_path(@form_jeune) %> |
 <%= link_to 'Retour', :back %>
 </div>

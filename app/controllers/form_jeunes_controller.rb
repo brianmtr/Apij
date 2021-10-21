@@ -132,6 +132,7 @@ class FormJeunesController < ApplicationController
         :enterprise_positif,
         :postoccuped_positif,
         :image,
+        :Agriculture, :Alimentation, :Animaux, :Architecture, :Armée_Sécurité_secours, :Artisanat, :Banque_Assurance, :Bâtiment, :Biologie, :Commerce_immobilier, :Communication, :Spectacle, :Droit, :Edition_Imprimerie, :Informatique, :Enseignement, :Environnement, :Ressources_Humaine, :Restauration, :Humanitaire, :Industrie_Agroalimentaire, :Industrie_Metallurgie, :Industrie_Automobile, :Sciences_Humaines, :Maintenance, :Numérique_Multimédia, :Santé, :Sciences_Mathématiques, :Secrétariat, :Social, :Estétique_Coiffure, :Sport_Animation, :Transport_Logistique
       )
     end
 end

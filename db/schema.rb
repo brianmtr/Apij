@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_19_114516) do
+ActiveRecord::Schema.define(version: 2021_10_21_085611) do
 
   create_table "books", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "firstname"
@@ -125,6 +125,40 @@ ActiveRecord::Schema.define(version: 2021_10_19_114516) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "image_data"
+    t.boolean "Agriculture"
+    t.boolean "Alimentation"
+    t.boolean "Animaux"
+    t.boolean "Architecture"
+    t.boolean "Armée_Sécurité_secours"
+    t.boolean "Artisanat"
+    t.boolean "Banque_Assurance"
+    t.boolean "Bâtiment"
+    t.boolean "Biologie"
+    t.boolean "Commerce_immobilier"
+    t.boolean "Communication"
+    t.boolean "Spectacle"
+    t.boolean "Droit"
+    t.boolean "Edition_Imprimerie"
+    t.boolean "Informatique"
+    t.boolean "Enseignement"
+    t.boolean "Environnement"
+    t.boolean "Ressources_Humaine"
+    t.boolean "Restauration"
+    t.boolean "Humanitaire"
+    t.boolean "Industrie_Agroalimentaire"
+    t.boolean "Industrie_Metallurgie"
+    t.boolean "Industrie_Automobile"
+    t.boolean "Sciences_Humaines"
+    t.boolean "Maintenance"
+    t.boolean "Numérique_Multimédia"
+    t.boolean "Santé"
+    t.boolean "Sciences_Mathématiques"
+    t.boolean "Secrétariat"
+    t.boolean "Social"
+    t.boolean "Estétique_Coiffure"
+    t.boolean "Sport_Animation"
+    t.boolean "Transport_Logistique"
+    t.boolean "Non_marchant"
   end
 
   create_table "offres", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -171,6 +205,8 @@ ActiveRecord::Schema.define(version: 2021_10_19_114516) do
     t.string "adress", default: "", null: false
     t.boolean "conseiller", default: false
     t.boolean "cre", default: false
+    t.boolean "acceptcookies"
+    t.boolean "refusedcookies"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

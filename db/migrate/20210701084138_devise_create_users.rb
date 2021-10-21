@@ -20,8 +20,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
         ##user conseiller
         t.boolean :conseiller,        default: "false"
         t.boolean :cre,               default: "false"
-
-  
+        
+        #cookies
+        t.boolean :acceptcookies     
+        t.boolean :refusedcookies
   
         ## Recoverable
         t.string   :reset_password_token

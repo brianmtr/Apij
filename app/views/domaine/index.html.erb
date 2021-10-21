@@ -5,7 +5,17 @@
 <div class="sectorJob">
     <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', domaine_agriculture_index_path %> </div>
 
-    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', domaine_espacevert_index_path %></div>
+    <div class="sectorBox transport"><%= link_to 'Transport, Logistique', domaine_transport_index_path %></div>
+    <%
+=begin%>
+ <div class="sectorBox association"><%= link_to 'Association', domaine_association_index_path %></div> 
+<%
+=end%>
+    <%
+=begin%>
+ <div class="sectorBox espacevert"><%= link_to 'Espaces verts', domaine_espacevert_index_path %></div> 
+<%
+=end%>
          
     <div class="sectorBox animals"><%= link_to 'Soins aux animaux', domaine_animals_index_path %></div>
             
@@ -52,13 +62,9 @@
     <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', domaine_spectacle_index_path %></div>
 
     <div class="sectorBox support"><%= link_to 'Support à l\'entreprise', domaine_support_index_path %></div>
-
-    <div class="sectorBox transport"><%= link_to 'Transport, Logistique', domaine_transport_index_path %></div>
     
     <div class="sectorBox collectivite"><%= link_to 'Non marchant', domaine_nonmarchant_index_path %></div>
 
 </div> 
-<div class="sectorJob">
-    <div class="sectorBox association"><%= link_to 'Association', domaine_association_index_path %></div>
-</div>    
+   
 </div>     
