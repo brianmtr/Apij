@@ -5,7 +5,7 @@
  <% @offres.each do |offre| %>
  <% if offre.commune === 'Feignies' && offre.domaine === 'Support à l\'entreprise' %>
 <div class="card">
-    <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
+    <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at.strftime("%d-%m-%Y") %></small>
     <br>
     <p><%= offre.contrat %> </p>
     <p><%= offre.salaire %> € par mois</p>

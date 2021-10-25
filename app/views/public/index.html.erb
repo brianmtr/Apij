@@ -6,7 +6,7 @@
 
 <% if current_user.conseiller? %>
 <br>
-<h1 class="h2Title"><span class="colorLetters">Pu</span>blic</h1>
+<h1 class="h2Title"><span class="colorLetters">Can</span>didat(e)s</h1>
 
 <div class="PublicContainer">
   <h2>Entretien à prévoir</h2>
@@ -47,7 +47,7 @@
 
 
     <div class="PublicContainer">
-    <h2>Candidats</h2>
+    <h2>Candidat(e)s</h2>
     <ul class="list-group">
     
 
@@ -56,10 +56,10 @@
             <div class="search-box">
                 <div class="row">
                     <div class="col-md-3">
-                        <h5>Rechercher un candidat :</h5>
+                        <h5>Rechercher un(e) candidat(e) :</h5>
                     </div>
                     <div class="col-md-9">
-                      <input class="form-control" id="myInput" type="text" placeholder="Recherche.."> 
+                       <input class="form-control" id="myInput" type="text" placeholder="Recherche par nom, domaine, email etc..."> 
 
                     </div> 
                 </div>
@@ -89,8 +89,145 @@
          <% end %> 
            
             <td><%= form_jeune.firstname %><span> </span><%= form_jeune.lastname %></td>
-            <td><%= form_jeune.domain_exp %></td>            
-            <td><%= form_jeune.metier_exp %></td>
+            <td>
+  <% if form_jeune.Agriculture === true %>
+    <p style= "color: black;">Agriculture</p>
+  <% end %>
+  
+  <% if form_jeune.Alimentation === true %>
+    <p style= "color: black;">Alimentation</p>
+  <% end %>
+    
+  <% if form_jeune.Animaux === true %>
+    <p style= "color: black;">Animaux</p>
+  <% end %>
+  
+  <% if form_jeune.Architecture === true %>
+      <p style= "color: black;">Architecture</p>
+  <% end %>   
+  
+  <% if form_jeune.Armée_Sécurité_secours === true %>
+      <p style= "color: black;">Armée_Sécurité_secours</p>
+  <% end %>
+  
+  <% if form_jeune.Artisanat === true %>
+      <p style= "color: black;">Artisanat</p>
+  <% end %>
+    
+  <% if form_jeune.Banque_Assurance === true %>
+      <p style= "color: black;">Banque_Assurance</p>
+  <% end %>
+    
+  <% if form_jeune.Bâtiment === true %>
+      <p style= "color: black;">Bâtiment</p>
+  <% end %>
+
+  <% if form_jeune.Biologie === true %>
+      <p style= "color: black;">Biologie</p>
+  <% end %>  
+  
+  <% if form_jeune.Commerce_immobilier === true %>
+      <p style= "color: black;">Commerce_immobilier</p>
+  <% end %> 
+
+  <% if form_jeune.Communication === true %>
+      <p style= "color: black;">Communication</p>
+  <% end %>
+
+  <% if form_jeune.Spectacle === true %>
+      <p style= "color: black;">Spectacle</p>
+  <% end %>
+
+  <% if form_jeune.Droit === true %>
+      <p style= "color: black;">Droit</p>
+  <% end %>
+
+  <% if form_jeune.Edition_Imprimerie === true %>
+      <p style= "color: black;">Edition_Imprimerie</p>
+  <% end %>
+
+  <% if form_jeune.Informatique === true %>
+      <p style= "color: black;">Informatique</p>
+  <% end %>
+
+  <% if form_jeune.Enseignement === true %>
+      <p style= "color: black;">Enseignement</p>
+  <% end %>
+
+  <% if form_jeune.Environnement === true %>
+      <p style= "color: black;">Environnement</p>
+  <% end %>
+
+  <% if form_jeune.Ressources_Humaine === true %>
+      <p style= "color: black;">Ressources_Humaine</p>
+  <% end %>
+
+  <% if form_jeune.Restauration === true %>
+      <p style= "color: black;">Restauration</p>
+  <% end %>
+
+  <% if form_jeune.Humanitaire === true %>
+      <p style= "color: black;">Humanitaire</p>
+  <% end %>
+
+  <% if form_jeune.Industrie_Agroalimentaire === true %>
+      <p style= "color: black;">Industrie_Agroalimentaire</p>
+  <% end %>
+
+  <% if form_jeune.Industrie_Metallurgie === true %>
+      <p style= "color: black;">Industrie_Metallurgie</p>
+  <% end %>
+
+  <% if form_jeune.Industrie_Automobile === true %>
+      <p style= "color: black;">Industrie_Automobile</p>
+  <% end %>
+
+  <% if form_jeune.Sciences_Humaines === true %>
+      <p style= "color: black;">Sciences_Humaines</p>
+  <% end %>
+
+  <% if form_jeune.Maintenance === true %>
+      <p style= "color: black;">Maintenance</p>
+  <% end %>
+
+  <% if form_jeune.Numérique_Multimédia === true %>
+      <p style= "color: black;">Numérique_Multimédia</p>
+  <% end %>
+
+  <% if form_jeune.Santé === true %>
+      <p style= "color: black;">Santé</p>
+  <% end %>
+
+  <% if form_jeune.Sciences_Mathématiques === true %>
+      <p style= "color: black;">Sciences_Mathématiques</p>
+  <% end %>
+
+  <% if form_jeune.Secrétariat === true %>
+      <p style= "color: black;">Secrétariat</p>
+  <% end %>
+
+  <% if form_jeune.Social === true %>
+      <p style= "color: black;">Social</p>
+  <% end %>
+
+  <% if form_jeune.Estétique_Coiffure === true %>
+      <p style= "color: black;">Estétique_Coiffure</p>
+  <% end %>
+
+  <% if form_jeune.Sport_Animation === true %>
+      <p style= "color: black;">Sport_Animation</p>
+  <% end %>
+
+  <% if form_jeune.Transport_Logistique === true %>
+      <p style= "color: black;">Transport_Logistique</p>
+  <% end %>
+
+  <% if form_jeune.Non_marchant === true %>
+      <p style= "color: black;">Non_marchant</p>
+  <% end %>
+
+<br></td>            
+            <td><%= form_jeune.postsearched_exp %></td>
             <td><%= form_jeune.address %></td>
             <td><%= form_jeune.mail %></td>
             <td>

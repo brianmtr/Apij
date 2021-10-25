@@ -27,7 +27,7 @@
 <% @offres.each do |offre| %>
     <% if offre.user_offres.where(state: "yes", user_id: current_user).exists? %>
         <div class="card" style="scroller">
-            <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at %></small>
+            <h5><%= offre.poste %></h5><small class="created"><%= offre.created_at.strftime("%d-%m-%Y") %></small>
             <br>
             <p><%= offre.contrat %> </p>
             <p><%= offre.salaire %> € par mois</p>
