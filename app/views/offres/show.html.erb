@@ -23,10 +23,12 @@
   </div>
 
   <div class="offreShowjob">
+  <% if @offre.salaire? %>
   <p>
     salaire:
     <%= @offre.salaire %>
   </p>
+  <% end %>
   <p>
 
     <%= @offre.contrat %>

@@ -35,9 +35,9 @@
 
 
 <div class="sectorJob">
-    <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration', domaine_restauration_index_path %></div>
+    <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration/Tourisme', domaine_restauration_index_path %></div>
 
-    <div class="sectorBox tourisme"><%= link_to 'Tourisme, Loisirs', domaine_tourisme_index_path %></div>
+    <div class="sectorBox tourisme"><%= link_to 'Sport, Loisir', domaine_tourisme_index_path %></div>
           
     <div class="sectorBox industrieagroalimentaire"><%= link_to 'Industrie Agroalimentaire', domaine_industrieagroalimentaire_index_path %></div>
 
@@ -50,20 +50,29 @@
 <div class="sectorJob">
     <div class="sectorBox industrieautomobile"><%= link_to 'Industrie Automobile', domaine_industrieautomobile_index_path %></div>
 
-    <div class="sectorBox maintenance"><%= link_to 'Maintenance', domaine_maintenance_index_path %></div>
+    <%
+=begin%>
+ <div class="sectorBox maintenance"><%= link_to 'Maintenance', domaine_maintenance_index_path %></div> 
+<%
+=end%>
+    <div class="sectorBox support"><%= link_to 'Gestion/Comptabilité/RH', domaine_support_index_path %></div>
 
     <div class="sectorBox sante"><%= link_to 'Santé', domaine_sante_index_path %></div>
 
-    <div class="sectorBox service"><%= link_to 'Service à la personne', domaine_service_index_path %></div>
+    <div class="sectorBox service"><%= link_to 'Social/Services à la personne', domaine_service_index_path %></div>
 
 </div> 
 
 <div class="sectorJob">   
-    <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', domaine_spectacle_index_path %></div>
+    <div class="sectorBox spectacle"><%= link_to 'Culture/Spectacle/Patrimoine', domaine_spectacle_index_path %></div>
 
-    <div class="sectorBox support"><%= link_to 'Support à l\'entreprise', domaine_support_index_path %></div>
-    
-    <div class="sectorBox collectivite"><%= link_to 'Non marchant', domaine_nonmarchant_index_path %></div>
+
+     
+    <%
+=begin%>
+ <div class="sectorBox collectivite"><%= link_to 'Non marchant', domaine_nonmarchant_index_path %></div> 
+<%
+=end%>
 
 </div> 
    

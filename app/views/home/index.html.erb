@@ -33,17 +33,18 @@
 <% if user_signed_in? && current_user.conseiller? %>
 <div class="containerDashbord">
   <div class="boxPubliCre">
-    <div class="publicDashCandidats">
-    <p class="titleBox">Candidat(e)s</p>
-        <div class="numberDynamic"><%= @users.count(1) %></div>
-    </div>
-        <div class="publicDash">
-    <p class="titleBox">Candidatures</p>
-        <div class="numberDynamic"><%= @candidats.count(1) %></div>
-    </div>
-   
+    <%
+=begin%>
+ <div class="publicDashCandidats">
 
-    
+
+    </div> 
+<%
+=end%>
+    <div class="publicDash">
+        <p class="titleBox">Candidat(e)s </p>
+        <div class="numberDynamic"><%= @form_jeunes.count(1) %></div>
+    </div> 
   </div>
   <div class="BoxOffreDashboard">
     <div class="OffreDash">
@@ -52,13 +53,13 @@
                <br>
                <br>
                <div class="ListOffers">
-                   <% @offres.each do |offre| %>
+                   <% @offres.reverse_each do |offre| %>
                
                <ul>
                   <li><%= offre.poste %></li>
                   <li><%= offre.contrat %></li>  
                   <li><%= offre.commune %></li> 
-                  <li><%= offre.salaire %> € par mois.</li>
+                  <li><%= offre.salaire %></li>
                   <li class="liHome"><%= link_to 'Voir offre', offre %></li>
                </ul>
                <div class="separeBar"></div>
