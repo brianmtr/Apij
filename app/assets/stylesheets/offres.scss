@@ -80,17 +80,22 @@ h1 {
     box-shadow: 20px 20px 50px #0000001c, 
     -30px -30px 60px #00000028;
     background-color: rgba(255, 255, 255, 0.603);
+  
 }
 
 
 
 .sectorBox a {
-    color: orange !important;
+    color: rgb(34, 34, 34) !important;
+    text-decoration-style:  2px solid red;
+        box-shadow: 5px 5px 5px #0000001c, 
+    -5px -5px 5px #00000028;
     list-style-type: none;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
     position: relative;
+    width: 100%;
     bottom: 30px;
 }
 
@@ -253,6 +258,16 @@ p {
 .linkShow a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+
+
+@media screen and(min-width: 375px) {
+    .h2Title {
+        width: 70%;
+        margin-left: 17%;
+
+    }
+
 }
 
 @media screen and(min-width: 576px) {

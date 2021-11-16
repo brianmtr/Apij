@@ -15,6 +15,14 @@ html, body {
  
 }
 
+.lienUtile {
+    width: 20%;
+    position: absolute;
+}
+
+.lienUtile p {
+    color: black;
+}
 
 h2 {
     color: black !important;
@@ -115,6 +123,37 @@ h2 {
     box-shadow: 
     6px 6px 12px 0 rgba(124, 9, 255, 0.5),
     -1px -1px 4px 0 rgba(124, 9, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+}
+
+.publicDashCandidats img {
+    width: 70% !important;
+    margin-top: 15%;
+    
+}
+
+.mine img {
+ margin-top: 30%;
+ width: 90% !important;
+}
+
+.publicDashCandidatsButton {
+    box-shadow: 
+    6px 6px 12px 0 rgba(124, 9, 255, 0.5),
+    -1px -1px 4px 0 rgba(124, 9, 255, 0.5);
+    background-color: blueviolet;
+    width: 40%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+
+
+.publicDashCandidatsButton:hover {
+    background-color: rgba(98, 0, 163, 0.555);
+
 }
 
 .publicDash{
@@ -201,6 +240,27 @@ h2 {
     background-color: rgba(255, 255, 255, 0.87);
 }
 
+@media screen and(min-width: 375px) {
+    .publicDashCandidatsButton {
+        width: 65%;
+        height: 51%;
+        margin-top: 45%;
+    }
+
+    .lienUtile {
+        width: 30%;
+    }
+
+    .mine {
+        margin-top: 40%;
+        width: 63%;
+    }
+
+    .titleBox {
+        color: black;
+    }
+}
+
 
 @media screen and(min-width: 480px) {
     .logoCo img {
@@ -212,6 +272,22 @@ h2 {
     .OffreDash {
         margin-bottom: 20px;
     }
+
+    .publicDashCandidatsButton {
+        width: 65%;
+        height: 51%;
+        margin-top: 45%;
+    }
+
+    .mine {
+        margin-top: 19%;
+        width: 64%;
+    }
+    .publicDashCandidatsButton {
+        
+        height: 67%;
+        margin-top: 17%;
+    }
 }
 
 @media screen and(min-width: 576px) {
@@ -219,12 +295,25 @@ h2 {
         font-size: 25px;
         color:black;
     }
+
+    .mine {
+        margin-top: 16%;
+        width: 55%;
+    }
+    .publicDashCandidatsButton {
+        width: 57%;
+    }
 }
 
 @media screen and(min-width: 772px) {
     .logo img {
         width: 20%;
         margin-left: 40%;
+    }
+
+    .publicDashCandidatsButton {
+        width: 40%;
+        margin-top: 10%;
     }
 }
 
@@ -283,6 +372,16 @@ h2 {
 }
 
 }
+
+@media screen and(min-width: 992px) {
+    .publicDashCandidatsButton {
+        width: 49%;
+        margin-top: 25%;
+        height: 50%;
+    }
+    
+     
+}
 @media screen and(min-width: 1200px) {
     .containerDashbord {
         margin-bottom: 50px;
@@ -302,11 +401,24 @@ h2 {
     .containerDescribe p {
         font-size: 17px;
     }
+
+    .publicDashCandidatsButton {
+        width: 48%;
+        margin-top: 21%;
+        height: 57%;
+    }
 }
 
 @media screen and (min-width: 1500px) {
     .OffreDash {
         height: 100%;
+    }
+
+    .publicDashCandidatsButton {
+        width: 37%;
+        margin-top: 15%;
+        height: 57%;
+        margin-left: 27%;
     }
 }
 @media screen and (min-width: 1900px) {
@@ -319,201 +431,11 @@ h2 {
     .containerDescribe p {
         font-size: 21px;
     }
+
+    .publicDashCandidatsButton {
+        width: 35%;
+        margin-top: 9%;
+        height: 65%;
+        margin-left: 27%;
+    }
 }
-// .top_nav {
-//     background-color: #FCB813;
-//     width: 100%;
-//     height: 30px;
-
-//  }
-
-//  .top_nav a {
-//      display: flex;
-//     flex-direction: row-reverse;
-//     margin-right: 50px;
-//     text-decoration: none;
-//     color: #fff;
-//     font-weight: bold;
-//     font-size: 20px;
-//  }
-
-//  .boxAccount {
-//     margin-top: 150px;
-//      display: flex;
-//      justify-content: space-around;
-//  }
-
-
-
-// .CreAccount, .PublicAccount {
-    
-//     width: 30%;
-//     text-align: center;
-//     height: 400px;
-// }
-
-
-// .logoCo img{
-//     width: 10%;
-
-// }
-
-// .logoCo {
-//     display: flex;
-//     justify-content: center;
-// }
-// .container-fluid img {
-//     width: 5%;
-//     position: absolute;
-// }
-
-// .logo {
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .logo img {
-//     width: 17%;
-
-// }
-
-// .TitleCreateAccount h1 {
-//     font-size: 50px;
-//     color: #fff;
-// }
-
-// .connexion h2 a {
-//     list-style-type: none;
-//     text-decoration: none;
-//     color: #fff;
-//     font-size: 50px;
-   
-// }
-
-
-// .containerDashbord {
-//     position: relative;
-//     bottom: 400px;
-  
-//     height: 600px;
-//     width: 70%;
-//     margin-left: 15%;
-//     display: flex;
-// }
-
-// .boxPubliCre {
-    
-//     width: 40%;
-//     height: 600px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-    
-// }
-
-
-
-// .publicDash, .CreDash {
-//     background-color: rgba(255, 255, 255, 0.459);
-//     width: 90%;
-//     height: 250px;
-//     margin-left: 5%;
-//     border-radius: 10px;
-//     box-shadow: 20px 20px 50px #3f3f3f57, 
-//     -30px -30px 60px #33333385;
-// }
-
-// .BoxOffreDashboard{
-  
-//     width: 60%;
-//     height: 600px;
-//     display: flex;
-    
-// }
-
-// .OffreDash {
-//     background-color: rgba(255, 255, 255, 0.459);
-//     width: 90%;
-//     height: 550px;
-//     margin-left: 5%;
-//     margin-top: 25px;
-//     border-radius: 10px;
-//     box-shadow: 20px 20px 50px #3f3f3f57, 
-//     -30px -30px 60px #33333385;
-// }
-
-// .containerDescribe {
-//     position: relative;
-//     bottom: 400px;
-//     height: 600px;
-//     width: 66%;
-//     margin-left: 16.7%;
-//     display: flex;
-//     background-color: rgba(255, 255, 255, 0.459);
-//     box-shadow: 20px 20px 50px #3f3f3f57, 
-//     -30px -30px 60px #33333385;
-//     border-radius: 10px;
-
-// }
-
-// .titleBox {
-//     font-size: 40px;
-//     font-weight: bold;
-//     color: #fff;
-// }
-
-// .numberDynamic {
-//     font-size: 60px;
-//     font-weight: bold;
-//     color: #fff;
-//     text-align: center;
-    
-// }
-
-// .ListOffers {
-//     margin-top: 10px;
-//     overflow: hidden;
-//     height: 290px;
-// }
-
-// .ListOffers ul{
-// color: #fff;
-// display: flex;
-// justify-content: space-around;
-
-// }
-
-// .ListOffers li {
-//     list-style-type: none;
- 
-// }
-
-// .separeBar {
-//     width: 90%;
-//     background-color: #fff;
-//     height: 1px;
-//     margin-left: 5%;
-// }
-
-
-// .containerDescribe {
-//     margin-top: 100px;
-// }
-
-// .containerDescribe img {
-//     width: 40%;
-//     height: 450px;
-//     margin-top: 75px;
-//     margin-left: 5%;
-// }
-
-// .presentation {
-//     width: 40%;
-//     height: 450px;
-//     margin-top: 75px;
-//     margin-left: 5%;
-//     text-align: justify;
-//     color: #fff;
-//     font-size: 17px;
-//     overflow: hidden;
-// }

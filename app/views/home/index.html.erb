@@ -6,9 +6,8 @@
 
 
 <% if user_signed_in? && current_user.conseiller? %>
-<div class="logoCo">
-    <%= image_tag("Logo-Reussir-en-Sambre-Avesnois.jpg", :alt => "logo_resa") %>
-</div>
+    <br>
+    <br>
 <% else %>
 <div class="logo">
     <%= image_tag("Logo-Reussir-en-Sambre-Avesnois.jpg", :alt => "logo_resa") %>
@@ -30,18 +29,31 @@
 
 <br>
 
-<% if user_signed_in? && current_user.conseiller? %>
+
+ <% if user_signed_in? %> 
+
 <div class="containerDashbord">
   <div class="boxPubliCre">
-    <%
-=begin%>
+
  <div class="publicDashCandidats">
+    <div class="lienUtile">
+      <p>Liens utiles:</p>
+    </div>
+    <a href="https://quivamaider.com/">
 
+      <div class="publicDashCandidatsButton mine">
+          <%= image_tag("logo-mine-dinfos.png", :alt => "mine-dinfos", :title => "Retrouvez toutes les aides accessibles et les structures autour de chez vous") %>
+      </div>
+    </a>
 
-    </div> 
-<%
-=end%>
-    <div class="publicDash">
+    <a href="https://www.gipreussir.fr/">
+      <div class="publicDashCandidatsButton">
+        <%= image_tag("Logo-Reussir-en-Sambre-Avesnois.jpg", :alt => "Reussir-en-Sambre-Avesnois", :title => "Site web de Réussir En Sambre Avesnois") %>
+      </div>
+    </a>
+  </div> 
+
+    <div class="publicDash ">
         <p class="titleBox">Candidat(e)s </p>
         <div class="numberDynamic"><%= @form_jeunes.count(1) %></div>
     </div> 
@@ -69,41 +81,37 @@
     </div>
   </div>
 </div>
-<% end %>
+
+ <% end %> 
+
 
 <% if user_signed_in? %>
+<div data-aos="fade-up">
 <div class="containerDescribe">
 
       <%= image_tag("imgGomeYellow.png", :alt => "image_home") %>
-      <p class="presentation">Traduction de H. Rackham (1914)
-         "But I must explain to you how all this mistaken idea of 
-         give you a complete account of the system, and expound 
-         the actual teachings of the great explorer of the truth, 
-         the master-builder of human happiness. No one rejects, 
-         dislikes, or avoids pleasure itself, because it is pleasure
-         ,<br>
-         <br>
-         but because those who do not know how to pursue pleasure 
-         rationally encounter consequences that are extremely 
-         denouncing pleasure and praising pain was born and I will
-         painful. Nor again is there anyone who loves or pursues or 
-         desires to obtain pain of itself, because it is pain, but 
-         because occasionally circumstances occur in which toil and 
-         pain can procure him some great pleasure. To take a trivial 
-         ple, which of us ever undertakes laborious physical 
-         exercise, except to obtain some advantage from it? But who
-         <br> 
-         <br>
-         has any right to find fault with a man who chooses to enjoy 
-         a pleasure that has no annoying consequences, or one who 
-         avoids a pain that produces no resultant pleasure?"
+      <p class="presentation">Bienvenue sur App'ijob  !!<br>
+      <br>
+      <br>
+      Notre site web vous permettra, d'une part, de rechercher un emploi dans tout les communautés de l'Avesnois
+      mais aussi d'être accompagné par l'équipe de Reussir En Sambre Avesnois.
+      <br>
+      <br>
+      N'hésitez pas à suivre nos Événements qui seront affichés directement sur cette page d'accueil.
+      <br>
+      <br>
+      <br>
+      <br>
+      RÉUSSIR EN SAMBRE AVESNOIS-Générateur d'Avenirs
       </p> 
+</div>
 </div>
 <br>
 <br>
 
 
    <% @events.each do |event| %>
+   <div data-aos="fade-up">
   <h2 class="h2Title"><span class="colorLetters">Évén</span>ements</h2>
    
        <div class="cardHome">
@@ -120,9 +128,14 @@
           </div>
         <% end %>
       </div>
+    </div>
 <br>
    <% end %>
 <% end %> 
 
 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

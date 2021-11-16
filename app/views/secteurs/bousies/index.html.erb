@@ -2,54 +2,182 @@
 
 <div class="tassevent">
 <div class="sectorJob">
-    <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', secteurs_bousies_agriculture_index_path %> </div>
+    <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', secteurs_bousies_agriculture_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Agriculture et pêche', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>
+    </div>
 
-    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs_bousies_espacevert_index_path %></div>
+    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs_bousies_espacevert_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Espaces verts', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>
+    </div>
 
-    <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs_bousies_animals_index_path %></div>
+        <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs_bousies_animals_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Soins aux animaux', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>
+    </div>
             
-    <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs_bousies_art_index_path %></div>
+        <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs_bousies_art_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Ouvrage d\'art', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>  
+    </div>
 </div>
 
 <div class="sectorJob">
-     <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_bousies_banque_index_path %></div>
+          <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_bousies_banque_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Banque, assurance, immobilier', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>  
+     </div>
 
-   <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs_bousies_commerce_index_path %></div>
+      <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs_bousies_commerce_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Commerce, Vente', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %> 
+   </div>
           
-    <div class="sectorBox communication"><%= link_to 'Communication', secteurs_bousies_communication_index_path %></div>
+        <div class="sectorBox communication"><%= link_to 'Communication', secteurs_bousies_communication_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Communication', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %> 
+    </div>
 
-    <div class="sectorBox batiment"><%= link_to 'Bâtiment/Travaux public', secteurs_bousies_batiment_index_path %></div>
+        <div class="sectorBox batiment"><%= link_to 'Bâtiment/Travaux public', secteurs_bousies_batiment_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Bâtiment', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %> 
+    </div>
 </div> 
 
-
 <div class="sectorJob">
-    <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration', secteurs_bousies_restauration_index_path %></div>
+        <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration', secteurs_bousies_restauration_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Restauration', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>  
+    </div>
 
-    <div class="sectorBox tourisme"><%= link_to 'Tourisme, Loisirs', secteurs_bousies_tourisme_index_path %></div>
+        <div class="sectorBox tourisme"><%= link_to 'Tourisme, Loisirs', secteurs_bousies_tourisme_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Tourisme, Loisirs', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>   
+    </div>
           
-    <div class="sectorBox industrie"><%= link_to 'Industrie Agroalimentaire', secteurs_bousies_industrieagroalimentaire_index_path %></div>
+      <div class="sectorBox industrieagroalimentaire"><%= link_to 'Industrie Agroalimentaire', secteurs_bousies_industrieagroalimentaire_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Agroalimentaire', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>   
+    </div>
 
-    <div class="sectorBox industrie"><%= link_to 'Industrie Metallurgie', secteurs_bousies_industriemetallurgie_index_path %></div>
+      <div class="sectorBox industriemetallurgie"><%= link_to 'Industrie Metallurgie', secteurs_bousies_industriemetallurgie_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Metallurgie', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>   
+    </div>
 </div> 
+
 <div class="sectorJob">
-    <div class="sectorBox industrie"><%= link_to 'Industrie Automobile', secteurs_bousies_industrieautomobile_index_path %></div>
+      <div class="sectorBox industrieautomobile"><%= link_to 'Industrie Automobile', secteurs_bousies_industrieautomobile_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Automobile', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>   
+    </div>
 
-    <div class="sectorBox maintenance"><%= link_to 'Maintenance', secteurs_bousies_maintenance_index_path %></div>
+       <div class="sectorBox maintenance"><%= link_to 'Maintenance', secteurs_bousies_maintenance_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Maintenance', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %> 
+    </div>
 
-    <div class="sectorBox sante"><%= link_to 'Santé', secteurs_bousies_sante_index_path %></div>
+        <div class="sectorBox sante"><%= link_to 'Santé', secteurs_bousies_sante_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Santé', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %> 
+    </div>
+    
+    <div class="sectorBox service"><%= link_to 'Service à la personne', secteurs_bousies_service_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Service à la personne', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %> 
+    </div>
+</div>
 
-    <div class="sectorBox service"><%= link_to 'Service à la personne', secteurs_bettrechies_service_index_path %></div>
-</div>    
 <div class="sectorJob">  
-    <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', secteurs_bousies_spectacle_index_path %></div>
+        <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', secteurs_bousies_spectacle_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Spectacle', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>  
+    </div>
   
-    <div class="sectorBox support"><%= link_to 'Support à l\'entreprise', secteurs_bousies_support_index_path %></div>
+       <div class="sectorBox support"><%= link_to 'Support à l\'entreprise', secteurs_bousies_support_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Support à l\'entreprise', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>  
+    </div>
 
-    <div class="sectorBox transport"><%= link_to 'Transport, Logistique', secteurs_bousies_transport_index_path %></div>
+        <div class="sectorBox transport"><%= link_to 'Transport, Logistique', secteurs_bousies_transport_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Transport, Logistique', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %>
+    </div>
 
-    <div class="sectorBox collectivite"><%= link_to 'Non marchant', secteurs_bousies_nonmarchant_index_path %></div>
+        <div class="sectorBox collectivite"><%= link_to 'Non marchant', secteurs_bousies_nonmarchant_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Non marchant', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %> 
+    </div>
 </div>
+
 <div class="sectorJob">   
-    <div class="sectorBox association"><%= link_to 'Association', secteurs_bousies_association_index_path %></div>
+       <div class="sectorBox association"><%= link_to 'Association', secteurs_bousies_association_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Association', commune: 'Bousies').count(1) %><p></div>
+            </div>
+        <% end %> 
+    </div>
 </div>    
 </div>
