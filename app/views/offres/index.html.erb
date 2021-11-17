@@ -342,7 +342,7 @@
                                     <td class="tdland"><%= Offre.where(commune:'Forest-en-cambrésis').count(1) %> disponibles</td></tr>
                                 <% end %>   
 
-                                <tr><td><div class="city fourmies"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Fourmies', secteurs_anor_index_path %></div></td>
+                                <tr><td><div class="city fourmies"><input type="checkbox" id="horns" name="horns"> <%= link_to 'Fourmies', secteurs_fourmies_index_path %></div></td>
                                 <% @offres.each do |offre| %>
                                     <td class="tdland"><%= Offre.where(commune:'Fourmies').count(1) %> disponibles</td></tr>
                                 <% end %>

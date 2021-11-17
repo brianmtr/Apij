@@ -2,190 +2,182 @@
 
 <div class="tassevent">
 <div class="sectorJob">
-    <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', secteurs_anor_agriculture_index_path %>
+    <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', secteurs_eppesauvage_agriculture_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Agriculture et pêche', commune: 'Anor').count(1) %><p></div>
-            </div>
-        <% end %>
-    </div><%= link_to 'Agriculture et pêche', secteurs_eppesauvage_agriculture_index_path %> </div>
-
-    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs_anor_espacevert_index_path %>
-        <% @offres.each do |offre| %>
-            <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Espaces verts', commune: 'Anor').count(1) %><p></div>
-            </div>
-        <% end %>
-    </div><%= link_to 'Espaces verts', secteurs_eppesauvage_espacevert_index_path %></div>
-
-        <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs_anor_animals_index_path %>
-        <% @offres.each do |offre| %>
-            <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Soins aux animaux', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Agriculture et pêche', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>
     </div>
-           <%= link_to 'Soins aux animaux', secteurs_eppesauvage_animals_index_path %></div>
+
+    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs_eppesauvage_espacevert_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Espaces verts', commune: 'Eppe-sauvage').count(1) %><p></div>
+            </div>
+        <% end %>
+    </div>
+
+        <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs_eppesauvage_animals_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Soins aux animaux', commune: 'Eppe-sauvage').count(1) %><p></div>
+            </div>
+        <% end %>
+    </div>
             
-        <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs_anor_art_index_path %>
+        <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs_eppesauvage_art_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Ouvrage d\'art', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Ouvrage d\'art', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>  
     </div>
 </div>
-    </div>
-           <%= link_to 'Ouvrage d\'art', secteurs_eppesauvage_art_index_path %></div>
-</div>
 
 <div class="sectorJob">
-          <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_anor_banque_index_path %>
+          <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_eppesauvage_banque_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Banque, assurance, immobilier', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Banque, assurance, immobilier', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>  
-     </div><%= link_to 'Banque, assur. immo.', secteurs_eppesauvage_banque_index_path %></div>
+     </div>
 
-      <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs_anor_commerce_index_path %>
+      <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs_eppesauvage_commerce_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Commerce, Vente', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Commerce, Vente', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %> 
-   </div><%= link_to 'Commerce, Vente', secteurs_eppesauvage_commerce_index_path %></div>
+   </div>
           
-        <div class="sectorBox communication"><%= link_to 'Communication', secteurs_anor_communication_index_path %>
+        <div class="sectorBox communication"><%= link_to 'Communication', secteurs_eppesauvage_communication_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Communication', commune: 'Anor').count(1) %><p></div>
-            </div>
-        <% end %> 
-    </div><%= link_to 'Communication', secteurs_eppesauvage_communication_index_path %></div>
-
-        <div class="sectorBox batiment"><%= link_to 'Bâtiment/Travaux public', secteurs_anor_batiment_index_path %>
-        <% @offres.each do |offre| %>
-            <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Bâtiment', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Communication', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %> 
     </div>
-</div> <%= link_to 'Bâtiment/Travaux public', secteurs_eppesauvage_batiment_index_path %></div>
-</div> 
 
-
-<div class="sectorJob">
-        <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration', secteurs_anor_restauration_index_path %>
+        <div class="sectorBox batiment"><%= link_to 'Bâtiment/Travaux public', secteurs_eppesauvage_batiment_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Bâtiment', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Bâtiment', commune: 'Eppe-sauvage').count(1) %><p></div>
+            </div>
+        <% end %> 
+    </div>
+</div> 
+
+<div class="sectorJob">
+        <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration', secteurs_eppesauvage_restauration_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Restauration', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>  
-    </div><%= link_to 'Hôtellerie/Restauration', secteurs_eppesauvage_restauration_index_path %></div>
+    </div>
 
-        <div class="sectorBox tourisme"><%= link_to 'Tourisme, Loisirs', secteurs_anor_tourisme_index_path %>
+        <div class="sectorBox tourisme"><%= link_to 'Tourisme, Loisirs', secteurs_eppesauvage_tourisme_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Tourisme, Loisirs', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Tourisme, Loisirs', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>   
-    </div><%= link_to 'Tourisme, Loisirs', secteurs_eppesauvage_tourisme_index_path %></div>
+    </div>
           
-      <div class="sectorBox industrie"><%= link_to 'Industrie Agroalimentaire', secteurs_anor_industrieagroalimentaire_index_path %>
+      <div class="sectorBox industrieagroalimentaire"><%= link_to 'Industrie Agroalimentaire', secteurs_eppesauvage_industrieagroalimentaire_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Agroalimentaire', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Agroalimentaire', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>   
-    </div><%= link_to 'Industrie Agroalimentaire', secteurs_eppesauvage_industrieagroalimentaire_index_path %></div>
+    </div>
 
-      <div class="sectorBox industrie"><%= link_to 'Industrie Agroalimentaire', secteurs_anor_industrieagroalimentaire_index_path %>
+      <div class="sectorBox industriemetallurgie"><%= link_to 'Industrie Metallurgie', secteurs_eppesauvage_industriemetallurgie_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Agroalimentaire', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Metallurgie', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>   
-    </div><%= link_to 'Industrie Metallurgie', secteurs_eppesauvage_industriemetallurgie_index_path %></div>
+    </div>
 </div> 
+
 <div class="sectorJob">
-      <div class="sectorBox industrie"><%= link_to 'Industrie Agroalimentaire', secteurs_anor_industrieagroalimentaire_index_path %>
+      <div class="sectorBox industrieautomobile"><%= link_to 'Industrie Automobile', secteurs_eppesauvage_industrieautomobile_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Agroalimentaire', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Industrie Automobile', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>   
-    </div><%= link_to 'Industrie Automobile', secteurs_eppesauvage_industrieautomobile_index_path %></div>
+    </div>
 
-       <div class="sectorBox maintenance"><%= link_to 'Maintenance', secteurs_anor_maintenance_index_path %>
+       <div class="sectorBox maintenance"><%= link_to 'Maintenance', secteurs_eppesauvage_maintenance_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Maintenance', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Maintenance', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %> 
-    </div><%= link_to 'Maintenance', secteurs_eppesauvage_maintenance_index_path %></div>
+    </div>
 
-        <div class="sectorBox sante"><%= link_to 'Santé', secteurs_anor_sante_index_path %>
+        <div class="sectorBox sante"><%= link_to 'Santé', secteurs_eppesauvage_sante_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Santé', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Santé', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %> 
-    </div><%= link_to 'Santé', secteurs_eppesauvage_sante_index_path %></div>
-
+    </div>
     
-    <div class="sectorBox service"><%= link_to 'Service à la personne', secteurs_anor_service_index_path %>
+    <div class="sectorBox service"><%= link_to 'Service à la personne', secteurs_eppesauvage_service_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Service à la personne', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Service à la personne', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %> 
     </div>
-</div>  <%= link_to 'Service à la personne', secteurs_eppesauvage_service_index_path %></div>
-</div>    
-<div class="sectorJob">  
-        <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', secteurs_anor_spectacle_index_path %>
-        <% @offres.each do |offre| %>
-            <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Spectacle', commune: 'Anor').count(1) %><p></div>
-            </div>
-        <% end %>  
-    </div><%= link_to 'Spectacle/Événementiel', secteurs_eppesauvage_spectacle_index_path %></div>
-  
-       <div class="sectorBox support"><%= link_to 'Support à l\'entreprise', secteurs_anor_support_index_path %>
-        <% @offres.each do |offre| %>
-            <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Support à l\'entreprise', commune: 'Anor').count(1) %><p></div>
-            </div>
-        <% end %>  
-    </div><%= link_to 'Support à l\'entreprise', secteurs_eppesauvage_support_index_path %></div>
+</div>
 
-        <div class="sectorBox transport"><%= link_to 'Transport, Logistique', secteurs_anor_transport_index_path %>
+<div class="sectorJob">  
+        <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', secteurs_eppesauvage_spectacle_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Transport, Logistique', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Spectacle', commune: 'Eppe-sauvage').count(1) %><p></div>
+            </div>
+        <% end %>  
+    </div>
+  
+       <div class="sectorBox support"><%= link_to 'Support à l\'entreprise', secteurs_eppesauvage_support_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Support à l\'entreprise', commune: 'Eppe-sauvage').count(1) %><p></div>
+            </div>
+        <% end %>  
+    </div>
+
+        <div class="sectorBox transport"><%= link_to 'Transport, Logistique', secteurs_eppesauvage_transport_index_path %>
+        <% @offres.each do |offre| %>
+            <div class="containerBadge">
+                <div class="badge"><p><%= @offres.where(domaine: 'Transport, Logistique', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %>
-    </div><%= link_to 'Transport, Logistique', secteurs_eppesauvage_transport_index_path %></div>
+    </div>
 
-        <div class="sectorBox collectivite"><%= link_to 'Non marchant', secteurs_anor_nonmarchant_index_path %>
+        <div class="sectorBox collectivite"><%= link_to 'Non marchant', secteurs_eppesauvage_nonmarchant_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Non marchant', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Non marchant', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %> 
     </div>
-</div><%= link_to 'Non marchant', secteurs_eppesauvage_nonmarchant_index_path %></div>
 </div>
+
 <div class="sectorJob">   
-       <div class="sectorBox association"><%= link_to 'Association', secteurs_anor_association_index_path %>
+       <div class="sectorBox association"><%= link_to 'Association', secteurs_eppesauvage_association_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
-                <div class="badge"><p><%= @offres.where(domaine: 'Association', commune: 'Anor').count(1) %><p></div>
+                <div class="badge"><p><%= @offres.where(domaine: 'Association', commune: 'Eppe-sauvage').count(1) %><p></div>
             </div>
         <% end %> 
     </div>
-</div>    
-</div>  <%= link_to 'Association', secteurs_eppesauvage_association_index_path %></div>
 </div>    
 </div>
