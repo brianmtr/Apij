@@ -51,6 +51,10 @@ class OffresController < ApplicationController
 
   # DELETE /offres/1 or /offres/1.json
   def destroy
+    @useroffre = UserOffre.find_by(params[:id])
+    if  UserOffre.exists?
+        @useroffre.destroy
+    end
     @offre.destroy
     respond_to do |format|
       format.html { redirect_to offres_url, notice: "Offre was successfully destroyed." }

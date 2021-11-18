@@ -1,6 +1,6 @@
 <h1>Amfroipret</h1>
 
-<div class="tassevent">
+<div class="test">
 <div class="sectorJob">
     <div class="sectorBox Agriculture"><%= link_to 'Agriculture et pêche', secteurs_amfroipret_agriculture_index_path %>
         <% @offres.each do |offre| %>
@@ -10,7 +10,7 @@
         <% end %>
     </div>
 
-    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs__espacevert_index_path %>
+    <div class="sectorBox espacevert"><%= link_to 'Espaces verts', secteurs_amfroipret_espacevert_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Espaces verts', commune: 'Amfroipret').count(1) %><p></div>
@@ -18,7 +18,7 @@
         <% end %>
     </div>
 
-        <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs__animals_index_path %>
+        <div class="sectorBox animals"><%= link_to 'Soins aux animaux', secteurs_amfroipret_animals_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Soins aux animaux', commune: 'Amfroipret').count(1) %><p></div>
@@ -27,7 +27,7 @@
     </div>
           
             
-        <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs__art_index_path %>
+        <div class="sectorBox art"><%= link_to 'Ouvrage d\'art', secteurs_amfroipret_art_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Ouvrage d\'art', commune: 'Amfroipret').count(1) %><p></div>
@@ -39,7 +39,7 @@
          
 
 <div class="sectorJob">
-          <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs__banque_index_path %>
+          <div class="sectorBox banque"><%= link_to 'Banque, assur. immo.', secteurs_amfroipret_banque_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Banque, assurance, immobilier', commune: 'Amfroipret').count(1) %><p></div>
@@ -47,7 +47,7 @@
         <% end %>  
      </div>
 
-      <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs__commerce_index_path %>
+      <div class="sectorBox commerce"><%= link_to 'Commerce, Vente', secteurs_amfroipret_commerce_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Commerce, Vente', commune: 'Amfroipret').count(1) %><p></div>
@@ -55,7 +55,7 @@
         <% end %> 
    </div>
           
-        <div class="sectorBox communication"><%= link_to 'Communication', secteurs__communication_index_path %>
+        <div class="sectorBox communication"><%= link_to 'Communication', secteurs_amfroipret_communication_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Communication', commune: 'Amfroipret').count(1) %><p></div>
@@ -63,7 +63,7 @@
         <% end %> 
     </div>
 
-        <div class="sectorBox batiment"><%= link_to 'Bâtiment/Travaux public', secteurs__batiment_index_path %>
+        <div class="sectorBox batiment"><%= link_to 'Bâtiment/Travaux public', secteurs_amfroipret_batiment_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Bâtiment', commune: 'Amfroipret').count(1) %><p></div>
@@ -74,7 +74,7 @@
 
 
 <div class="sectorJob">
-        <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration', secteurs__restauration_index_path %>
+        <div class="sectorBox restauration"><%= link_to 'Hôtellerie/Restauration', secteurs_amfroipret_restauration_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Restauration', commune: 'Amfroipret').count(1) %><p></div>
@@ -82,7 +82,7 @@
         <% end %>  
     </div>
 
-        <div class="sectorBox tourisme"><%= link_to 'Tourisme, Loisirs', secteurs__tourisme_index_path %>
+        <div class="sectorBox tourisme"><%= link_to 'Tourisme, Loisirs', secteurs_amfroipret_tourisme_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Tourisme, Loisirs', commune: 'Amfroipret').count(1) %><p></div>
@@ -90,7 +90,7 @@
         <% end %>   
     </div>
           
-      <div class="sectorBox industrie"><%= link_to 'Industrie Agroalimentaire', secteurs__industrieagroalimentaire_index_path %>
+      <div class="sectorBox industrie"><%= link_to 'Industrie Agroalimentaire', secteurs_amfroipret_industrieagroalimentaire_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Industrie Agroalimentaire', commune: 'Amfroipret').count(1) %><p></div>
@@ -98,7 +98,7 @@
         <% end %>   
     </div>
 
-      <div class="sectorBox industrie"><%= link_to 'Industrie Metallurgie', secteurs__industriemetallurgie_index_path %>
+      <div class="sectorBox industrie"><%= link_to 'Industrie Metallurgie', secteurs_amfroipret_industriemetallurgie_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Industrie Metallurgie', commune: 'Amfroipret').count(1) %><p></div>
@@ -107,14 +107,14 @@
     </div>
 </div> 
 <div class="sectorJob">
-      <div class="sectorBox industrie"><%= link_to 'Industrie Automobile', secteurs__industrieautomobile_index_path %>
+      <div class="sectorBox industrie"><%= link_to 'Industrie Automobile', secteurs_amfroipret_industrieautomobile_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Industrie Automobile', commune: 'Amfroipret').count(1) %><p></div>
             </div>
         <% end %>   
     </div>
-       <div class="sectorBox maintenance"><%= link_to 'Maintenance', secteurs__maintenance_index_path %>
+       <div class="sectorBox maintenance"><%= link_to 'Maintenance', secteurs_amfroipret_maintenance_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Maintenance', commune: 'Amfroipret').count(1) %><p></div>
@@ -122,7 +122,7 @@
         <% end %> 
     </div>
 
-        <div class="sectorBox sante"><%= link_to 'Santé', secteurs__sante_index_path %>
+        <div class="sectorBox sante"><%= link_to 'Santé', secteurs_amfroipret_sante_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Santé', commune: 'Amfroipret').count(1) %><p></div>
@@ -130,7 +130,7 @@
         <% end %> 
     </div>
 
-    <div class="sectorBox service"><%= link_to 'Service à la personne', secteurs__service_index_path %>
+    <div class="sectorBox service"><%= link_to 'Service à la personne', secteurs_amfroipret_service_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Service à la personne', commune: 'Amfroipret').count(1) %><p></div>
@@ -140,7 +140,7 @@
 </div>
 
 <div class="sectorJob">  
-        <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', secteurs__spectacle_index_path %>
+        <div class="sectorBox spectacle"><%= link_to 'Spectacle/Événementiel', secteurs_amfroipret_spectacle_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Spectacle', commune: 'Amfroipret').count(1) %><p></div>
@@ -148,7 +148,7 @@
         <% end %>  
     </div>
 
-       <div class="sectorBox support"><%= link_to 'Support à l\'entreprise', secteurs__support_index_path %>
+       <div class="sectorBox support"><%= link_to 'Support à l\'entreprise', secteurs_amfroipret_support_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Support à l\'entreprise', commune: 'Amfroipret').count(1) %><p></div>
@@ -156,7 +156,7 @@
         <% end %>  
     </div>
 
-        <div class="sectorBox transport"><%= link_to 'Transport, Logistique', secteurs__transport_index_path %>
+        <div class="sectorBox transport"><%= link_to 'Transport, Logistique', secteurs_amfroipret_transport_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Transport, Logistique', commune: 'Amfroipret').count(1) %><p></div>
@@ -164,7 +164,7 @@
         <% end %>
     </div>
 
-        <div class="sectorBox collectivite"><%= link_to 'Non marchant', secteurs__nonmarchant_index_path %>
+        <div class="sectorBox collectivite"><%= link_to 'Non marchant', secteurs_amfroipret_nonmarchant_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Non marchant', commune: 'Amfroipret').count(1) %><p></div>
@@ -174,7 +174,7 @@
 </div>
 
 <div class="sectorJob">   
-       <div class="sectorBox association"><%= link_to 'Association', secteurs__association_index_path %>
+       <div class="sectorBox association"><%= link_to 'Association', secteurs_amfroipret_association_index_path %>
         <% @offres.each do |offre| %>
             <div class="containerBadge">
                 <div class="badge"><p><%= @offres.where(domaine: 'Association', commune: 'Amfroipret').count(1) %><p></div>
