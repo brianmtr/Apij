@@ -277,12 +277,16 @@
 <div class="cre">
   <h3 class="title">Vous êtes un chargé de Relation Entreprise ou conseiller ?</h3>
   
-<div class="fieldcheckbox">
+<%
+=begin%>
+ <div class="fieldcheckbox">
   
   <%= f.label :demandecre, 'Demander un compte CRE.' %>
   <%= f.select :demandecre, ['NON', 'OUI'] %>
 
-</div>
+</div> 
+<%
+=end%>
 
 <div class="fieldcheckbox">
   <%= f.label :demandeconseiller, 'Demander un compte Conseiller.' %>

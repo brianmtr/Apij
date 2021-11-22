@@ -1,14 +1,17 @@
 <% if current_user.conseiller? %>
 <%= form_with(model: form_jeune) do |form| %>
-  <% if form_jeune.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(form_jeune.errors.count, "error") %> prohibited this form_jeune from being saved:</h2>
 
-      <ul>
+  <% if form_jeune.errors.any? %>
+  <div class="alert alert-danger">
+    <div id="error_explanation">
+      <h2><%= pluralize(form_jeune.errors.count, "erreur") %> empêche le formulaire d'être sauvegardé:</h2>
+
+      <ul style="text-align: center;">
         <% form_jeune.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
+    </div>
     </div>
   <% end %>
 <div class="fieldBoxFormJeune">
@@ -531,8 +534,15 @@
     <%= form.select :integration_recom, ['Oui', 'Non', 'en attente', 'oui avec coaching']%>
   </div>
 <br>
+  <% if @form_jeune.invalid? %>*
+    <div class="alert alert-danger">
+      <% @form_jeune.errors.full_messages.each do |message| %>
+          <% message %>
+      <% end %>
+    </div>
+  <% end %>
 
-  <div class="fieldFormJeune">
+  <div class="fieldFormJeune alert alert-danger">
     <%= form.label :⚠️OBLIGATOIRE⚠️_Ajouter_un_CV %>
     <%= form.file_field :image, value: form_jeune.cached_image_data %>
   </div>
